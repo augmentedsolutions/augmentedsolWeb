@@ -3,6 +3,8 @@ import HeroSection from "../components/HomeComponent/HeroSection/HeroSection";
 import "../index.css";
 import AboutHome from "../components/HomeComponent/AboutHome/AboutHome";
 import ServicesHome from "../components/HomeComponent/ServicesHome/ServicesHome";
+import TeamHome from "../components/HomeComponent/TeamHome/TeamHome";
+import ClientHome from "../components/HomeComponent/ClientHome/ClientHome";
 const Home = () => {
   return (
     <>
@@ -21,6 +23,16 @@ const Home = () => {
           <div className="row " style={{marginTop:"100px"}}>
             <div className="col-12 ">
                <ServicesHome/>
+            </div>
+          </div>
+          <div className="row " style={{marginTop:"100px"}}>
+            <div className="col-12 ">
+               <TeamHome/>
+            </div>
+          </div>
+          <div className="row " style={{marginTop:"100px"}}>
+            <div className="col-12 ">
+               <ClientHome/>
             </div>
           </div>
         </div>
