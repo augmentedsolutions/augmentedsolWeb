@@ -1,0 +1,27 @@
+.image-container {
+    position: relative;
+    height: 614px;
+    /* border: 2px solid red; Add the border to the container */
+  }
+  
+  .about-image-main{
+     height: 467px;
+     width: 350px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url(../../../assets/Home/AboutVector.png);
+  } 
+   .about-image-left {
+ 
+    position: absolute;
+    left: 0;
+    top:0;
+  }
+  
+  .about-image-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  

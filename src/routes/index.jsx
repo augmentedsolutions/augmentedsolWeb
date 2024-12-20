@@ -7,34 +7,34 @@ import PortfolioPage from "../pages/PortfolioPage.jsx";
 import ContactPage from "../pages/ContactPage";
 import Navbar from "../layouts/Navbar.jsx";
 import Footer from "../layouts/Footer.jsx";
+
 const Path = () => {
   return (
-    <>
-      <Router>
-        {/* Navbar */}
-        <Navbar />
+    <Router>
+      {/* Navbar */}
+      <Navbar />
 
-        <Routes>
-          {/* Home Page Route */}
-          <Route path="/" element={<HomePage />} />
+      <Routes>
+        {/* Home Page Route */}
+        <Route path="/" element={<HomePage />} />
 
-          {/* About Page Route */}
-          <Route path="/about" element={<AboutPage />} />
+        {/* About Page Route */}
+        <Route path="/about" element={<AboutPage />} />
 
-          {/* Contact Page Route */}
-          <Route path="contact" element={<ContactPage />} />
+        {/* Contact Page Route */}
+        <Route path="/contact" element={<ContactPage />} />
 
-          {/* Service Page Route */}
-          <Route path="service" element={<ServicePage />} />
+        {/* Service Page Route */}
+        <Route path="/service" element={<ServicePage />} />
 
-          {/* Portfolio Page Route */}
-          <Route path="portfolio" element={<PortfolioPage />} />
-        </Routes>
+        {/* Portfolio Page Route */}
+        <Route path="/portfolio" element={<PortfolioPage />} />
+      </Routes>
 
-        {/* Footer */}
-        <Footer />
-      </Router>
-    </>
+      {/* Footer */}
+      <Footer />
+    </Router>
   );
 };
+
 export default Path;

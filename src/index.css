@@ -6,5 +6,72 @@
 body{
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;  
+  box-sizing: border-box; 
+  background-color: rgb(1,1,1); 
 }
+
+:root{
+  /* Font Family */
+  --font_family_poppins: "Poppins", serif;
+  --font_family_orbitron: "Orbitron", serif;
+
+  /* Backgrounds */
+  --background_color_btn:linear-gradient(#BC3CD8,#C54B8C);
+  
+   /* Text Color */
+  --btn_text_color:#FFFFFF;
+
+  /* Font Size */
+  --font_size_45:45.39px;
+  --font_size_21:21px;
+  --btn_text_fontsize:18.67px;
+  --font_size2:16px;
+
+  
+  /* Font Weight */
+  --font_weight_900:900;
+  --font_wight_primary:700;
+  --font_wight_secondary:500;
+  --font_wight_400:400;
+
+  /* Line Height */
+  --btn_text_line_height:28.01px;
+  --line_height_2:24px;
+  --line_height_72:72.63px;
+  --line_height_33:33px;
+
+
+}
+
+.btn_text{
+  color:var(--btn_text_color) ;
+  line-height: var(--btn_text_line_height);
+  font-weight: var(--font_wight_primary);
+  font-size: var(--btn_text_fontsize);
+  font-family: var(--font_family_poppins);
+}
+.text_primary{
+  font-family: var(--font_family_orbitron);
+  font-size: var(--font_size_45);
+  font-weight: var(--font_weight_900);
+  line-height: var(--line_height_72);
+  color: var(--btn_text_color);
+}
+.text_secondary{
+  font-family: var(--font_family_poppins);
+  font-size: var(--font_size2);
+  line-height: var(--line_height_2);
+  font-weight: var(--font_wight_secondary);
+  color: var(--btn_text_color);
+}
+.text_paragraph{
+  font-size:var(--font_family_poppins);
+  font-weight: var(--font_wight_400);
+  font-size: var(--font_size_21);
+  line-height: var(--line_height_33);
+  color: var(--btn_text_color);
+}
+.Container {
+  margin: 0px 98px 0px 98px;
+}
+
