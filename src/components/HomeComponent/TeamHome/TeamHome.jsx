@@ -4,9 +4,9 @@ import TeamCard from "./TeamCard";
 const TeamHome = () => {
   return (
     <>
-      <div className="row ">
+      <div className="row  ">
         <div
-          className="col-6 d-flex justify-content-center align-items-center"
+          className="col-lg-6 d-flex justify-content-center align-items-center"
           style={{ height: "529px" }}
         >
           <div className="row d-flex justify-content-start align-items-center">
@@ -28,7 +28,7 @@ const TeamHome = () => {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-lg-6">
           <div className="row">
             <div className="col-5">
               <TeamCard />

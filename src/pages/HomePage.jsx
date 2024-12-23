@@ -5,6 +5,7 @@ import AboutHome from "../components/HomeComponent/AboutHome/AboutHome";
 import ServicesHome from "../components/HomeComponent/ServicesHome/ServicesHome";
 import TeamHome from "../components/HomeComponent/TeamHome/TeamHome";
 import ClientHome from "../components/HomeComponent/ClientHome/ClientHome";
+import ContactHome from "../components/HomeComponent/ContactHome/ContactHome";
 const Home = () => {
   return (
     <div style={{ overflow: "hidden" }}>
@@ -33,6 +34,11 @@ const Home = () => {
           <div className="row " style={{ marginTop: "100px" }}>
             <div className="col-12 ">
               <ClientHome />
+            </div>
+          </div>
+          <div className="row " style={{ marginTop: "100px" }}>
+            <div className="col-12 ">
+              <ContactHome />
             </div>
           </div>
         </div>

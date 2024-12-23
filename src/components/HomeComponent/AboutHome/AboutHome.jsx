@@ -7,7 +7,7 @@ import "../../../index.css"
 const AboutHome = () => {
   return (
     <div className="row d-flex justify-content-center align-items-center ">
-      <div className="col-6">
+      <div className="col-lg-6">
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-6 image-container">
             <div className="about-image-main about-image-left">
@@ -30,7 +30,7 @@ const AboutHome = () => {
           </div>
         </div>
       </div>
-      <div className="col-6">
+      <div className="col-lg-6">
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-8">
             <div className="row mb-5">

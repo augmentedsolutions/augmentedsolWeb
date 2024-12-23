@@ -4,6 +4,7 @@ import ServiceCard from "./ServiceCard";
 import ServiceIMage1 from '../../../assets/Home/AgmentServices1.png'
 import ServiceIMage2 from '../../../assets/Home/AgmentServices2.png'
 import ServiceIMage3 from '../../../assets/Home/AgmentServices3.png'
+import Carousel from "./Carousle";
 
 const ServicesHome = () => {
   return (
@@ -14,14 +15,11 @@ const ServicesHome = () => {
         </div>
       </div>
       <div className="row mt-3">
-        <div className="col-4">
-           <ServiceCard image={ServiceIMage1}/>
-        </div>
-        <div className="col-4">
-        <ServiceCard image={ServiceIMage2}/>
-        </div>
-        <div className="col-4">
-        <ServiceCard image={ServiceIMage3}/>
+
+        <div className="row">
+           <div className="col-12">
+           <Carousel/>
+           </div> 
         </div>
       </div>
     </>

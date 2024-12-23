@@ -3,7 +3,7 @@ import '../../../index.css'
 const ClientCard = ({Img}) => {
   return (
     
-      <div className= 'Flex col-2 backgroundClientCard' style={{height:'140px', margin:'20px 20px 20px 20px'}}>
+      <div className='col-2 backgroundClientCard' style={{margin:'20px 20px 20px 20px'}}>
           <img src={Img}/>
       </div>
    
