@@ -12,13 +12,13 @@ const ClientCardTwo = () => {
       <div className="row border_radius_two"  style={{display:'flex' , justifyContent:'center'}}>
         <div className="col-auto">
 
-        <h1 className="text_paragraph_teritary">What our clients say</h1>
+        <h1 className="heading_primary">What our clients say</h1>
         </div>
       </div>
       <div className="row mt-5 " style={{display:'flex' , justifyContent:'center'}}>
         <div className="col-auto">
 
-        <p className="text_paragraph_sixth">
+        <p className="text_primary">
           See what our customer say about us. It really matter for us. How good
           or bad we will make ir for evaluation to make EhyalLive better.
         </p>

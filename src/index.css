@@ -12,10 +12,10 @@ body {
 
 :root {
   /* Font Family */
+  --font_family_orbitron: "Orbitron", serif;
   --font_family_poppins: "Poppins", serif;
   --font_family_inter: "Inter", serif;
   --font_family_roboto: "Roboto", serif;
-  --font_family_orbitron: "Orbitron", serif;
 
   
 
@@ -137,11 +137,18 @@ body {
   font-size: var(--btn_text_fontsize);
   font-family: var(--font_family_poppins);
 }
-.text_primary {
+.heading_primary {
   font-family: var(--font_family_orbitron);
   font-size: var(--font_size_45);
   font-weight: var(--font_weight_900);
   line-height: var(--line_height_72);
+  color: var(--btn_text_color);
+}
+.text_primary {
+  font-size: var(--font_family_poppins);
+  font-weight: var(--font_wight_400);
+  font-size: var(--font_size_26_33);
+  line-height: var(--line_height_33);
   color: var(--btn_text_color);
 }
 .text_secondary {
@@ -219,7 +226,7 @@ body {
   color: var(--btn_text_color);
 }
 .text_paragraph_teritary {
-  font-family: var(--font_family_inter);
+  font-family: var(--font_family_orbitron);
   font-weight: var(--font_weight_600);
   font-size: var(--font_size_45);
   line-height: var(--Line_height_28_92);
@@ -227,7 +234,7 @@ body {
   text-decoration: underline;
 }
 .text_paragraph_forth {
-  font-family: var(--font_family_inter);
+  font-family: var(--font_family_poppins);
   font-size: var(--font_size14_68);
   font-weight: var(--font_wight_400);
   line-height: var(--Line_height_24_22);
@@ -262,7 +269,7 @@ body {
   
 }
 .text_paragraph_eighth {
-  font-family: var(--font_family_inter);
+  font-family: var(--font_family_poppins);
   font-size: var(--font_size_24);
   font-weight: var(--font_wight_primary);
   line-height: var(--line_height_32);

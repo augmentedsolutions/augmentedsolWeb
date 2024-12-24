@@ -14,12 +14,12 @@ const TeamHome = () => {
             <div className="col-8">
               <div className="row">
                 <div className="col-12">
-                  <h1 className="text_primary">Augmented Team</h1>
+                  <h1 className="heading_primary">Augmented Team</h1>
                 </div>
               </div>
               <div className="row">
                 <div className="col-12">
-                  <p className="text_paragraph">
+                  <p className="text_primary">
                     Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel
                     ut feugiat ut. Lorem ipsum dolor sit amet consectetur. Lorem
                     urna dui vel ut feugiat ut.

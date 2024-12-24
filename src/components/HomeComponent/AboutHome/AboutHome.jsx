@@ -3,7 +3,8 @@ import AboutOne from "../../../assets/Home/AboutAugmnetImage1.png";
 import AboutTwo from "../../../assets/Home/AboutAugmnetImage2.png";
 import "./AboutHome.css"; // Optional: add styles here
 import Button from "../../../common/Button/Button";
-import "../../../index.css"
+import "../../../index.css";
+
 const AboutHome = () => {
   return (
     <div className="row d-flex justify-content-center align-items-center ">
@@ -35,12 +36,12 @@ const AboutHome = () => {
           <div className="col-12">
             <div className="row mb-3 mb-lg-5">
               <div className="col-12 text-center text-lg-start ">
-                <h1 className="text_primary">About Augmented</h1>
+                <h1 className="heading_primary">About Augmented</h1>
               </div>
             </div>
             <div className="row mb-3 mb-lg-5">
               <div className="col-12 text-center text-lg-start">
-                <p className="text_paragraph">
+                <p className="text_primary">
                   We are a specialized software company at the forefront of
                   augmented reality (AR) technology, With a passion for
                   innovation and a deep understanding of the power of AR, we are

@@ -11,7 +11,7 @@ const ClientCardOne = () => {
     <>
       <div className=" row  ">
         <div className="col-12 text-center">
-          <h1 className="text_primary">Augmented Clients</h1>
+          <h1 className="heading_primary">Augmented Clients</h1>
         </div>
       </div>
       <div className="row pt-3" style={{display:"flex",justifyContent:'center',alignItems:'center'}}>
