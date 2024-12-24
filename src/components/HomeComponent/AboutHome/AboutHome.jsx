@@ -32,7 +32,7 @@ const AboutHome = () => {
       </div>
       <div className="col-lg-6">
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="col-8">
+          <div className="col-10">
             <div className="row mb-5">
               <div className="col-12">
                 <h1 className="text_primary">About Augmented</h1>
