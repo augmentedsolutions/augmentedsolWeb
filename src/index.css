@@ -73,7 +73,8 @@ body {
   --font_size_21: 21px;
   --font_size_21: 20px;
   --font_size_24: 24px;
-  --font_size_23: 23.66px;
+  /* 23.66px */
+  --font_size_23:1.479rem ;
   
   /* font size 18.67px; */
   --btn_text_fontsize:1.167rem
@@ -189,6 +190,20 @@ body {
   line-height: var(--line_height_30);
   color: var(--btn_text_color);
 }
+.text_seventh {
+  font-family: var(--font_family_roboto);
+  font-size: var(--font_size_15_96);
+  font-weight: var(--font_wight_400);
+  line-height: var(--line_height_26);
+  color: var(--btn_text_color);
+  
+}
+.border_tabs_portfolio {
+  border: 1px solid #DF308D;
+  border-radius: 5px;
+}
+
+
 .text_paragraph {
   font-size: var(--font_family_poppins);
   font-weight: var(--font_wight_400);
@@ -209,6 +224,7 @@ body {
   font-size: var(--font_size_45);
   line-height: var(--Line_height_28_92);
   color: var(--btn_text_color);
+  text-decoration: underline;
 }
 .text_paragraph_forth {
   font-family: var(--font_family_inter);
@@ -230,7 +246,7 @@ body {
   letter-spacing: var(--leter_spacing_0_2_rem);
 }
 .text_paragraph_sixth {
-  font-family: var(--font_family_poppins);
+  font-family: var(--font_family_inter);
   font-size: var(--font_size_23);
   font-weight: var(--font_wight_400);
   line-height: var(--Line_height_28_92);
@@ -291,15 +307,17 @@ body {
 }
 
 .background_gradient_one {
-  background: var(--background_gradient_one);
-  border: 2.15px solid;
+  background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #AA14F0 -42.58%, rgba(170, 20, 240, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(185, 54, 245, 0) 100%);
 
-  border-image-source: linear-gradient(
-    77.91deg,
-    rgba(185, 54, 245, 0.1375) 1.95%,
-    rgba(185, 54, 245, 0.11) 1.95%,
-    rgba(170, 20, 240, 0.0825) 108.82%
-  );
+}
+.background_Input_Client {
+  border: 2.15px solid rgb(148, 78, 180);
+   border-radius:5px ;
+/* border-image-source: linear-gradient(77.91deg, rgba(185, 54, 245, 0.1375) 1.95%, rgba(185, 54, 245, 0.11) 1.95%, rgba(170, 20, 240, 0.0825) 108.82%); */
+
+background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #CB8DE8 -42.58%, rgba(203, 143, 232, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(199, 137, 228, 0) 100%);
+
+
 }
 .background_gradient_two {
   background: var(--background_gradient_two);
@@ -330,7 +348,11 @@ body {
   border-radius: 17px;
 
 }
-
+.backgorundTeamCard{
+  background: rgba(24, 15, 28, 1);
+  border: 3.24px solid;
+/* border-image-source: linear-gradient(77.91deg, rgba(185, 54, 245, 0.1375) 1.95%, rgba(185, 54, 245, 0.11) 1.95%, rgba(170, 20, 240, 0.0825) 108.82%); */
+}
 .border_radius_two {
   border: var(--border_Radius_2_02);
   border-image-source: var(--border_image_1);
@@ -386,4 +408,8 @@ body {
   .MarginContainer{
     margin-top: 50px;
   }
+}
+
+.Border{
+  border: 3px solid green;
 }

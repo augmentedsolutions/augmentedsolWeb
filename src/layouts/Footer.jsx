@@ -12,7 +12,7 @@ import ContactLogoright3 from "../assets/Home/ContactLogoRight3.png";
 const Footer = () => {
   return (
     <div className="row Container " style={{}}>
-      <div className="col-md-4">
+      <div className=" col-md-4">
         <div className="row">
           <div className="col-12">
             <img src={LogoImg} />

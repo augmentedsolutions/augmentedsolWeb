@@ -4,10 +4,10 @@ import '../../index.css'
 const CardAboutOne = ({img}) => {
   return (
     <div className='row'>
-      <div className='col-6 text-center'>
-         <img src={img} width='100%'/>
+      <div className='col-lg-6 text-center' style={{display:'flex',justifyContent:'center',alignItems:'center'}} >
+         <img src={img} width='90%' height='auto' />
       </div>
-      <div className='col-6'>
+      <div className='col-lg-6'>
      
            <div className='row'>
            

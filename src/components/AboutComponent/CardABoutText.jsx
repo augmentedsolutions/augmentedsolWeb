@@ -13,7 +13,7 @@ const CardABoutText = ({text,paragraph}) => {
         </p>
       </div>
       <div className="col-4 pt-5 ">
-        <Button/>
+        <Button name='Read More'/>
       </div>
     </div>
   );

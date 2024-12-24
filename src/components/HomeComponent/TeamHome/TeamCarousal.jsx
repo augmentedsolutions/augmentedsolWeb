@@ -1,20 +1,21 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectCoverflow } from "swiper/modules";
-import ServiceCard from "./ServiceCard";
+import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
+
 import ServiceImage1 from "../../../assets/Home/AgmentServices1.png";
 import ServiceImage2 from "../../../assets/Home/AgmentServices2.png";
 import ServiceImage3 from "../../../assets/Home/AgmentServices3.png";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
-import "./Carousel.css";
+import "./TeamCarousal.css";
+import TeamCard from "./TeamCard";
 
-const Carousel = () => {
+const TeamCarousal = () => {
   return (
     <Swiper
-      className="swiper Border"
-      modules={[Navigation, EffectCoverflow]}
+      modules={[Navigation, EffectCoverflow, Pagination]}
       effect="coverflow"
       coverflowEffect={{
         rotate: 0,
@@ -23,31 +24,31 @@ const Carousel = () => {
         modifier: 1,
         slideShadows: true,
       }}
-      spaceBetween={0}
-      slidesPerView={3}
+      spaceBetween={-150} // Negative space between to allow overlap
+      slidesPerView={3}   // Show 3 slides at once
       centeredSlides
       navigation
+      pagination={{
+        clickable: true,
+      }}
       breakpoints={{
-        // Breakpoint for tablets
         768: {
-          slidesPerView: 2, // Show 2 slides
-          spaceBetween: 20,
+          slidesPerView: 2,
+          spaceBetween: -100,  // Adjust for tablets
         },
-        // Breakpoint for mobile
         576: {
-          slidesPerView: 1, // Show 1 slide
-          spaceBetween: 10,
+          slidesPerView: 1,
+          spaceBetween: -50,  // Adjust for mobile
         },
       }}
     >
       {[ServiceImage1, ServiceImage2, ServiceImage3].map((image, index) => (
-        <SwiperSlide className="swiper-slide" key={index} style={{height:'auto'}}>
-          <ServiceCard image={image} />
+        <SwiperSlide key={index} style={{ height: "auto" }}>
+          <TeamCard />
         </SwiperSlide>
       ))}
-      <SwiperSlide>Slide 4</SwiperSlide>
     </Swiper>
   );
 };
 
-export default Carousel;
+export default TeamCarousal;

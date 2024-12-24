@@ -1,6 +1,7 @@
 import React from "react";
 import "../../../index.css";
 import TeamCard from "./TeamCard";
+import TeamCarousal from "./TeamCarousal";
 const TeamHome = () => {
   return (
     <>
@@ -29,19 +30,7 @@ const TeamHome = () => {
           </div>
         </div>
         <div className="col-lg-6">
-          <div className="row">
-            <div className="col-5">
-              <TeamCard />
-            </div>
-      
-            <div className="col-4">
-              {/* <TeamCard /> */}
-            </div>
- 
-            <div className="col-4">
-              {/* <TeamCard /> */}
-            </div>
-          </div>
+         <TeamCarousal/>
         </div>
       </div>
     </>

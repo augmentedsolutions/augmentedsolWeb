@@ -14,9 +14,9 @@ const ClientCardOne = () => {
           <h1 className="text_primary">Augmented Clients</h1>
         </div>
       </div>
-      <div className="row">
-        <div className="col-12">
-          <div className="row">
+      <div className="row pt-3" style={{display:"flex",justifyContent:'center',alignItems:'center'}}>
+        <div className="col-auto">
+          <div className="row" style={{display:'flex' ,alignItems:'center'}}>
             <ClientCard Img={ClientIMg1} />
             <ClientCard Img={ClientIMg2} />
             <ClientCard Img={ClientIMg3} />

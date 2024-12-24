@@ -20,9 +20,9 @@ const ServicePage = () => {
             <HeroSectionService img={ServicesHeroSection} />
           </div>
         </div>
-        <div className="row mt-4">
-          <div className="col-12">
-            <div className="row ">
+        <div className="row mt-4" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+          <div className="col-auto">
+            <div className="row gap-5 gap-lg-0  " style={{display:"flex",alignItems:'center',justifyContent:'center'}}>
               <ServiceCard
                 img={ServicesImage1}
                 text="Web Development"

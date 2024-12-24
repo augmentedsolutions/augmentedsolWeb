@@ -12,31 +12,31 @@ const Home = () => {
       <div className="row Container" style={{ position: "relative" }}>
         <div className="col-12">
           <div className="row">
-            <div className="col-12" style={{}}>
+            <div className="col-12 MarginContainer" style={{}}>
               <HeroSection />
             </div>
           </div>
-          <div className="row " style={{ marginTop: "100px" }}>
+          <div className="row MarginContainer" >
             <div className="col-12 ">
               <AboutHome />
             </div>
           </div>
-          <div className="row " style={{ marginTop: "100px" }}>
+          <div className="row MarginContainer" >
             <div className="col-12 ">
               <ServicesHome />
             </div>
           </div>
-          <div className="row " style={{ marginTop: "100px" }}>
+          <div className="row MarginContainer" >
             <div className="col-12 ">
               <TeamHome />
             </div>
           </div>
-          <div className="row " style={{ marginTop: "100px" }}>
+          <div className="row MarginContainer" >
             <div className="col-12 ">
               <ClientHome />
             </div>
           </div>
-          <div className="row " style={{ marginTop: "100px" }}>
+          <div className="row MarginContainer" >
             <div className="col-12 ">
               <ContactHome />
             </div>

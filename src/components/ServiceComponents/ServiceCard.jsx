@@ -2,7 +2,7 @@ import React from "react";
 import '../../index.css'
 const ServiceCard = ({ img, text, paragraph }) => {
   return (
-    <div className="col-4 mb-5">
+    <div className="col-5 col-lg-4  mb-lg-5">
       <div className="row " style={{display:"flex",
             alignItems:'end',
             justifyContent:'center'}}>
@@ -15,6 +15,7 @@ const ServiceCard = ({ img, text, paragraph }) => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             display:"flex",
+            minWidth:'380px',
             alignItems:'end',
             justifyContent:'center'
           }}

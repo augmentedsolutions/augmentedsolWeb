@@ -16,6 +16,7 @@ const Button = ({ name }) => {
             background: "var(--background_color_btn)",
             textAlign: "center",
             display: "flex",
+            borderRadius:'7.14px',
             justifyContent: "center",
             alignItems: "center",
             // width:'95%',

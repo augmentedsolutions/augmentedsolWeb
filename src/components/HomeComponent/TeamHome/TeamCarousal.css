@@ -1,0 +1,56 @@
+.swiper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto; /* Center the Swiper container */
+}
+
+/* Control Swiper Slide dimensions */
+.swiper-slide {
+  display: flex; /* Center content inside the slide */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adjust as per your requirement */
+  height: 400px; /* Adjust as per your requirement */
+}
+
+/* Scale the active slide for focus effect */
+.swiper-slide-active {
+  transform: scale(1.1); /* Scale the active slide */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 250px; /* Adjust for tablets */
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-slide {
+    width: 200px; /* Adjust for mobile */
+    height: 300px;
+  }
+}
+/* Custom styles for Swiper pagination dots */
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  width: 32px;
+  height: 3px;
+  border-radius: 0px;
+  background: #ddd; /* Default dot color */
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  width: 70px !important;    
+  background: linear-gradient(
+    99.05deg,
+    #a700f5 0.07%,
+    #df308d 106.32%
+  ) !important; /* Active dot color */
+}

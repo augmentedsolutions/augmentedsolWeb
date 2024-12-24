@@ -2,49 +2,30 @@ import React from "react";
 import "../../index.css"
 const PortfolioCard = ({ img, text, options }) => {
   return (
-    <div className="col-4">
-      <div className="row">
-        <div className="col-11">
-          <div className="row">
-            <div className="col-12 ">
-              <img
-                src={img}
-                style={{
-                  width: "100%",
-                  height: "430.22px",
-                  gap: "0px",
-                  opacity: "0px",
-                }}
-              />
-            </div>
-          </div>
+      <div>
+        <div >
+            <img src={img} height='400px' width='500px'/ >
+              <h1 className="text_forth px-3 pt-3">
+                {text}
+              </h1>
+              <div className=" pt-3 " style={{display:'flex'}}>
 
-          <div className="row">
-            <div className="col-12 text_forth" >{text}</div>
-          </div>
-
-          <div className="row">
-            <div className="col-12">
-              <div className="row">
-                {options.map((e) => {
-                  return (
-                    
-                      <div className="col-auto border_radius_three px-1 py-2 text_paragraph_tevelth">{e.option}</div>
-                    
-                  );
-                })}
+              {options.map((e)=>{
+                return(
+                  <span className="border_tabs_portfolio mx-3 px-2 py-1" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+                   <p className="text_seventh  " style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+                     {e.option}  
+                   </p>
+                   </span>
+              )
+              })}
               </div>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-12">
-              <button />
-            </div>
-          </div>
+              <div className="mt-4 text_seventh" style={{height:'53px',background: 'linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%)',
+ width:"100%",display:'flex',justifyContent:'center',alignItems:'center'}}>
+                View Details
+              </div>
         </div>
       </div>
-    </div>
   );
 };
 

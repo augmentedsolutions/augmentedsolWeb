@@ -1,11 +1,39 @@
+.swiper {
+  width: 100%; /* Ensure swiper takes up the full width */
+  height: 100%; /* Adjust height based on your design */
+  display: flex;
+  justify-content: center;
+}
+
 .swiper-slide {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    transform: scale(0.8); /* Smaller size for non-active slides */
-    opacity: 0.5; /* Reduced opacity for non-active slides */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+/* Centered (active) slide */
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 10;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .swiper-slide {
+    transform: scale(0.9);
   }
-  
   .swiper-slide-active {
-    transform: scale(1); /* Full size for the active slide */
-    opacity: 1; /* Full opacity for the active slide */
+    transform: scale(1.1);
   }
-  
+}
+
+@media (max-width: 576px) {
+  .swiper-slide {
+    transform: scale(0.8);
+  }
+  .swiper-slide-active {
+    transform: scale(1);
+  }
+}

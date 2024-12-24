@@ -50,7 +50,7 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="col-2">
-            <Button />
+            <Button name='Submit' />
           </div>
         </div>
 
@@ -81,7 +81,7 @@ const ContactForm = () => {
             <div className="col-2">
               <Logo logo={ContactLogoright3} />
             </div>
-            <div className="col-auto">
+            <div className="col-auto" style={{display:'flex',justifyContent:''}}>
               <span className="text_fifth">
                 337 G Block Rehman Pura Muslim.
               </span>
