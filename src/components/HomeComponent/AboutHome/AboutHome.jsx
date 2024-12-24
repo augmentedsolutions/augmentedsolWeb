@@ -7,22 +7,22 @@ import "../../../index.css"
 const AboutHome = () => {
   return (
     <div className="row d-flex justify-content-center align-items-center ">
-      <div className="col-lg-6">
+      <div className="col-lg-6" >
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="col-6 image-container">
+          <div className="col-7 col-lg-8 image-container">
             <div className="about-image-main about-image-left">
               <img
                 src={AboutOne}
-                height="435px"
-                width="323px"
+                height="auto"
+                width="100%"
                 alt="About One"
               />
             </div>
             <div className="about-image-main about-image-right">
               <img
                 src={AboutTwo}
-                height="435px"
-                width="323px"
+                height="auto"
+                width="100%"
                 className="img-fluid"
                 alt="About Two"
               />

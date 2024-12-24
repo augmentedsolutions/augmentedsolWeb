@@ -1,16 +1,17 @@
 import React from "react";
 import Logo from "../common/Logo/Logo";
 import "../index.css";
+
 import LogoImg from "../assets/Home/Logo.png";
 import ContactLogoleft1 from "../assets/Home/ContactLogoleft1.png";
 import ContactLogoleft2 from "../assets/Home/ContactLogoleft2.png";
 import ContactLogoleft3 from "../assets/Home/ContactLogoleft3.png";
-import ContactLogoright1 from "../assets/Home/ContactLogoright1.png";
-import ContactLogoright2 from "../assets/Home/ContactLogoright2.png";
-import ContactLogoright3 from "../assets/Home/ContactLogoright3.png";
+import ContactLogoright1 from "../assets/Home/ContactLogoRight1.png";
+import ContactLogoright2 from "../assets/Home/ContactLogoRight2.png";
+import ContactLogoright3 from "../assets/Home/ContactLogoRight3.png";
 const Footer = () => {
   return (
-    <div className="row Container " style={{marginTop:'159px',marginBottom:'100px'}}>
+    <div className="row Container " style={{}}>
       <div className="col-md-4">
         <div className="row">
           <div className="col-12">
@@ -41,7 +42,7 @@ const Footer = () => {
       </div>
       <div className="col-md-4">
         <div className="row d-flex justify-content-center ">
-          <div className="col-6">
+          <div className="col-md-6">
             <p className=" text_paragraph_eighth ">Company</p>
             <p className=" text_paragraph_tenth">About Us</p>
             <p className=" text_paragraph_tenth">Services</p>
@@ -63,7 +64,7 @@ const Footer = () => {
                   <div className="col-auto">
                     <Logo logo={ContactLogoright1} />
                   </div>
-                  <div className="col-10">
+                  <div className="col-auto">
                     <p className="text_paragraph_ninth">
                       augmentedsol@gmail.com
                     </p>
@@ -75,7 +76,7 @@ const Footer = () => {
                   <div className="col-auto">
                     <Logo logo={ContactLogoright2} />
                   </div>
-                  <div className="col-10">
+                  <div className="col-auto">
                     <p className="text_paragraph_ninth">+92 308 4846218</p>
                   </div>
                 </div>
@@ -85,7 +86,7 @@ const Footer = () => {
                   <div className="col-auto">
                     <Logo logo={ContactLogoright3} />
                   </div>
-                  <div className="col-10">
+                  <div className="col-auto">
                     <p className="text_paragraph_ninth">
                       337 G Block Rehmanpura Muslim Town Lahore.
                     </p>

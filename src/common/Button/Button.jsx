@@ -5,21 +5,20 @@ import "../../index.css";
 const Button = ({ name }) => {
   return (
     <div className="row d-flex justify-content-center align-items-center">
-      <div className="col-8">
+      <div className="col-auto col-lg-11">
         <Link
-          className=" btn_text"
+          className=" btn_text py-3 px-2"
           to={"/contact"}
           style={{
             textDecoration: "none",
             color: "white",
-            height: "62px",
+            // height: '3.875rem',
             background: "var(--background_color_btn)",
             textAlign: "center",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            width:'95%',
-            minWidth:'100px'
+            // width:'95%',
           }}
         >
           {name}

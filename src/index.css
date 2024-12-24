@@ -65,16 +65,23 @@ body {
   --btn_text_color: #ffffff;
 
   /* Font Size */
-  --font_size_45: 45.39px;
-  --font_size_21: 21px;
+
+  /* font size 45.39px */
+  --font_size_45: 2.837rem;
+
+  /* font size 21px */
+  --font_size_21: 1.313rem;
   --font_size_21: 20px;
   --font_size_24: 24px;
   --font_size_23: 23.66px;
-  --btn_text_fontsize: 18.67px;
+  
+  /* font size 18.67px; */
+  --btn_text_fontsize:1.167rem
   --font_size14_68: 14.68px;
   --font_size_18_24: 18.24px;
   --font_size_17: 17px;
-  --font_size2: 16px;
+  /* font size16px; */
+  --font_size2: 1rem; 
   --font_size13_27: 13.27px;
   --font_size28: 28.5px;
   --font_size_23: 23.89px;
