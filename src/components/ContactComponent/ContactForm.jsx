@@ -2,9 +2,9 @@ import React from "react";
 import Button from "../../common/Button/Button";
 import "../../index.css";
 
-import ContactLogoright1 from "../../assets/Home/ContactLogoright1.png";
-import ContactLogoright2 from "../../assets/Home/ContactLogoright2.png";
-import ContactLogoright3 from "../../assets/Home/ContactLogoright3.png";
+import ContactLogoright1 from "../../assets/Home/ContactLogoRight1.png";
+import ContactLogoright2 from "../../assets/Home/ContactLogoRight2.png";
+import ContactLogoright3 from "../../assets/Home/ContactLogoRight3.png";
 import ContactLogoleft1 from "../../assets/Home/ContactLogoleft1.png";
 import ContactLogoleft2 from "../../assets/Home/ContactLogoleft2.png";
 import ContactLogoleft3 from "../../assets/Home/ContactLogoleft3.png";
