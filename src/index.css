@@ -350,6 +350,30 @@ body {
   /* padding: 3px; */
 
 }
+/* For screens smaller than 1200px */
+@media (max-width: 1199px) {
+  .Container {
+    margin: 0px 98px 0px 98px;
+  }
+}
 
+/* For screens smaller than 992px */
+@media (max-width: 991px) {
+  .Container {
+    margin: 0px 98px 0px 98px;
+  }
+}
 
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .Container {
+    margin: 0px 20px 0px 20px;
+  }
+}
 
+/* For screens smaller than 576px */
+@media (max-width: 575px) {
+  .Container {
+    margin: 0px 20px 0px 20px;
+  }
+}
