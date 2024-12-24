@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="row mt-3">
           <div className="col-12 text_paragraph_seventh">
             <p>
-              At the core of our company is a passion for the transformative
+              A the core of our company is a passion for the transformative
               power of augmented reality (AR) and virtual reality (VR).
             </p>
           </div>
