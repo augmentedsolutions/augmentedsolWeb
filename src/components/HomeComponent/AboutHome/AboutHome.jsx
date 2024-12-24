@@ -30,15 +30,15 @@ const AboutHome = () => {
           </div>
         </div>
       </div>
-      <div className="col-lg-6">
+      <div className="col-lg-6 mt-3 ">
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-12">
-            <div className="row mb-3 mb-md-5">
+            <div className="row mb-3 mb-lg-5">
               <div className="col-12 text-center text-lg-start ">
                 <h1 className="text_primary">About Augmented</h1>
               </div>
             </div>
-            <div className="row mb-3 mb-md-5">
+            <div className="row mb-3 mb-lg-5">
               <div className="col-12 text-center text-lg-start">
                 <p className="text_paragraph">
                   We are a specialized software company at the forefront of
