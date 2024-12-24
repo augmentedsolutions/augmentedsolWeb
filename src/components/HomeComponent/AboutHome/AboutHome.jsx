@@ -9,7 +9,7 @@ const AboutHome = () => {
     <div className="row d-flex justify-content-center align-items-center ">
       <div className="col-lg-6" >
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="col-7 col-lg-8 image-container">
+          <div className=" image-container" style={{width:'550px'}}>
             <div className="about-image-main about-image-left">
               <img
                 src={AboutOne}
@@ -32,14 +32,14 @@ const AboutHome = () => {
       </div>
       <div className="col-lg-6">
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="col-10">
-            <div className="row mb-5">
-              <div className="col-12">
+          <div className="col-12">
+            <div className="row mb-3 mb-md-5">
+              <div className="col-12 text-center text-lg-start ">
                 <h1 className="text_primary">About Augmented</h1>
               </div>
             </div>
-            <div className="row mb-5">
-              <div className="col-12">
+            <div className="row mb-3 mb-md-5">
+              <div className="col-12 text-center text-lg-start">
                 <p className="text_paragraph">
                   We are a specialized software company at the forefront of
                   augmented reality (AR) technology, With a passion for
@@ -49,7 +49,7 @@ const AboutHome = () => {
               </div>
             </div>
             <div className="row d-flex justify-content-start">
-                <div className="col-6 ">
+                <div className="col-lg-6 text-center text-lg-start">
                 <Button name="Read More" />
                 </div>
             </div>
