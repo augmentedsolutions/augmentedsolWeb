@@ -27,7 +27,7 @@ useEffect(()=>{
               alt="..."
             />
           </div>
-          <div className="col-md-7 col-lg-6">
+          <div className=" col-md-6 col-lg-6 col-xl-5">
             <div className="row d-flex justify-content-between align-items-center">
               <div className="col-auto">
                 <NavLink

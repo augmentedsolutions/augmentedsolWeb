@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
-
+import './PortfolioCarousel.css';
 import ServicesImage1 from "../../assets/Protfolio/ServicesImage1.png";
 import ServicesImage2 from "../../assets/Protfolio/ServicesImage2.png";
 import ServicesImage3 from "../../assets/Protfolio/ServicesImage3.png";
@@ -64,45 +64,45 @@ const PortfolioCarousel = () => {
 
   return (
     <Swiper
-    style={{display:'flex',justifyContent:'center',alignItems:'center'}}
-    modules={[Navigation, EffectCoverflow, Pagination]}
-    effect="coverflow"
-    coverflowEffect={{
-      rotate: 0,
-      stretch: 0,
-      depth: 50,
-      modifier: 1,
-      slideShadows: true,
-    }}
-    spaceBetween={20} // Consistent spacing
-    slidesPerView={3}
-    centeredSlides
-    navigation
-    // pagination={{ clickable: true }}
-    breakpoints={{
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      576: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-    }}
-  >
-    {portfolioData.map((item, index) => (
-      <SwiperSlide key={index} style={{ height: "auto" }}>
-        <PortfolioCard
-          img={item.img || "path/to/fallback-image.png"}
-          text={item.text}
-          options={item.options}
-          aria-label={`Portfolio card showcasing ${item.text}`}
-          loading="lazy"
-        />
-      </SwiperSlide>
-    ))}
-  </Swiper>
-  
+      style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+      modules={[Navigation, EffectCoverflow, Pagination]}
+      effect="coverflow"
+      coverflowEffect={{
+        rotate: 0,
+        stretch: 0,
+        depth: 50,
+        modifier: 1,
+        slideShadows: true,
+      }}
+      spaceBetween={20} // Consistent spacing
+      slidesPerView={3}
+      centeredSlides
+      loop // Loop the slides infinitely
+      navigation
+      pagination={{ clickable: true }} // Optional pagination
+      breakpoints={{
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        576: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+      }}
+    >
+      {portfolioData.map((item, index) => (
+        <SwiperSlide key={index} style={{ height: "auto" }}>
+          <PortfolioCard
+            img={item.img || "path/to/fallback-image.png"}
+            text={item.text}
+            options={item.options}
+            aria-label={`Portfolio card showcasing ${item.text}`}
+            loading="lazy"
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 

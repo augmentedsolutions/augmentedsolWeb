@@ -11,15 +11,15 @@ import ContactLogoright2 from "../assets/Home/ContactLogoRight2.png";
 import ContactLogoright3 from "../assets/Home/ContactLogoRight3.png";
 const Footer = () => {
   return (
-    <div className="row Container " style={{}}>
-      <div className="my-5 my-lg-0 col-lg-4">
-        <div className="row">
+    <div className="row Container MarginTopContainer " style={{}}>
+      <div className=" my-lg-0 col-lg-4 MarginTopContainer">
+        <div className="row MarginInnerBottomContainer ">
           <div className="col-12">
             <img src={LogoImg} />
           </div>
         </div>
 
-        <div className="row mt-3">
+        <div className="row ">
           <div className="col-12 text_forth">
             <p>
               A the core of our company is a passion for the transformative
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="row mt-5">
+        <div className="row MarginTopContentContainer">
           <div className="col-auto">
             <Logo logo={ContactLogoleft1} />
           </div>
@@ -40,27 +40,30 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="col-12 col-lg-4 text-start text-lg-center">
-        <div className="row d-flex justify-content-center ">
-          <div className="col-12 col-lg-auto">
-            <p className=" heading_secondary ">Company</p>
+      <div className="col-auto col-lg-4 MarginTopContainer text-center text-lg-start">
+        <div className="row d-flex justify-content-center text-center text-lg-start">
+          <div className=" col-lg-auto ">
+            <p className=" heading_secondary MarginInnerBottomContainer">Company</p>
+            <div className="">
+
             <p className=" heading_forth">About Us</p>
-            <p className=" heading_forth">Services</p>
-            <p className=" heading_forth">Products</p>
-            <p className=" heading_forth">Contact US</p>
-            <p className=" heading_forth">Privacy Policy</p>
+            <p className=" heading_forth MarginTopContentContainer ">Services</p>
+            <p className=" heading_forth MarginTopContentContainer">Products</p>
+            <p className=" heading_forth MarginTopContentContainer">Contact US</p>
+            <p className=" heading_forth MarginTopContentContainer">Privacy Policy</p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="col-12 col-lg-4">
+      <div className="col-12 MarginTopContainer col-lg-4">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 MarginInnerBottomContainer">
             <p className="text-start heading_secondary ">Contact Us</p>
           </div>
-          <div className="col-12">
+          <div className="col-12 ">
             <div className="row">
               <div className="col-12">
-                <div className="row">
+                <div className="row ">
                   <div className="col-auto">
                     <Logo logo={ContactLogoright1} />
                   </div>
@@ -71,17 +74,17 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 mt-2">
-                <div className="row">
+              <div className="col-12 MarginTopContentContainer">
+                <div className="row Flex ">
                   <div className="col-auto">
                     <Logo logo={ContactLogoright2} />
                   </div>
-                  <div className="col-auto">
-                    <p className="heading_forth">+92 308 4846218</p>
+                  <div className="col-auto ">
+                    <p className="heading_forth ">+92 308 4846218</p>
                   </div>
                 </div>
               </div>
-              <div className="col-12  mt-2">
+              <div className="col-12  MarginTopContentContainer">
                 <div className="row">
                   <div className="col-auto">
                     <Logo logo={ContactLogoright3} />

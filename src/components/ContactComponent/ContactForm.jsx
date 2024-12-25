@@ -11,20 +11,20 @@ import ContactLogoleft3 from "../../assets/Home/ContactLogoleft3.png";
 import Logo from "../../common/Logo/Logo";
 const ContactForm = () => {
   return (
-    <div className="row">
-      <div className="col-12 mt-3">
-        <h1 className="text_sixth ">Contact Fom</h1>
+    <div className="row PaddingContainer">
+      <div className="col-12 MarginInnerBottomContainer">
+        <h1 className="heading_tertiary ">Contact Fom</h1>
       </div>
-      <div className="col-12 mt-4">
-        <div className="row">
-          <div className="col-5">
+      <div className="col-12">
+        <div className="row ">
+          <div className="col-lg-5">
             <div className="row">
               <div className="col-10">
                 <input
                   type="text"
                   style={{
                     width: "100%",
-                    height: "62px",
+                    minHeight: "62px",
                     border: "1px solid white",
                     borderRadius: "5px",
                   }}
@@ -33,14 +33,14 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="col-5">
+          <div className="col-lg-5 MarginTopContainer">
             <div className="row">
               <div className="col-10">
                 <input
                   type="text"
                   style={{
                     width: "100%",
-                    height: "62px",
+                    minHeight: "62px",
                     border: "1px solid white",
                     borderRadius: "5px",
                   }}
@@ -49,23 +49,23 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="col-2">
+          <div className="col-4 col-lg-2 MarginTopContainer">
             <Button name='Submit' />
           </div>
         </div>
 
-        <div className="row mt-5">
-          <div className="col-4">
+        <div className="row MarginTopContentContainer ">
+          <div className="col-lg-4">
             <div className="row">
               <div className="col-2">
                 <Logo logo={ContactLogoright1} />
               </div>
-              <div className="col-auto">
-                <h5 className="text_fifth">augmentedsol@gmail.com</h5>
+              <div className="col-auto text-wrap">
+                <h5 className="text_fifth text-wrap">augmentedsol@gmail.com</h5>
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-lg-4 ">
             <div className="row">
               <div className="col-2">
                 <Logo logo={ContactLogoright2} />
@@ -75,7 +75,7 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-lg-4">
             <div className="row">
 
             <div className="col-2">
@@ -91,8 +91,8 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <div className="col-12 mt-5">
-        <h1 className="text_sixth ">Social Links</h1>
+      <div className="col-12 MarginInnerContainer ">
+        <h1 className="heading_tertiary ">Social Links</h1>
       </div>
       <div className="col-12">
         <div className="row " style={{display:'flex' ,justifyContent:'center',alignItems:'center'}}>

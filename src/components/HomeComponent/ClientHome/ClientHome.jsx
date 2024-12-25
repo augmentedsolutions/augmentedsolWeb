@@ -15,7 +15,7 @@ const ClientHome = () => {
         </div>
       </div>
       <div className="row ">
-       <div className="col-12 MarginContainer" style={{position:'relative',height:'450px'}}>
+       <div className="col-12 MarginContainer" style={{position:'relative',height:'500px'}}>
 
       <div className="row background_gradient_one  p-5 border_radius_one" style={{height:'420px',marginBottom:'200px'}}>
         <div className="col-12 Flex " style={{flexDirection:'column'}} >

@@ -29,7 +29,7 @@ const ServiceCard = ({ img, text, paragraph }) => {
                       <h1 className="heading_tertiary">{text}</h1>
                     </div>
                     <div className="col-12 text-center">
-                      <p className="text_secondary">{paragraph}</p>
+                      <p className="text_sixth">{paragraph}</p>
                     </div>
                   </div>
                 </div>

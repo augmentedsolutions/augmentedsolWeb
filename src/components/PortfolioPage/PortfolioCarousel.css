@@ -1,0 +1,9 @@
+.swiper-slide-active {
+    background-color: black;
+  }
+  
+  .swiper-slide-active .heading_tertiary,
+  .swiper-slide-active .text_seventh {
+    color: white;
+  }
+  
