@@ -12,7 +12,7 @@ import ContactLogoright3 from "../assets/Home/ContactLogoRight3.png";
 const Footer = () => {
   return (
     <div className="row Container " style={{}}>
-      <div className=" col-md-4">
+      <div className="my-5 my-lg-0 col-lg-4">
         <div className="row">
           <div className="col-12">
             <img src={LogoImg} />
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="col-md-4">
+      <div className="col-6 col-lg-4 text-start text-lg-center">
         <div className="row d-flex justify-content-center ">
           <div className="col-md-6">
             <p className=" heading_secondary ">Company</p>
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="col-md-4">
+      <div className="col-6 col-lg-4">
         <div className="row">
           <div className="col-12">
             <p className="text-start heading_secondary ">Contact Us</p>
@@ -86,10 +86,10 @@ const Footer = () => {
                   <div className="col-auto">
                     <Logo logo={ContactLogoright3} />
                   </div>
-                  <div className="col-auto">
-                    <p className="heading_forth">
+                  <div className="col-10" style={{}}>
+                    <span className="heading_forth" style={{textWrap:'wrap'}}>
                       337 G Block Rehmanpura Muslim Town Lahore.
-                    </p>
+                    </span>
                   </div>
                 </div>
               </div>

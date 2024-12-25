@@ -369,6 +369,8 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
 }
 .backgroundClientCard {
   background-color: var(--background_color_secondary);
+  /* padding: 20px 50px 20px 50px; */
+  border-radius: 10px;
 }
 .backgroundServiceCard {
   background: rgba(255, 255, 255, 0.18);

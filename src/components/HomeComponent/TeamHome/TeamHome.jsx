@@ -7,11 +7,11 @@ const TeamHome = () => {
     <>
       <div className="row  PaddingContainer">
         <div
-          className="col-lg-6 d-flex justify-content-center align-items-center"
-          style={{ height: "529px" }}
+          className="text-center text-lg-start MarginContainer col-lg-6 d-flex justify-content-center align-items-center"
+          style={{  }}
         >
           <div className="row d-flex justify-content-start align-items-center">
-            <div className="col-8">
+            <div className="col-lg-10">
               <div className="row MarginBottomText1">
                 <div className="col-12">
                   <h1 className="heading_primary">Augmented Team</h1>

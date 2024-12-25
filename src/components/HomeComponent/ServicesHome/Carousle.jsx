@@ -42,7 +42,16 @@ const Carousel = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+            spaceBetween: -100,
+          },
+          576: {
+            slidesPerView: 1,
+            spaceBetween: -50,
+          },
+        }}
         modules={[EffectCoverflow, Navigation]}
         className="swiper"
         onSwiper={(swiper) => {

@@ -13,14 +13,13 @@ import "./TeamCarousal.css";
 import TeamCard from "./TeamCard";
 
 const TeamCarousal = () => {
-  const images = [ServiceImage1, ServiceImage2, ServiceImage3];
+  const images = [ServiceImage1, ServiceImage2, ServiceImage3, ServiceImage3];
 
   return (
     <Swiper
       modules={[Navigation, EffectCoverflow, Pagination]}
       effect="coverflow"
       loop={true}
-      navigation
       pagination={{
         clickable: true,
         renderBullet: (index, className) =>

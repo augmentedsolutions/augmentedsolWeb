@@ -1,0 +1,32 @@
+.text_fifth {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white; /* Default color */
+  }
+  
+  .text_fifth:hover {
+    color: #df308d; /* Hover color */
+    background: linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  .text_fifth.active {
+    color: #df308d;
+    background: linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  .text_fifth.active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Adjust for the distance of the underline */
+    left: 50%;
+    width: 50%; /* 50% width of the text */
+    height: 2px; /* Line thickness */
+    background-color: #df308d; /* Line color */
+    transform: translateX(-50%); /* Center the line */
+  }
+  
