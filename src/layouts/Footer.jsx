@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
 
         <div className="row mt-3">
-          <div className="col-12 text_paragraph_seventh">
+          <div className="col-12 text_forth">
             <p>
               A the core of our company is a passion for the transformative
               power of augmented reality (AR) and virtual reality (VR).
@@ -43,19 +43,19 @@ const Footer = () => {
       <div className="col-md-4">
         <div className="row d-flex justify-content-center ">
           <div className="col-md-6">
-            <p className=" text_paragraph_eighth ">Company</p>
-            <p className=" text_paragraph_tenth">About Us</p>
-            <p className=" text_paragraph_tenth">Services</p>
-            <p className=" text_paragraph_tenth">Products</p>
-            <p className=" text_paragraph_tenth">Contact US</p>
-            <p className=" text_paragraph_tenth">Privacy Policy</p>
+            <p className=" heading_secondary ">Company</p>
+            <p className=" heading_forth">About Us</p>
+            <p className=" heading_forth">Services</p>
+            <p className=" heading_forth">Products</p>
+            <p className=" heading_forth">Contact US</p>
+            <p className=" heading_forth">Privacy Policy</p>
           </div>
         </div>
       </div>
       <div className="col-md-4">
         <div className="row">
           <div className="col-12">
-            <p className="text-start text_paragraph_eighth ">Contact Us</p>
+            <p className="text-start heading_secondary ">Contact Us</p>
           </div>
           <div className="col-12">
             <div className="row">
@@ -65,7 +65,7 @@ const Footer = () => {
                     <Logo logo={ContactLogoright1} />
                   </div>
                   <div className="col-auto">
-                    <p className="text_paragraph_ninth">
+                    <p className="heading_forth">
                       augmentedsol@gmail.com
                     </p>
                   </div>
@@ -77,7 +77,7 @@ const Footer = () => {
                     <Logo logo={ContactLogoright2} />
                   </div>
                   <div className="col-auto">
-                    <p className="text_paragraph_ninth">+92 308 4846218</p>
+                    <p className="heading_forth">+92 308 4846218</p>
                   </div>
                 </div>
               </div>
@@ -87,7 +87,7 @@ const Footer = () => {
                     <Logo logo={ContactLogoright3} />
                   </div>
                   <div className="col-auto">
-                    <p className="text_paragraph_ninth">
+                    <p className="heading_forth">
                       337 G Block Rehmanpura Muslim Town Lahore.
                     </p>
                   </div>

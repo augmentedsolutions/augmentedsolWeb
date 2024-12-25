@@ -12,7 +12,10 @@ const Path = () => {
   return (
     <Router>
       {/* Navbar */}
+      <div className=" MarginTopText1">
+
       <Navbar />
+      </div>
 
       <Routes>
         {/* Home Page Route */}

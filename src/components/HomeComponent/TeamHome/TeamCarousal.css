@@ -36,7 +36,7 @@
 .custom-pagination {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .custom-pagination .swiper-pagination-bullet {
@@ -47,10 +47,43 @@
 }
 
 .custom-pagination .swiper-pagination-bullet-active {
-  width: 70px !important;    
+  /* width: 70px !important;    
   background: linear-gradient(
     99.05deg,
     #a700f5 0.07%,
     #df308d 106.32%
-  ) !important; /* Active dot color */
+  ) !important; Active dot color */
+}
+
+
+/* Style the pagination container */
+.swiper-pagination {
+  position: relative; /* Ensure it's positioned relative to its container */
+  bottom: -20px; /* Move pagination down */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Style individual pagination bullets */
+.swiper-pagination .custom-pagination-bullet {
+
+  border-radius: 0px;
+  width: 25px;
+  height: 3px;
+  /* border: 5px solid; */
+  background-color: white;
+  /* border-width: 5px 0px 0px 0px; */
+  opacity: 1; /* Adjust opacity for visibility */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%);
+  opacity: 1; /* Fully visible for the active bullet */
+  width: 45px;
+  height: 4px;
 }

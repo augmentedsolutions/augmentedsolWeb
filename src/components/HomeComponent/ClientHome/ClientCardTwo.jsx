@@ -9,22 +9,35 @@ import ClientTwoCard from "./ClientTwoCard";
 const ClientCardTwo = () => {
   return (
     <>
-      <div className="row border_radius_two"  style={{display:'flex' , justifyContent:'center'}}>
+      <div
+        className="row border_radius_two MarginBottomText1"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
         <div className="col-auto">
-
-        <h1 className="heading_primary">What our clients say</h1>
+          <h1 className="heading_primary ">What our clients say</h1>
         </div>
       </div>
-      <div className="row mt-5 " style={{display:'flex' , justifyContent:'center'}}>
+      <div
+        className="row MarginBottomText1"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
         <div className="col-auto">
-
-        <p className="text_primary">
-          See what our customer say about us. It really matter for us. How good
-          or bad we will make ir for evaluation to make EhyalLive better.
-        </p>
+          <p className="text_primary">
+            See what our customer say about us. It really matter for us. How
+            good or bad we will make ir for evaluation to make EhyalLive better.
+          </p>
         </div>
       </div>
-      <div className="row " style={{position:'absolute', bottom:'-100px',display:'flex' , justifyContent:'center'}}>
+      <div
+        className="row "
+        style={{
+          position: "absolute",
+          bottom: "-100px",
+          display: "flex",
+          justifyContent: "center",
+          border:'1px solid red'
+        }}
+      >
         <div className="col-11">
           <div className="row">
             <div className="col-12">
@@ -42,7 +55,7 @@ anymore. What a relief!"'
                 <div className="col-4">
                   <ClientTwoCard
                     Img={Client2}
-                    comment='“VISUALS are much better. The improvements in optics and resolution and much more than a modern console generation leap”'
+                    comment="“VISUALS are much better. The improvements in optics and resolution and much more than a modern console generation leap”"
                     name="Kathryn Murphy"
                     email="alma.lawson@example.com"
                   />
@@ -50,7 +63,7 @@ anymore. What a relief!"'
                 <div className="col-4">
                   <ClientTwoCard
                     Img={Client3}
-                    comment='“I can actually see the improvement in the graphics, not having the external sensors is a big plus”'
+                    comment="“I can actually see the improvement in the graphics, not having the external sensors is a big plus”"
                     name="Eleanor Pena"
                     email="michelle.rivera@example.com"
                   />

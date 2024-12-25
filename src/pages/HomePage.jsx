@@ -36,11 +36,7 @@ const Home = () => {
               <ClientHome />
             </div>
           </div>
-          <div className="row MarginContainer" >
-            <div className="col-12 ">
-              <ContactHome />
-            </div>
-          </div>
+       
         </div>
 
         <div
@@ -71,6 +67,39 @@ const Home = () => {
             position: "absolute",
             top: "500px",
             right: "-400px",
+          }}
+        ></div>
+          <div
+          className="gradient_radial"
+          style={{
+            height: "950px",
+            width: "950px",
+            position: "absolute",
+            bottom: "-100px",
+            left: "-600px",
+            // backgroundColor:'red'
+          }}
+        ></div>
+           <div
+          className="gradient_radial"
+          style={{
+            height: "950px",
+            width: "950px",
+            position: "absolute",
+            bottom: "1000px",
+            left: "-600px",
+            // backgroundColor:'red'
+          }}
+        ></div>
+        <div
+          className="gradient_radial"
+          style={{
+            height: "950px",
+            width: "950px",
+            position: "absolute",
+            bottom: "300px",
+            right: "-600px",
+            // backgroundColor:'red'
           }}
         ></div>
       </div>

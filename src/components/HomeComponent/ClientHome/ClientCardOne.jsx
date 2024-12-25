@@ -9,7 +9,7 @@ import ClientIMg5 from "../../../assets/Home/AugmentedClients5.png";
 const ClientCardOne = () => {
   return (
     <>
-      <div className=" row  ">
+      <div className=" row MarginBottomText1 ">
         <div className="col-12 text-center">
           <h1 className="heading_primary">Augmented Clients</h1>
         </div>

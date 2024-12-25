@@ -13,10 +13,19 @@ import "./TeamCarousal.css";
 import TeamCard from "./TeamCard";
 
 const TeamCarousal = () => {
+  const images = [ServiceImage1, ServiceImage2, ServiceImage3];
+
   return (
     <Swiper
       modules={[Navigation, EffectCoverflow, Pagination]}
       effect="coverflow"
+      loop={true}
+      navigation
+      pagination={{
+        clickable: true,
+        renderBullet: (index, className) =>
+          `<span class="${className} custom-pagination-bullet"></span>`,
+      }}
       coverflowEffect={{
         rotate: 0,
         stretch: 0,
@@ -24,27 +33,23 @@ const TeamCarousal = () => {
         modifier: 1,
         slideShadows: true,
       }}
-      spaceBetween={-150} // Negative space between to allow overlap
-      slidesPerView={3}   // Show 3 slides at once
+      spaceBetween={-150}
+      slidesPerView={3}
       centeredSlides
-      navigation
-      pagination={{
-        clickable: true,
-      }}
       breakpoints={{
         768: {
           slidesPerView: 2,
-          spaceBetween: -100,  // Adjust for tablets
+          spaceBetween: -100,
         },
         576: {
           slidesPerView: 1,
-          spaceBetween: -50,  // Adjust for mobile
+          spaceBetween: -50,
         },
       }}
     >
-      {[ServiceImage1, ServiceImage2, ServiceImage3].map((image, index) => (
+      {images.map((image, index) => (
         <SwiperSlide key={index} style={{ height: "auto" }}>
-          <TeamCard />
+          <TeamCard image={image} />
         </SwiperSlide>
       ))}
     </Swiper>

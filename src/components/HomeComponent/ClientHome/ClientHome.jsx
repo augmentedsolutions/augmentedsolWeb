@@ -9,7 +9,7 @@ import bgImage from '../../../assets/Home/ClientBackgornd.png'
 const ClientHome = () => {
   return (
     <>
-      <div className="row background_gradient_one my-5 p-5 border_radius_one">
+      <div className="row background_gradient_one my-5 p-5 border_radius_one PaddingContainer">
         <div className="col-12">
           <ClientCardOne />
         </div>

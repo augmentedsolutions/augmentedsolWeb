@@ -17,7 +17,7 @@ const Navbar = () => {
               <div className="col-auto">
                 <Link
                   to={"/"}
-                  className="text_secondary"
+                  className="text_fifth"
                   style={{ textDecoration: "none", color: "white" }}
                 >
                   Home
@@ -26,7 +26,7 @@ const Navbar = () => {
               <div className="col-auto">
                 <Link
                   to={"/service"}
-                  className="text_secondary"
+                  className="text_fifth"
                   style={{ textDecoration: "none", color: "white" }}
                 >
                   Services
@@ -34,7 +34,7 @@ const Navbar = () => {
               </div>
               <div className="col-auto">
                 <Link
-                  className="text_secondary"
+                  className="text_fifth"
                   to={"/portfolio"}
                   style={{ textDecoration: "none", color: "white" }}
                 >
@@ -48,7 +48,7 @@ const Navbar = () => {
               >
                 <Link
                   to={"/about"}
-                  className="text_secondary"
+                  className="text_fifth"
                   style={{ textDecoration: "none", color: "white" }}
                 >
                   About Us

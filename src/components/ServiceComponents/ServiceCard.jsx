@@ -26,10 +26,10 @@ const ServiceCard = ({ img, text, paragraph }) => {
                 <div className="col-12">
                   <div className="row">
                     <div className="col-12 text-center">
-                      <h1 className="text_forth">{text}</h1>
+                      <h1 className="heading_tertiary">{text}</h1>
                     </div>
                     <div className="col-12 text-center">
-                      <p className="text_paragraph_tenth">{paragraph}</p>
+                      <p className="text_secondary">{paragraph}</p>
                     </div>
                   </div>
                 </div>

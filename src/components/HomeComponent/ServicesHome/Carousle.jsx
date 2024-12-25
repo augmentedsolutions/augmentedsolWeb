@@ -1,52 +1,69 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectCoverflow } from "swiper/modules";
-import ServiceCard from "./ServiceCard";
-import ServiceImage1 from "../../../assets/Home/AgmentServices1.png";
-import ServiceImage2 from "../../../assets/Home/AgmentServices2.png";
-import ServiceImage3 from "../../../assets/Home/AgmentServices3.png";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import ServiceCard from "./ServiceCard";
 import "./Carousel.css";
 
+// Import images
+import AgmentServices1 from "../../../assets/Home/AgmentServices1.png";
+import AgmentServices2 from "../../../assets/Home/AgmentServices2.png";
+import AgmentServices3 from "../../../assets/Home/AgmentServices3.png";
+import Serviceprvious from "../../../assets/Home/Service prvious.png";
+import ServiceNext from "../../../assets/Home/ServiceNext.png";
+
 const Carousel = () => {
+  const slides = [
+    { id: 1, image: AgmentServices1 },
+    { id: 2, image: AgmentServices2 },
+    { id: 3, image: AgmentServices3 },
+    { id: 4, image: AgmentServices3 },
+  ];
+
   return (
-    <Swiper
-      className="swiper Border"
-      modules={[Navigation, EffectCoverflow]}
-      effect="coverflow"
-      coverflowEffect={{
-        rotate: 0,
-        stretch: 0,
-        depth: 50,
-        modifier: 1,
-        slideShadows: true,
-      }}
-      spaceBetween={0}
-      slidesPerView={3}
-      centeredSlides
-      navigation
-      breakpoints={{
-        // Breakpoint for tablets
-        768: {
-          slidesPerView: 2, // Show 2 slides
-          spaceBetween: 20,
-        },
-        // Breakpoint for mobile
-        576: {
-          slidesPerView: 1, // Show 1 slide
-          spaceBetween: 10,
-        },
-      }}
-    >
-      {[ServiceImage1, ServiceImage2, ServiceImage3].map((image, index) => (
-        <SwiperSlide className="swiper-slide" key={index} style={{height:'auto'}}>
-          <ServiceCard image={image} />
-        </SwiperSlide>
-      ))}
-      <SwiperSlide>Slide 4</SwiperSlide>
-    </Swiper>
+    <div className="carousel-container">
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={3}
+        spaceBetween={100}
+        loop={true}
+        navigation={{
+          prevEl: ".custom-prev",
+          nextEl: ".custom-next",
+        }}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        
+        modules={[EffectCoverflow, Navigation]}
+        className="swiper"
+        onSwiper={(swiper) => {
+          swiper.slideToLoop(0, 0); // Start from the first slide in loop mode
+        }}
+      >
+        {/* Carousel slides */}
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id} className="swiper-slide">
+            <ServiceCard image={slide.image} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      {/* Custom navigation buttons */}
+      <div className="custom-prev">
+        <img src={Serviceprvious} alt="Previous" />
+      </div>
+      <div className="custom-next">
+        <img src={ServiceNext} alt="Next" />
+      </div>
+    </div>
   );
 };
 

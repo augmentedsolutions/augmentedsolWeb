@@ -9,7 +9,7 @@ const ServiceCard = ({ image }) => {
       style={{
         position: "relative",
         backgroundImage: `url(${image})`,
-        height: "464px",
+        height: "450px",
         width: "500px",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -25,9 +25,9 @@ const ServiceCard = ({ image }) => {
           backgroundSize: "cover",
           padding: "10px",
         }}
-         className="col-12"
+         className="col-8"
       >
-        <p className="text_paragraph">Web Development</p>
+        <p className="text_secondary" style={{textDecoration:'underline'}}>Web Development</p>
         <p className="text_paragraph">
           A Network of 3D virtual worlds focused on social connection.
         </p>
