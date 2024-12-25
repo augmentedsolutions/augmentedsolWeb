@@ -11,14 +11,14 @@ const AboutPage=()=>{
     return(
         <div className='row Container'>
           <div className='col-12'>
-          <div className='row'>
-             <div className='12 py-3'>
+          <div className='row '>
+             <div className='12 MarginContainer '>
               <HeroSectionService img={HeroSectionImage}/>
              </div>
-             <div className='12 py-3'>
+             <div className='12 MarginContainer '>
              <CardAboutOne img={AboutImage}/>
              </div>
-             <div className='12 py-3'>
+             <div className='12 MarginContainer '>
              <CardAboutTwo img={AboutImage}/>
              </div>
            </div>

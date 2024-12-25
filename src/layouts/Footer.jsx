@@ -40,9 +40,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="col-6 col-lg-4 text-start text-lg-center">
+      <div className="col-12 col-lg-4 text-start text-lg-center">
         <div className="row d-flex justify-content-center ">
-          <div className="col-md-6">
+          <div className="col-12 col-lg-auto">
             <p className=" heading_secondary ">Company</p>
             <p className=" heading_forth">About Us</p>
             <p className=" heading_forth">Services</p>
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="col-6 col-lg-4">
+      <div className="col-12 col-lg-4">
         <div className="row">
           <div className="col-12">
             <p className="text-start heading_secondary ">Contact Us</p>

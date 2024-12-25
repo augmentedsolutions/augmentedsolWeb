@@ -8,19 +8,19 @@ const ContactPage=()=>{
 return(
      <div className='row Container'> 
          <div className='col-12'>
-           <div className='row'>
-             <div className='col-12'>
+           <div className='row MarginContainer'>
+             <div className='col-12 '>
                 <HeroSectionService img={ContactImage1}/>
              </div>
            </div>
 
-           <div className='row ' style={{position:'relative',top:'-90px', display:'flex',justifyContent:'center',alignItems:'center'}} >
+           <div className='row MarginContainer' style={{position:'relative',top:'-90px', display:'flex',justifyContent:'center',alignItems:'center'}} >
              <div className='col-10 backgroundCOntactForm'>
                  <ContactForm/>
              </div>
            </div>
 
-           <div className='row'>
+           <div className='row MarginContainer'>
              <div className='col-12'>
              <HeroSectionService img={ContactImage2}/>
              </div>

@@ -3,8 +3,8 @@ import CardABoutText from './CardABoutText'
 import '../../index.css'
 const CardAboutOne = ({img}) => {
   return (
-    <div className='row'>
-      <div className='col-lg-6 text-center' style={{display:'flex',justifyContent:'center',alignItems:'center'}} >
+    <div className='row '>
+      <div className= 'MarginContainer col-lg-6 text-center' style={{display:'flex',justifyContent:'center',alignItems:'center'}} >
          <img src={img} width='90%' height='auto' />
       </div>
       <div className='col-lg-6'>

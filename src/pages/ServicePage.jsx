@@ -10,19 +10,33 @@ import ServicesImage5 from "../assets/services/ServicesImage5.png";
 import ServicesImage6 from "../assets/services/ServicesImage6.png";
 import ServicesImage7 from "../assets/services/ServicesImage7.png";
 
-import ServicesHeroSection from '../assets/services/ServicesHeroSection.png'
+import ServicesHeroSection from "../assets/services/ServicesHeroSection.png";
 const ServicePage = () => {
   return (
-    <div className="row Container">
+    <div className="row Container ">
       <div className="col-12">
-        <div className="row">
+        <div className="row MarginContainer">
           <div className="col-12">
             <HeroSectionService img={ServicesHeroSection} />
           </div>
         </div>
-        <div className="row mt-4" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+        <div
+          className="row MarginContainer"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <div className="col-auto">
-            <div className="row gap-5 gap-lg-0  " style={{display:"flex",alignItems:'center',justifyContent:'center'}}>
+            <div
+              className="row gap-5 gap-lg-0  "
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
               <ServiceCard
                 img={ServicesImage1}
                 text="Web Development"
@@ -31,7 +45,7 @@ We specialize in crafting dynamic, user-friendly websites tailored to your needs
 From responsive design to e-commerce solutions, our expertise ensures your
 online presence shines."
               />
-                <ServiceCard
+              <ServiceCard
                 img={ServicesImage2}
                 text="Web Development"
                 paragraph="Find our Web Development service, where digital possibilities become reality.
@@ -39,7 +53,7 @@ We specialize in crafting dynamic, user-friendly websites tailored to your needs
 From responsive design to e-commerce solutions, our expertise ensures your
 online presence shines."
               />
-                <ServiceCard
+              <ServiceCard
                 img={ServicesImage3}
                 text="Web Development"
                 paragraph="Find our Web Development service, where digital possibilities become reality.
@@ -47,7 +61,7 @@ We specialize in crafting dynamic, user-friendly websites tailored to your needs
 From responsive design to e-commerce solutions, our expertise ensures your
 online presence shines."
               />
-                <ServiceCard
+              <ServiceCard
                 img={ServicesImage4}
                 text="Web Development"
                 paragraph="Find our Web Development service, where digital possibilities become reality.
@@ -55,7 +69,7 @@ We specialize in crafting dynamic, user-friendly websites tailored to your needs
 From responsive design to e-commerce solutions, our expertise ensures your
 online presence shines."
               />
-                <ServiceCard
+              <ServiceCard
                 img={ServicesImage5}
                 text="Web Development"
                 paragraph="Find our Web Development service, where digital possibilities become reality.
@@ -63,7 +77,7 @@ We specialize in crafting dynamic, user-friendly websites tailored to your needs
 From responsive design to e-commerce solutions, our expertise ensures your
 online presence shines."
               />
-                <ServiceCard
+              <ServiceCard
                 img={ServicesImage6}
                 text="Web Development"
                 paragraph="Find our Web Development service, where digital possibilities become reality.
@@ -71,7 +85,7 @@ We specialize in crafting dynamic, user-friendly websites tailored to your needs
 From responsive design to e-commerce solutions, our expertise ensures your
 online presence shines."
               />
-                <ServiceCard
+              <ServiceCard
                 img={ServicesImage7}
                 text="Web Development"
                 paragraph="Find our Web Development service, where digital possibilities become reality.

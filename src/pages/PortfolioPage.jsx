@@ -9,12 +9,12 @@ const PortfolioPage = () => {
   return (
     <div className="row Container">
       <div className="col-12">
-        <div className="row">
-          <div className="col-12">
+        <div className="row MarginContainer">
+          <div className="col-12 ">
             <HeroSectionService img={PortfolioHersoSection} />
           </div>
         </div>
-        <div className="row my-5">
+        <div className="row MarginContainer">
           <div className="col-12">
             <div className="row">
              <PortfolioCarousel/>
