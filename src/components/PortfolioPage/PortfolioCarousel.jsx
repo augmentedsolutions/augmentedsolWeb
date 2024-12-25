@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
+import { Navigation, Pagination, EffectCoverflow, Autoplay } from "swiper/modules";
 import './PortfolioCarousel.css';
 import ServicesImage1 from "../../assets/Protfolio/ServicesImage1.png";
 import ServicesImage2 from "../../assets/Protfolio/ServicesImage2.png";
@@ -32,7 +32,18 @@ const PortfolioCarousel = () => {
         { option: "ARkit" },
         { option: "ARCore" },
       ],
-    },
+    }
+    ,
+    {
+      img: ServicesImage2,
+      text: "Snapchat Filters",
+      options: [
+        { option: "Augmented Reality" },
+        { option: "ARkit" },
+        { option: "ARCore" },
+      ],
+    }
+    ,
     {
       img: ServicesImage3,
       text: "Interactive 3D Models",
@@ -65,28 +76,30 @@ const PortfolioCarousel = () => {
   return (
     <Swiper
       style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-      modules={[Navigation, EffectCoverflow, Pagination]}
+      modules={[Navigation, EffectCoverflow, Pagination, Autoplay]}
       effect="coverflow"
       coverflowEffect={{
         rotate: 0,
-        stretch: 0,
-        depth: 50,
+        stretch: 0, // Stretch the slides for better visibility
+        depth: 100, // Add depth to the slide stack
         modifier: 1,
         slideShadows: true,
       }}
-      spaceBetween={20} // Consistent spacing
-      slidesPerView={3}
+      spaceBetween={5}
+      slidesPerView={4} // Show 3 slides: 1 active + 1 on each side
       centeredSlides
-      loop // Loop the slides infinitely
-      navigation
-      pagination={{ clickable: true }} // Optional pagination
+      loop
+      autoplay={{
+        delay: 1500,
+        disableOnInteraction: false,
+      }}
       breakpoints={{
         768: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+          slidesPerView: 4, // Show slides on both sides for larger screens
+          spaceBetween: 5,
         },
         576: {
-          slidesPerView: 1,
+          slidesPerView: 1, // Single slide for smaller screens
           spaceBetween: 10,
         },
       }}
@@ -94,7 +107,7 @@ const PortfolioCarousel = () => {
       {portfolioData.map((item, index) => (
         <SwiperSlide key={index} style={{ height: "auto" }}>
           <PortfolioCard
-            img={item.img || "path/to/fallback-image.png"}
+            img={item.img}
             text={item.text}
             options={item.options}
             aria-label={`Portfolio card showcasing ${item.text}`}

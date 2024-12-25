@@ -1,9 +1,15 @@
-.swiper-slide-active {
-    background-color: black;
+/* .swiper-slide {
+    height: auto;
+    /* width: 00px !important; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  
+
   
   .swiper-slide-active .heading_tertiary,
   .swiper-slide-active .text_seventh {
     color: white;
   }
-  
+   */

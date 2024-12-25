@@ -5,7 +5,7 @@ const PortfolioCard = ({ img, text, options }) => {
   return (
     <div style={{backgroundColor: 'white'}}>
       <div>
-        <img src={img} height='400px' width='500px' />
+        <img src={img} width='auto' height='320px' />
         <h1 className="heading_tertiary px-3 pt-3" style={{ color: 'black' }}>
           {text}
         </h1>

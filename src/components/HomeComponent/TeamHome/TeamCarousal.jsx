@@ -16,42 +16,45 @@ const TeamCarousal = () => {
   const images = [ServiceImage1, ServiceImage2, ServiceImage3, ServiceImage3];
 
   return (
+    <div className="row">
+
     <Swiper
-      modules={[Navigation, EffectCoverflow, Pagination]}
-      effect="coverflow"
-      loop={true}
-      pagination={{
-        clickable: true,
-        renderBullet: (index, className) =>
-          `<span class="${className} custom-pagination-bullet"></span>`,
-      }}
-      coverflowEffect={{
-        rotate: 0,
-        stretch: 0,
-        depth: 50,
-        modifier: 1,
-        slideShadows: true,
-      }}
-      spaceBetween={-150}
-      slidesPerView={3}
-      centeredSlides
-      breakpoints={{
-        768: {
-          slidesPerView: 2,
-          spaceBetween: -100,
-        },
-        576: {
-          slidesPerView: 1,
-          spaceBetween: -50,
-        },
-      }}
-    >
-      {images.map((image, index) => (
-        <SwiperSlide key={index} style={{ height: "auto" }}>
-          <TeamCard image={image} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    modules={[Navigation, EffectCoverflow, Pagination]}
+    effect="coverflow"
+    loop={true}
+    pagination={{
+      clickable: true,
+      renderBullet: (index, className) =>
+        `<span class="${className} custom-pagination-bullet"></span>`,
+    }}
+    coverflowEffect={{
+      rotate: 0,
+      stretch: 0,
+      depth: 50,
+      modifier: 1,
+      slideShadows: false,
+    }}
+    spaceBetween={-130} // No space between slides
+    slidesPerView={3}
+    centeredSlides
+    breakpoints={{
+      768: {
+        slidesPerView: 3,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+    }}
+    style={{width:'100%'}}
+  >
+    {images.map((image, index) => (
+      <SwiperSlide key={index} className="custom-slide">
+        <TeamCard image={image} />
+      </SwiperSlide>
+    ))}
+  </Swiper>
+    </div>
+  
   );
 };
 

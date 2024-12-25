@@ -1,34 +1,48 @@
 import React from "react";
 import "../../../index.css";
 import ServiceImage from "../../../assets/Home/Service Bacground.png";
-import "./ServiceCard.css"
+
 const ServiceCard = ({ image }) => {
   return (
     <div
-      className=""
+      className="service-card"
       style={{
         position: "relative",
-        backgroundImage: `url(${image})`,
-        height: "450px",
-        width: "500px",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
+        height: "auto",
+        width: "auto",
       }}
-      
     >
+      {/* Main Image */}
+      <img
+        src={image}
+        alt="Service"
+        style={{
+          height: '450px',
+          width: "auto",
+          objectFit: "cover",
+          position: "relative",
+        }}
+      />
+
+      {/* Text Overlay */}
       <div
         style={{
           position: "absolute",
-          bottom: 0,
+          bottom: '10px',
           backgroundImage: `url(${ServiceImage})`,
           backgroundSize: "cover",
-          padding: "10px",
+          width: "100%",
+          // padding: "10px",
         }}
-         className="col-8"
+        className="text-overlay"
       >
-        <p className="text_secondary" style={{textDecoration:'underline'}}>Web Development</p>
-        <p className="text_paragraph">
+        <p
+          className="text_secondary"
+          style={{ textDecoration: "underline", margin: 0 }}
+        >
+          Web Development
+        </p>
+        <p className="text_paragraph" style={{ margin: 0 }}>
           A Network of 3D virtual worlds focused on social connection.
         </p>
       </div>

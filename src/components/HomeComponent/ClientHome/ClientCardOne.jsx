@@ -25,28 +25,31 @@ const ClientCardOne = () => {
       </div>
       <div className="row">
         <Swiper
-          modules={[Navigation, Autoplay]}
-          spaceBetween={20}
-          loop={true} // Enable looping
-          centeredSlides={true}
-          slidesPerView={3} // Number of slides visible
+          allowTouchMove={true}
           autoplay={{
-            delay: 3000, // Delay between each slide change (3 seconds)
-            disableOnInteraction: false, // Keep autoplay active even after user interaction
-            pauseOnMouseEnter: true, // Pause autoplay when mouse hovers over the swiper
+            delay: 0,
+            disableOnInteraction: false, 
+            pauseOnMouseEnter: false,
           }}
-          speed={1500} // Smooth transition with 1.5 seconds speed
+          className='swiper-transition' //add CSS class
+          direction='horizontal'
+          loop
+          modules={[Autoplay]}
+          slidesPerView={4}
+          spaceBetween={16}
+          speed={2000}
           breakpoints={{
             768: {
-              slidesPerView: 2,
+              slidesPerView: 3,
             },
-            576: {
-              slidesPerView: 1,
+            1200: {
+              slidesPerView: 4,
+              spaceBetween:40
             },
           }}
         >
           {[...clients, ...clients].map((client, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} >
               <ClientCard Img={client} />
             </SwiperSlide>
           ))}

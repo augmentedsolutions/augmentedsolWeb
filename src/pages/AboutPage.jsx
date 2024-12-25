@@ -13,7 +13,7 @@ const AboutPage=()=>{
           <div className='col-12'>
           <div className='row '>
              <div className='12 MarginContainer '>
-              <HeroSectionService img={HeroSectionImage}/>
+              <HeroSectionService img={HeroSectionImage} text1='About' text2='Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel ut feugiat ut. Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel ut feugiat ut.'/>
              </div>
              <div className='12 MarginContainer '>
              <CardAboutOne img={AboutImage}/>

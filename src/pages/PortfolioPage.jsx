@@ -11,7 +11,7 @@ const PortfolioPage = () => {
       <div className="col-12">
         <div className="row MarginContainer">
           <div className="col-12 ">
-            <HeroSectionService img={PortfolioHersoSection} />
+            <HeroSectionService img={PortfolioHersoSection} text1='Portfolio' text2='Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel ut feugiat ut. Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel ut feugiat ut.' />
           </div>
         </div>
         <div className="row MarginContainer">

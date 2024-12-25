@@ -10,7 +10,7 @@ return(
          <div className='col-12'>
            <div className='row MarginContainer'>
              <div className='col-12 '>
-                <HeroSectionService img={ContactImage1}/>
+                <HeroSectionService img={ContactImage1} text1='Contact' text2='Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel ut feugiat ut. Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel ut feugiat ut.'/>
              </div>
            </div>
 

@@ -49,17 +49,18 @@ const ClientCardTwo = () => {
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
             }}
-            spaceBetween={30} // Spacing between slides
+            style={{display:'flex',justifyContent:'center',alignItems:'center'}}
+            spaceBetween={0} // Spacing between slides
             slidesPerView={1} // Number of slides visible at once
             loop={true} // Loop the slides
-            autoplay={{ delay: 3000 }} // Automatically move to next slide every 3 seconds
+            autoplay={{ delay: 2500 }} // Automatically move to next slide every 3 seconds
             breakpoints={{
               768: { slidesPerView: 1 }, // Show 1 slide on tablet and larger screens
-              1024: { slidesPerView: 2 }, // Show 2 slides on desktop and larger screens
+              1024: { slidesPerView: 3 }, // Show 2 slides on desktop and larger screens
             }}
             className="mySwiper"
           >
-            <SwiperSlide>
+            <SwiperSlide >
               <ClientTwoCard
                 Img={Client1}
                 comment='“I know in real-time where the money is spent, and I don’t have to lend out the company’s credit card anymore. What a relief!"'

@@ -29,7 +29,7 @@ const Carousel = () => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={3}
-        spaceBetween={100}
+        spaceBetween={90}
         loop={true}
         navigation={{
           prevEl: ".custom-prev",
@@ -38,14 +38,14 @@ const Carousel = () => {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 100,
+          depth: 60,
           modifier: 1,
           slideShadows: true,
         }}
         breakpoints={{
           768: {
-            slidesPerView: 2,
-            spaceBetween: -100,
+            slidesPerView: 3,
+            spaceBetween: 90,
           },
           576: {
             slidesPerView: 1,
@@ -60,7 +60,7 @@ const Carousel = () => {
       >
         {/* Carousel slides */}
         {slides.map((slide) => (
-          <SwiperSlide key={slide.id} className="swiper-slide">
+          <SwiperSlide style={{display:'flex',justifyContent:'center',alignItems:'center'}} key={slide.id} className="swiper-slide">
             <ServiceCard image={slide.image} />
           </SwiperSlide>
         ))}

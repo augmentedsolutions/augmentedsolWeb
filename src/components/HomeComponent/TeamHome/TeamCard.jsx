@@ -11,7 +11,7 @@ import Logo from "../../../common/Logo/Logo";
 const TeamCard = () => {
   return (
     <div
-      className="card "
+      className="row "
       style={{
         
         display: "flex",
@@ -20,8 +20,8 @@ const TeamCard = () => {
 
       }}
     >
-      <div className="card-main">
-        <div className="card-photo"
+      <div className="card-main col-12">
+        <div className="card-photo "
          
         >
           <img
@@ -29,14 +29,14 @@ const TeamCard = () => {
         
           />
         </div>
-        <div className="card-description backgorundTeamCard mt-2" style={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}} >
+        <div className="col-12 backgorundTeamCard mt-2" style={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}} >
            <h1 className="text_second text-center">
            Muh sanaullah
            </h1>
            <p className="text_paragraph_secondary text-center">
            CO- FOUNDER & PROJECT MANAGER
            </p>
-           <div style={{display:'flex',justifyContent:'space-between',alignItems:'center', width:'40%'}}>
+           <div style={{display:'flex',justifyContent:'space-between',alignItems:'center', width:'100%'}}>
           <Logo logo={TeamLogo1} />
           <Logo logo={TeamLogo2} />
            </div>
