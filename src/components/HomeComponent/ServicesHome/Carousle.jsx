@@ -27,8 +27,9 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container ">
       <Swiper
+      className='swiper-slide-service-carousel'
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -57,7 +58,7 @@ const Carousel = () => {
           },
         }}
         modules={[EffectCoverflow, Navigation]}
-        className="swiper"
+        
         onSwiper={(swiper) => {
           swiper.slideToLoop(0, 0); // Start from the first slide in loop mode
         }}
