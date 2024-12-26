@@ -191,9 +191,9 @@ body {
   color: var(--btn_text_color);
 }
 .heading_forth_1 {
-  font-family: var(--font_family_orbitron);
+  font-family: var(--font_family_poppins);
   font-size: var(--font_size_1_5);
-  font-weight: var(--font_weight_900);
+  font-weight: var(--font_weight_600);
   line-height: var(--line_height_25);
   color: var(--btn_text_color);
 }
@@ -205,10 +205,10 @@ body {
   color: var(--btn_text_color);
 }
 .heading_sixth_1 {
-  font-family: var(--font_family_orbitron);
+  font-family: var(--font_family_poppins);
   font-size: var(--font_size_1);
   font-weight: var(--font_weight_900);
-  line-height: var(--line_height_72);
+  line-height: var(--line_height_17_29);
   color: var(--btn_text_color);
 }
 .text_primary_1 {

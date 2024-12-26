@@ -2,14 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../index.css";
 // import './Button.css'
-const Button = ({ name }) => {
+const Button = ({ name ,Height = "62px",FontStylte='heading_sixth_11',justify='center' }) => {
   return (
-    <div className="row d-flex justify-content-center align-items-center">
-      <div className="col-8 col-lg-11">
+    <div className="row p-0 m-0 " style={{display:'flex',justifyContent:'center'}}>
+      
         <Link
-          className=" btn_text py-3 px-2"
+          className={`col-12 btn_text   ${FontStylte}`}
           to={"/contact"}
           style={{
+            height:Height,
             textDecoration: "none",
             color: "white",
             // height: '3.875rem',
@@ -24,7 +25,7 @@ const Button = ({ name }) => {
         >
           {name}
         </Link>
-      </div>
+      
     </div>
   );
 };

@@ -9,30 +9,32 @@ import ContactHome from "../components/HomeComponent/ContactHome/ContactHome";
 const Home = () => {
   return (
     <div style={{ overflow: "hidden" }}>
-      <div className="row Container" style={{ position: "relative" }}>
-        <div className="col-12">
-          <div className="row">
+      <div className="row " style={{ position: "relative" }}>
+        <div className="col-12 ">
+          <div className="row Container">
             <div className="col-12 MarginContainer" style={{}}>
               <HeroSection />
             </div>
           </div>
-          <div className="row MarginContainer" >
-            <div className="col-12 ">
+          <div className="row  Container" >
+            <div className="col-12 MarginContainer">
               <AboutHome />
             </div>
           </div>
-          <div className="row MarginContainer" >
+
+          
+          <div className="row MarginContainer " >
             <div className="col-12 ">
               <ServicesHome />
             </div>
           </div>
-          <div className="row MarginContainer" >
-            <div className="col-12 ">
+          <div className="row  Container" >
+            <div className="col-12 MarginContainer ">
               <TeamHome />
             </div>
           </div>
-          <div className="row MarginContainer" >
-            <div className="col-12 ">
+          <div className="row  Container" >
+            <div className="col-12  MarginContainer">
               <ClientHome />
             </div>
           </div>

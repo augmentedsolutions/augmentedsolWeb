@@ -17,7 +17,7 @@ const ServiceCard = ({ image }) => {
         src={image}
         alt="Service"
         style={{
-          height: '400px',
+          height: '530px',
           width: "auto",
           objectFit: "cover",
           position: "relative",
@@ -25,26 +25,36 @@ const ServiceCard = ({ image }) => {
       />
 
       {/* Text Overlay */}
+      <div className="row p-0 m-0 " style={{ position: "absolute",
+        // padding:'20px 50px 20px 50px',
+          
+          left:'0%'
+          ,bottom:'0%'}}>
+        <div className="col-7 p-0 m-0" style={{
+         
+          
+         backgroundImage: `url(${ServiceImage})`,
+         backgroundSize: "cover",
+         
+         // padding: "10px",
+       }} >
+
       <div
-        style={{
-          position: "absolute",
-          bottom: '10px',
-          backgroundImage: `url(${ServiceImage})`,
-          backgroundSize: "cover",
-          width: "100%",
-          // padding: "10px",
-        }}
+        
         className="text-overlay"
+        style={{margin:'20px 50px 20px 50px',}}
       >
         <p
           className="text_secondary"
           style={{ textDecoration: "underline", margin: 0 }}
-        >
+          >
           Web Development
         </p>
         <p className="text_paragraph" style={{ margin: 0 }}>
           A Network of 3D virtual worlds focused on social connection.
         </p>
+          </div>
+      </div>
       </div>
     </div>
   );

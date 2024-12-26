@@ -50,9 +50,9 @@ const AboutHome = () => {
                 </p>
               </div>
             </div>
-            <div className="row d-flex justify-content-start MarginBottomText1">
-                <div className="col-lg-6 text-center text-lg-start">
-                <Button name="Read More" />
+            <div className="row  d-flex justify-content-center justify-content-lg-start" style={{}}>
+                <div className="col-3 col-lg-3 text-center text-lg-start" style={{minWidth:'250px'}}>
+                <Button name="Read More" Height="75px" FontStylte='heading_fifth_1' />
                 </div>
             </div>
           </div>

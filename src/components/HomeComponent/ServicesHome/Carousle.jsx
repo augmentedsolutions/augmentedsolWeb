@@ -21,6 +21,9 @@ const Carousel = () => {
     { id: 3, image: AgmentServices3 },
     { id: 4, image: AgmentServices3 },
     { id: 5, image: AgmentServices3 },
+    { id: 3, image: AgmentServices3 },
+    { id: 4, image: AgmentServices3 },
+    { id: 5, image: AgmentServices3 },
   ];
 
   return (
@@ -29,8 +32,8 @@ const Carousel = () => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={3}
-        spaceBetween={50}
+        slidesPerView={2}
+        spaceBetween={0}
         loop={true}
         navigation={{
           prevEl: ".custom-prev",
@@ -39,14 +42,14 @@ const Carousel = () => {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth:90,
+          depth:400,
           modifier: 1,
           slideShadows: true,
         }}
         breakpoints={{
           768: {
-            slidesPerView: 3,
-            spaceBetween: 20,
+            slidesPerView: 2,
+            spaceBetween: 0,
           },
           576: {
             slidesPerView: 1,
