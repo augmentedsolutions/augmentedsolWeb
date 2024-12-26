@@ -1,7 +1,7 @@
 /* Styling for Text1 */
 .text3{
     position: relative;
-    left: -1020px;
+    left: -1420px;
     transition: left 0.11s ease-in; /* Smooth transition for movement */
     color: white;
   }

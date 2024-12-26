@@ -17,7 +17,7 @@ const ServiceCard = ({ image }) => {
         src={image}
         alt="Service"
         style={{
-          height: '450px',
+          height: '400px',
           width: "auto",
           objectFit: "cover",
           position: "relative",

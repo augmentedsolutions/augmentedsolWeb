@@ -23,15 +23,17 @@ useEffect(()=>{
               src={Logo}
               className="img-fluid"
               height="100%"
+               style={{minHeight:"30px"}}
               width="217px"
               alt="..."
             />
           </div>
-          <div className=" col-md-6 col-lg-6 col-xl-5">
+          <div className=" col-7 col-xl-6">
             <div className="row d-flex justify-content-between align-items-center">
               <div className="col-auto">
                 <NavLink
                   to={"/"}
+                  className='heading_fifth_1'
                   style={({ isActive }) => ({
                     display: 'inline-block', // Ensure the text takes up space for styling
                     position: 'relative', // For positioning the custom underline
@@ -57,7 +59,7 @@ useEffect(()=>{
                 <NavLink
                   to={"/service"}
                   
-                  
+                  className='heading_fifth_1'
                    style={({ isActive }) => ({
             display: 'inline-block', // Ensure the text takes up space for styling
             position: 'relative', // For positioning the custom underline
@@ -80,6 +82,7 @@ useEffect(()=>{
               <div className="col-auto">
                 <NavLink
                   to={"/portfolio"}
+                  className='heading_fifth_1'
                   style={({ isActive }) => ({
                     display: 'inline-block', // Ensure the text takes up space for styling
                     position: 'relative', // For positioning the custom underline
@@ -102,6 +105,7 @@ useEffect(()=>{
               <div className="col-auto">
                 <NavLink
                   to={"/about"}
+                  className='heading_fifth_1'
                   style={({ isActive }) => ({
                     display: 'inline-block', // Ensure the text takes up space for styling
                     position: 'relative', // For positioning the custom underline
@@ -123,7 +127,7 @@ useEffect(()=>{
               </div>
             </div>
           </div>
-          <div className="col-2 text-end">
+          <div className="col-3 col-lg-2 text-end">
             <Button name="Contact Us" />
           </div>
         </div>

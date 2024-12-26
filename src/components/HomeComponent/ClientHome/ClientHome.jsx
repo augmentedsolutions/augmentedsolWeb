@@ -27,6 +27,7 @@ const ClientHome = () => {
       <div className="row  my-5 background_gradient_one  p-5 border_radius_one py-5 " style={{
       backgroundImage: `var(--background_gradient_one), url(${bgImage})`,
       backgroundSize: 'auto',
+      
       backgroundPosition: 'right center',
       backgroundRepeat: 'no-repeat',
       }}>

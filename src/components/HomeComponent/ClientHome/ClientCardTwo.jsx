@@ -42,7 +42,7 @@ const ClientCardTwo = () => {
       
       {/* Swiper Carousel */}
       <div className="row" style={{ display: "flex", justifyContent: "center" }}>
-        <div className="col-11">
+        <div className="col-12">
           <Swiper
             modules={[Navigation, Autoplay]} // Enable Navigation and Autoplay modules
             navigation={{
@@ -50,13 +50,13 @@ const ClientCardTwo = () => {
               prevEl: '.swiper-button-prev',
             }}
             style={{display:'flex',justifyContent:'center',alignItems:'center'}}
-            spaceBetween={0} // Spacing between slides
-            slidesPerView={1} // Number of slides visible at once
+            spaceBetween={50} // Spacing between slides
+            slidesPerView={2} // Number of slides visible at once
             loop={true} // Loop the slides
-            autoplay={{ delay: 2500 }} // Automatically move to next slide every 3 seconds
+            autoplay={{ delay: 3000 }} // Automatically move to next slide every 3 seconds
             breakpoints={{
               768: { slidesPerView: 1 }, // Show 1 slide on tablet and larger screens
-              1024: { slidesPerView: 3 }, // Show 2 slides on desktop and larger screens
+              1024: { slidesPerView: 2 }, // Show 2 slides on desktop and larger screens
             }}
             className="mySwiper"
           >

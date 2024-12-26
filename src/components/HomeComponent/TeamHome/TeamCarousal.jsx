@@ -30,8 +30,8 @@ const TeamCarousal = () => {
     coverflowEffect={{
       rotate: 0,
       stretch: 0,
-      depth: 50,
-      modifier: 1,
+      depth: 0,
+      modifier: 0,
       slideShadows: false,
     }}
     spaceBetween={-130} // No space between slides

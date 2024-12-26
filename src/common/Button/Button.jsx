@@ -5,7 +5,7 @@ import "../../index.css";
 const Button = ({ name }) => {
   return (
     <div className="row d-flex justify-content-center align-items-center">
-      <div className="col-auto col-lg-11">
+      <div className="col-8 col-lg-11">
         <Link
           className=" btn_text py-3 px-2"
           to={"/contact"}
