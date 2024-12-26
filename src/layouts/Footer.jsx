@@ -46,11 +46,11 @@ const Footer = () => {
             <p className=" heading_secondary MarginInnerBottomContainer">Company</p>
             <div className="">
 
-            <p className=" heading_forth">About Us</p>
-            <p className=" heading_forth MarginTopContentContainer ">Services</p>
-            <p className=" heading_forth MarginTopContentContainer">Products</p>
-            <p className=" heading_forth MarginTopContentContainer">Contact US</p>
-            <p className=" heading_forth MarginTopContentContainer">Privacy Policy</p>
+            <p className=" heading_forth text-start ">About Us</p>
+            <p className=" heading_forth MarginTopContentContainer text-start  ">Services</p>
+            <p className=" heading_forth MarginTopContentContainer text-start ">Products</p>
+            <p className=" heading_forth MarginTopContentContainer text-start ">Contact US</p>
+            <p className=" heading_forth MarginTopContentContainer text-start ">Privacy Policy</p>
             </div>
           </div>
         </div>
