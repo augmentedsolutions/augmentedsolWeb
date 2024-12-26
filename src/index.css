@@ -218,8 +218,22 @@ body {
   line-height: var(--line_height_33);
   color: var(--btn_text_color);
 }
+.text_primary_2 {
+  font-size: var(--font_family_orbitron);
+  font-weight: var(--font_wight_400);
+  font-size: var(--font_size_2);
+  line-height: var(--line_height_33);
+  color: var(--btn_text_color);
+}
 .text_secondary_1 {
   font-size: var(--font_family_poppins);
+  font-weight: var(--font_wight_400);
+  font-size: var(--font_size_body_1_25);
+  line-height: var(--line_height_33);
+  color: var(--btn_text_color);
+}
+.text_secondary_2 {
+  font-size: var(--font_family_orbitron);
   font-weight: var(--font_wight_400);
   font-size: var(--font_size_body_1_25);
   line-height: var(--line_height_33);
