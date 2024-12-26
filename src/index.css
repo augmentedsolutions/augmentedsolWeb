@@ -66,13 +66,13 @@ body {
 
 
   /* font size 64 px */
-  --font_size_45: 3rem;
+  --font_size_3_343: 3.343rem;
 
   /* font size 48 px */
   --font_size_2_5:2.5rem;
    
    /* font size 32 px */
-   --font_size_1_5:1.5rem;
+   --font_size_1_313:1.313rem;
 
   /* font size 24 px */
   --font_size_1_5:1.5rem;
@@ -171,7 +171,7 @@ body {
 }
 .heading_primary_1 {
   font-family: var(--font_family_orbitron);
-  font-size: var(--font_size_45);
+  font-size: var(--font_size_3_343);
   font-weight: var(--font_weight_900);
   line-height: var(--line_height_72);
   color: var(--btn_text_color);
@@ -214,8 +214,8 @@ body {
 .text_primary_1 {
   font-size: var(--font_family_poppins);
   font-weight: var(--font_wight_400);
-  font-size: var(--font_size_1_5);
-  line-height: var(--line_height_33);
+  font-size: var(--font_size_1_313);
+  line-height: var(--line_height_30);
   color: var(--btn_text_color);
 }
 .text_primary_2 {
@@ -253,6 +253,7 @@ body {
   line-height: var(--line_height_33);
   color: var(--btn_text_color);
 }
+
 .heading_primary {
   font-family: var(--font_family_orbitron);
   font-size: var(--font_size_2_5);

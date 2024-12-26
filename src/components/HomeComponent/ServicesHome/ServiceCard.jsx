@@ -17,7 +17,7 @@ const ServiceCard = ({ image }) => {
         src={image}
         alt="Service"
         style={{
-          height: '530px',
+          height: '500px',
           width: "auto",
           objectFit: "cover",
           position: "relative",
@@ -30,7 +30,7 @@ const ServiceCard = ({ image }) => {
           
           left:'0%'
           ,bottom:'0%'}}>
-        <div className="col-7 p-0 m-0" style={{
+        <div className="col-8 p-0 m-0" style={{
          
           
          backgroundImage: `url(${ServiceImage})`,

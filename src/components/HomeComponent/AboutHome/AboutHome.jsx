@@ -28,6 +28,7 @@ const AboutHome = () => {
                 className="img-fluid"
                 alt="About Two"
               />
+              
             </div>
           </div>
         </div>

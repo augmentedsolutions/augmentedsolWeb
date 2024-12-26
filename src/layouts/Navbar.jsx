@@ -18,13 +18,13 @@ useEffect(()=>{
     <div className="Navbar row Container mt-2 mb-3">
       <div className="NavbarMain col-12">
         <div className="row d-flex justify-content-between align-items-center">
-          <div className="col-2">
+          <div className="col-2 p-0 m-0">
             <img
               src={Logo}
-              className="img-fluid"
-              height="100%"
-               style={{minHeight:"30px"}}
-              width="217px"
+              // className="img-fluid"
+              height="auto"
+               
+              width="100%"
               alt="..."
             />
           </div>
