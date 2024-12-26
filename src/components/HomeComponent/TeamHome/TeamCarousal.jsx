@@ -13,48 +13,53 @@ import "./TeamCarousal.css";
 import TeamCard from "./TeamCard";
 
 const TeamCarousal = () => {
-  const images = [ServiceImage1, ServiceImage2, ServiceImage3, ServiceImage3];
+  const images = [
+    ServiceImage1,
+    ServiceImage2,
+    ServiceImage3,
+    ServiceImage3,
+    ServiceImage3,
+    ServiceImage3,
+  ];
 
   return (
     <div className="row">
-
-    <Swiper
-    modules={[Navigation, EffectCoverflow, Pagination]}
-    effect="coverflow"
-    loop={true}
-    pagination={{
-      clickable: true,
-      renderBullet: (index, className) =>
-        `<span class="${className} custom-pagination-bullet"></span>`,
-    }}
-    coverflowEffect={{
-      rotate: 0,
-      stretch: 0,
-      depth: 50,
-      modifier: 1,
-      slideShadows: false,
-    }}
-    spaceBetween={-130} // No space between slides
-    slidesPerView={3}
-    centeredSlides
-    breakpoints={{
-      768: {
-        slidesPerView: 3,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-    }}
-    style={{width:'100%'}}
-  >
-    {images.map((image, index) => (
-      <SwiperSlide key={index} className="custom-slide">
-        <TeamCard image={image} />
-      </SwiperSlide>
-    ))}
-  </Swiper>
+      <Swiper
+       className="swiperTeam"
+        modules={[Navigation, EffectCoverflow, Pagination]}
+        effect="coverflow"
+        loop={true}
+        pagination={{
+          clickable: true,
+          renderBullet: (index, className) =>
+            `<span class="${className} custom-pagination-bullet" aria-label="Slide ${index + 1}"></span>`,
+        }}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 400,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        spaceBetween={-250}
+        slidesPerView={2}
+        centeredSlides
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          576: {
+            slidesPerView: 1,
+          },
+        }}
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index} className="custom-slide">
+            <TeamCard image={image} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
-  
   );
 };
 

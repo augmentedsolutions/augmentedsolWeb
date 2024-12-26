@@ -26,19 +26,41 @@ const TeamCard = () => {
         >
           <img
             src={TeamImage}
-        
+             width='auto'
+             height='370px'        
           />
         </div>
-        <div className="col-12 backgorundTeamCard mt-2" style={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}} >
-           <h1 className="text_second text-center">
+        <div className="col-12 backgorundTeamCard my-3 py-3"  >
+          <div className="row">
+            <div className="col-12">
+
+           <h1 className="text_second  text-center" style={{color:'white'}}>
            Muh sanaullah
            </h1>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12">
            <p className="text_paragraph_secondary text-center">
            CO- FOUNDER & PROJECT MANAGER
            </p>
-           <div style={{display:'flex',justifyContent:'space-between',alignItems:'center', width:'100%'}}>
+
+            </div>
+          </div>
+           <div className="row" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+            <div className="col-4">
+              <div className="row " style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+              <div className="col-auto">
           <Logo logo={TeamLogo1} />
+
+</div>
+<div className="col-auto">
+
           <Logo logo={TeamLogo2} />
+            </div>
+              </div>
+            </div>
            </div>
         </div>
       </div>

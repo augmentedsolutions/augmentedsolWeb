@@ -56,37 +56,36 @@ const ContactForm = () => {
 
         <div className="row MarginTopContentContainer ">
           <div className="col-lg-4">
-            <div className="row">
-              <div className="col-2">
+            <div className="row" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+              <div className="col-auto">
                 <Logo logo={ContactLogoright1} />
               </div>
-              <div className="col-auto text-wrap">
-                <h5 className="text_fifth text-wrap">augmentedsol@gmail.com</h5>
+              <div className="col-auto text_fifth text-wrap">
+                augmentedsol@gmail.com
               </div>
             </div>
           </div>
           <div className="col-lg-4 ">
-            <div className="row">
-              <div className="col-2">
+            <div className="row style={{display:'flex',justifyContent:'center',alignItems:'center'}}">
+              <div className="col-auto">
                 <Logo logo={ContactLogoright2} />
               </div>
-              <div className="col-auto">
-                <h5 className="text_fifth">+92 308 4846218</h5>
+              
+              <div className="col-auto text_fifth text-wrap">
+              +92 308 4846218
               </div>
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="row">
+            <div className="row style={{display:'flex',justifyContent:'center',alignItems:'center'}}">
 
-            <div className="col-2">
+            <div className="col-auto">
               <Logo logo={ContactLogoright3} />
             </div>
-            <div className="col-auto" style={{display:'flex',justifyContent:''}}>
-              <span className="text_fifth">
-                337 G Block Rehman Pura Muslim.
-              </span>
-            </div>
-
+            
+            <div className="col-auto text_fifth text-wrap">
+            337 G Block Rehman Pura Muslim.
+              </div>
             </div>
           </div>
         </div>
@@ -96,13 +95,13 @@ const ContactForm = () => {
       </div>
       <div className="col-12">
         <div className="row " style={{display:'flex' ,justifyContent:'center',alignItems:'center'}}>
-          <div className="col-1" style={{display:'flex' ,justifyContent:'center',alignItems:'center'}} >
+          <div className="col-3" style={{display:'flex' ,justifyContent:'center',alignItems:'center'}} >
             <Logo logo={ContactLogoleft1}  />
           </div>
-          <div className="col-1" style={{display:'flex' ,justifyContent:'center',alignItems:'center'}}>
+          <div className="col-3" style={{display:'flex' ,justifyContent:'center',alignItems:'center'}}>
             <Logo logo={ContactLogoleft2} />
           </div>
-          <div className="col-1 " style={{display:'flex' ,justifyContent:'center',alignItems:'center'}}>
+          <div className="col-3 " style={{display:'flex' ,justifyContent:'center',alignItems:'center'}}>
             <Logo logo={ContactLogoleft3} />
           </div>
         </div>

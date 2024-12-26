@@ -8,7 +8,7 @@ const TeamHome = () => {
       <div className="row  PaddingContainer">
         <div
           className="text-center text-lg-start MarginContainer col-lg-5 d-flex justify-content-center align-items-center"
-          style={{  }}
+          style={{ position:'relative' }}
         >
           <div className="row d-flex justify-content-start align-items-center">
             <div className="col-lg-10">
@@ -29,7 +29,7 @@ const TeamHome = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6 " style={{}}>
          <TeamCarousal/>
         </div>
       </div>

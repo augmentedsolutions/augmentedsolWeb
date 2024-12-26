@@ -14,8 +14,8 @@ return(
              </div>
            </div>
 
-           <div className='row MarginContainer' style={{position:'relative',top:'-90px', display:'flex',justifyContent:'center',alignItems:'center'}} >
-             <div className='col-10 backgroundCOntactForm'>
+           <div className='row MarginContainer' style={{position:'relative',top:'-150px', display:'flex',justifyContent:'center',alignItems:'center',zIndex:'1'}} >
+             <div className='col-10 backgroundCOntactForm PaddingAllContainer'>
                  <ContactForm/>
              </div>
            </div>

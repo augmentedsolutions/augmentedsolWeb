@@ -15,15 +15,7 @@ import "swiper/css/effect-coverflow";
 
 const PortfolioCarousel = () => {
   const portfolioData = [
-    {
-      img: ServicesImage1,
-      text: "Instagram and Facebook Filters",
-      options: [
-        { option: "Augmented Reality" },
-        { option: "ARkit" },
-        { option: "ARCore" },
-      ],
-    },
+  
     {
       img: ServicesImage2,
       text: "Snapchat Filters",
@@ -63,14 +55,24 @@ const PortfolioCarousel = () => {
       ],
     },
     {
-      img: ServicesImage5,
-      text: "Custom AR Experiences",
+      img: ServicesImage3,
+      text: "Interactive 3D Models",
       options: [
         { option: "Augmented Reality" },
         { option: "ARkit" },
         { option: "ARCore" },
       ],
     },
+    {
+      img: ServicesImage4,
+      text: "E-commerce AR Filters",
+      options: [
+        { option: "Augmented Reality" },
+        { option: "ARkit" },
+        { option: "ARCore" },
+      ],
+    },
+
   ];
 
   return (
@@ -81,12 +83,12 @@ const PortfolioCarousel = () => {
       coverflowEffect={{
         rotate: 0,
         stretch: 0, // Stretch the slides for better visibility
-        depth: 100, // Add depth to the slide stack
+        depth: 50, // Add depth to the slide stack
         modifier: 1,
         slideShadows: true,
       }}
       spaceBetween={5}
-      slidesPerView={4} // Show 3 slides: 1 active + 1 on each side
+      slidesPerView={4} // Show 4 slides: 1 active + 1 on each side
       centeredSlides
       loop
       autoplay={{

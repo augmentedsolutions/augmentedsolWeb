@@ -344,6 +344,8 @@ body {
 .border_tabs_portfolio {
   border: 1px solid #DF308D;
   border-radius: 5px;
+  padding: 0px;
+  margin: 0px;
 }
 
 
@@ -488,8 +490,11 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
 }
 .backgorundTeamCard{
   background: rgba(24, 15, 28, 1);
-  border: 3.24px solid;
-/* border-image-source: linear-gradient(77.91deg, rgba(185, 54, 245, 0.1375) 1.95%, rgba(185, 54, 245, 0.11) 1.95%, rgba(170, 20, 240, 0.0825) 108.82%); */
+  border: 3.24px solid  rgba(36, 16, 46, 0.781));
+  
+
+  
+    
 }
 .border_radius_two {
   border: var(--border_Radius_2_02);

@@ -1,15 +1,14 @@
-/* .swiper-slide {
-    height: auto;
-    /* width: 00px !important; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+.swiper-slide-active .PortfolioCard {
+  background-color: rgb(0, 0, 0);
+}
+.swiper-slide-active .PortfolioOption {
+  color: white !important;
+}
 
-  
-  .swiper-slide-active .heading_tertiary,
-  .swiper-slide-active .text_seventh {
-    color: white;
-  }
-   */
+.swiper-slide-active .PortfolioText {
+  color: white !important;
+}
+
+.PortfolioCard {
+  background-color: white;
+}
