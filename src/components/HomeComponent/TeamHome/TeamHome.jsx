@@ -29,7 +29,7 @@ const TeamHome = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 " style={{}}>
+        <div className="col-lg-7 " style={{}}>
          <TeamCarousal/>
         </div>
       </div>
