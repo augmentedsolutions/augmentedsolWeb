@@ -7,7 +7,7 @@ const Button = ({ name ,Height = "62px",FontStylte='heading_sixth_11',justify='c
     <div className="row p-0 m-0 " style={{display:'flex',justifyContent:'center'}}>
       
         <Link
-          className={`col-12 btn_text   ${FontStylte}`}
+          className={`col-8 btn_text   ${FontStylte}`}
           to={"/contact"}
           style={{
             height:Height,

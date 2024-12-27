@@ -29,6 +29,11 @@ useEffect(()=>{
             />
           </div>
           <div className=" col-7 col-xl-6">
+            <div className="row">
+              <div className="col-12 ">
+
+              
+            
             <div className="row d-flex justify-content-between align-items-center">
               <div className="col-auto">
                 <NavLink
@@ -125,6 +130,8 @@ useEffect(()=>{
                   About Us
                 </NavLink>
               </div>
+            </div>
+            </div>
             </div>
           </div>
           <div className="col-3 col-lg-2 text-end">

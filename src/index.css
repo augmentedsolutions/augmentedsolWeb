@@ -121,7 +121,7 @@ body {
   --font_size_16: 1rem;
 
   /* Font size 30.33 */
-  --font_size_30_33: 1.2rem;
+  --font_size_1_2: 1.2rem;
   
   
 
@@ -297,7 +297,8 @@ body {
 .text_primary {
   font-size: var(--font_family_poppins);
   font-weight: var(--font_wight_400);
-  font-size: var(--font_size_30_33);
+  font-size: var(--font_size_1_5
+  );
   line-height: var(--line_height_33);
   color: var(--btn_text_color);
 }

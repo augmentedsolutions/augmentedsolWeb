@@ -27,7 +27,7 @@ const TeamCard = () => {
           <img
             src={TeamImage}
              width='auto'
-             height='370px'        
+             height='400px'        
           />
         </div>
         <div className="col-12 backgorundTeamCard my-3 py-3"  >
