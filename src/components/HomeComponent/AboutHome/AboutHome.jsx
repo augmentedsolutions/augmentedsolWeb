@@ -1,36 +1,41 @@
 import React from "react";
-import AboutOne from "../../../assets/Home/AboutAugmnetImage1.png";
+
+import AboutOne from "../../../assets/Home/AboutAugmnetImage_2.png";
 import AboutTwo from "../../../assets/Home/AboutAugmnetImage2.png";
+import AboutVector from "../../../assets/Home/AboutVector.png";
 import "./AboutHome.css"; // Optional: add styles here
 import Button from "../../../common/Button/Button";
 import "../../../index.css";
 
+
 const AboutHome = () => {
   return (
     <div className="row PaddingContainer d-flex justify-content-center align-items-center ">
-      <div className="col-lg-6 " style={{height:'auto'}} >
-        <div className="row d-flex justify-content-center align-items-center" >
-          <div className=" image-container" style={{width:'600px'}}>
-            <div className="about-image-main about-image-left">
-              <img
-                src={AboutOne}
-                height="auto"
-                className="img-fluid"
-                width="100%"
-                alt="About One"
-              />
+      <div className="col-lg-6 " style={{ height: "auto" }}>
+        <div className="row d-flex justify-content-center align-items-center">
+         
+            <div className=" image-container" style={{ width: "600px" }}>
+              <div className="">
+                <div className="about-image-main about-image-left p-3" >
+                  <img
+                    src={AboutOne}
+                    height="auto"
+                    width="100%"
+                    alt="About One"
+                  />
+                </div>
+              </div>
+              <div className="about-image-main about-image-right p-3">
+                <img
+                  src={AboutTwo}
+                  height="auto"
+                  width="100%"
+                  // style={{objectFit: "cover"}}
+                  alt="About Two"
+                />
+              </div>
             </div>
-            <div className="about-image-main about-image-right">
-              <img
-                src={AboutTwo}
-                height="auto"
-                width="100%"
-                className="img-fluid"
-                alt="About Two"
-              />
-              
-            </div>
-          </div>
+         
         </div>
       </div>
       <div className="col-lg-6 mt-3 ">
@@ -51,10 +56,20 @@ const AboutHome = () => {
                 </p>
               </div>
             </div>
-            <div className="row  d-flex justify-content-center justify-content-lg-start" style={{}}>
-                <div className="col-3 col-lg-3 text-center text-lg-start" style={{minWidth:'250px'}}>
-                <Button name="Read More" Height="75px" FontStylte='heading_fifth_1' />
-                </div>
+            <div
+              className="row  d-flex justify-content-center justify-content-lg-start"
+              style={{}}
+            >
+              <div
+                className="col-3 col-lg-3 text-center text-lg-start"
+                style={{ minWidth: "250px" }}
+              >
+                <Button
+                  name="Read More"
+                  Height="75px"
+                  FontStylte="heading_fifth_1"
+                />
+              </div>
             </div>
           </div>
         </div>
