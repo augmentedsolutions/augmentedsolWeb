@@ -6,7 +6,9 @@ import ContactImage2 from '../assets/Contact/ContactImage2.png'
 import ContactForm from '../components/ContactComponent/ContactForm'
 const ContactPage=()=>{
 return(
-     <div className='row Container'> 
+  <div style={{ overflow: "hidden" }}>
+
+  <div className="row Container" style={{ position: "relative" }}>
          <div className='col-12'>
            <div className='row MarginContainer'>
              <div className='col-12 '>
@@ -28,6 +30,30 @@ return(
 
 
          </div>
+         <div
+          className="gradient_radial"
+          style={{
+            height: "950px",
+            width: "950px",
+            position: "absolute",
+            top: "250px",
+            left: "-600px",
+            // backgroundColor:"red"
+          }}
+          ></div> 
+          <div
+          className="gradient_radial"
+          style={{
+            height: "950px",
+            width: "950px",
+            position: "absolute",
+            top: "400px",
+            right: "-600px",
+            // backgroundColor:"red"
+          }}
+          ></div> 
+
+     </div>
      </div>
 )
 }

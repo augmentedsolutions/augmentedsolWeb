@@ -111,6 +111,20 @@ online presence shines."
             // backgroundColor:"red"
           }}
           ></div>
+
+<div
+          className="gradient_radial"
+          style={{
+            height: "950px",
+            width: "950px",
+            position: "absolute",
+            top: "400px",
+            right: "-600px",
+            // backgroundColor:"red"
+          }}
+          ></div> 
+
+
     </div>
           </div>
   );
