@@ -1,6 +1,6 @@
 import React from "react";
-import AboutOne from "../../../assets/Home/AboutAugmnetImage1.png";
-import AboutTwo from "../../../assets/Home/AboutAugmnetImage2.png";
+import AboutOne from "../../../assets/Home/Vector1.png";
+import AboutTwo from "../../../assets/Home/Vector2.png";
 import AboutVector from "../../../assets/Home/AboutVector.png";
 import "./AboutHome.css"; // Optional: add styles here
 import Button from "../../../common/Button/Button";
@@ -14,23 +14,24 @@ const AboutHome = () => {
         <div className="row d-flex justify-content-center align-items-center">
          
             <div className=" image-container" style={{ width: "600px" }}>
-              <div className="">
-                <div className="about-image-main about-image-left p-3" style={{backgroundImage:`url(${AboutVector})`}}>
+              
+                <div className="about-image-main about-image-left p-3" style={{backgroundImage:`url(${AboutVector})`,backgroundRepeat:'no-repeat'}}>
                   <img
                     src={AboutOne}
                     className="image-vector-clip"
                     height="100%"
-                    width="auto"
+                    width="100%"
                     alt="About One"
                   />
                 </div>
-              </div>
-              <div className="about-image-main about-image-right p-3" style={{backgroundImage:`url(${AboutVector})`}}>
+              
+              <div className="about-image-main about-image-right p-3" style={{backgroundImage:`url(${AboutVector})`,backgroundRepeat:'no-repeat'}}>
                 <img
                   src={AboutTwo}
-                  height="100%"
-                  className="image-vector-clip"
-                  width="auto"
+                  
+                  className="image-vector-clip  "
+                  height='100%'
+                  width="100%"
                   style={{objectFit: "cover"}}
                   alt="About Two"
                 />

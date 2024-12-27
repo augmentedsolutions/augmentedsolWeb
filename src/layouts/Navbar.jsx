@@ -134,7 +134,7 @@ useEffect(()=>{
             </div>
             </div>
           </div>
-          <div className="col-3 col-lg-2 text-end">
+          <div className="col-3 col-lg-1 text-end" style={{minWidth:'190px'}}>
             <Button name="Contact Us" />
           </div>
         </div>

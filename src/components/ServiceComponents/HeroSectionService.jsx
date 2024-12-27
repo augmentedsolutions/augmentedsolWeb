@@ -11,11 +11,11 @@ const HeroSectionService = ({ img,text1,text2 }) => {
             <div className="row" style={{display:'flex',justifyContent:'center',alignItems:"center"}}>
              <div className="col-5">
 
-            <h1 className="heading_secondary_1 text1" style={{}}>{text1}</h1>
+            <h1 className="heading_primary_1 text1" style={{}}>{text1}</h1>
              </div>
             </div>
             <div className="row">
-              <div col-8>
+              <div col-8 className="MarginBottomText1">
 
             <h2 className="text_primary_1 text2" style={{}}>{text2}</h2>
               </div>

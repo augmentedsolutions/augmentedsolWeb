@@ -4,10 +4,10 @@ import "../../index.css";
 // import './Button.css'
 const Button = ({ name ,Height = "62px",FontStylte='heading_sixth_11',justify='center' }) => {
   return (
-    <div className="row p-0 m-0 " style={{display:'flex',justifyContent:'center'}}>
+    <div className="row p-0 m-0 " style={{display:'flex',justifyContent:{justify}}}>
       
         <Link
-          className={`col-8 btn_text   ${FontStylte}`}
+          className={`col-12 btn_text   ${FontStylte}`}
           to={"/contact"}
           style={{
             height:Height,

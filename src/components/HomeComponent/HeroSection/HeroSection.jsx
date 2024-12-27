@@ -32,9 +32,9 @@ const HeroSection = () => {
                 </div>
               </div>
               <div className="row p-0 m-0 Btn  " style={{display:'flex',justifyContent:'start',alignItems:'start'}}>
-             <div className="col-2 p-0 m-0" style={{minWidth:'172px',height:'62px'}}>
+             <div className="col-3 p-0 m-0" style={{minWidth:'172px',height:'62px'}}>
               
-              <Button name='Lets Start' Height='63px' FontStylte={'heading_fifth_1'}/>
+              <Button name='Lets Start' Height='63px' FontStylte={'heading_fifth_1'} justify='start'/>
              </div>
               </div>
             </div>

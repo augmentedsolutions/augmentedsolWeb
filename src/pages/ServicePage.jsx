@@ -13,7 +13,9 @@ import ServicesImage7 from "../assets/services/ServicesImage7.png";
 import ServicesHeroSection from "../assets/services/ServicesHeroSection.png";
 const ServicePage = () => {
   return (
-    <div className="row Container ">
+    <div style={{ overflow: "hidden" }}>
+
+    <div className="row Container " style={{ position: "relative" }}>
       <div className="col-12">
         <div className="row MarginContainer">
           <div className="col-12">
@@ -27,7 +29,7 @@ const ServicePage = () => {
             justifyContent: "center",
             alignItems: "center",
           }}
-        >
+          >
           <div className="col-auto">
             <div
               className="row gap-5 gap-lg-0  "
@@ -36,7 +38,7 @@ const ServicePage = () => {
                 alignItems: "center",
                 justifyContent: "center",
               }}
-            >
+              >
               <ServiceCard
                 img={ServicesImage1}
                 text="Web Development"
@@ -44,15 +46,15 @@ const ServicePage = () => {
 We specialize in crafting dynamic, user-friendly websites tailored to your needs.
 From responsive design to e-commerce solutions, our expertise ensures your
 online presence shines."
-              />
+/>
               <ServiceCard
                 img={ServicesImage2}
                 text="Web Development"
                 paragraph="Find our Web Development service, where digital possibilities become reality.
-We specialize in crafting dynamic, user-friendly websites tailored to your needs.
-From responsive design to e-commerce solutions, our expertise ensures your
-online presence shines."
-              />
+                We specialize in crafting dynamic, user-friendly websites tailored to your needs.
+                From responsive design to e-commerce solutions, our expertise ensures your
+                online presence shines."
+                />
               <ServiceCard
                 img={ServicesImage3}
                 text="Web Development"
@@ -60,31 +62,31 @@ online presence shines."
 We specialize in crafting dynamic, user-friendly websites tailored to your needs.
 From responsive design to e-commerce solutions, our expertise ensures your
 online presence shines."
-              />
+/>
               <ServiceCard
                 img={ServicesImage4}
                 text="Web Development"
                 paragraph="Find our Web Development service, where digital possibilities become reality.
-We specialize in crafting dynamic, user-friendly websites tailored to your needs.
-From responsive design to e-commerce solutions, our expertise ensures your
-online presence shines."
-              />
+                We specialize in crafting dynamic, user-friendly websites tailored to your needs.
+                From responsive design to e-commerce solutions, our expertise ensures your
+                online presence shines."
+                />
               <ServiceCard
                 img={ServicesImage5}
                 text="Web Development"
                 paragraph="Find our Web Development service, where digital possibilities become reality.
-We specialize in crafting dynamic, user-friendly websites tailored to your needs.
-From responsive design to e-commerce solutions, our expertise ensures your
-online presence shines."
-              />
+                We specialize in crafting dynamic, user-friendly websites tailored to your needs.
+                From responsive design to e-commerce solutions, our expertise ensures your
+                online presence shines."
+                />
               <ServiceCard
                 img={ServicesImage6}
                 text="Web Development"
                 paragraph="Find our Web Development service, where digital possibilities become reality.
-We specialize in crafting dynamic, user-friendly websites tailored to your needs.
-From responsive design to e-commerce solutions, our expertise ensures your
-online presence shines."
-              />
+                We specialize in crafting dynamic, user-friendly websites tailored to your needs.
+                From responsive design to e-commerce solutions, our expertise ensures your
+                online presence shines."
+                />
               <ServiceCard
                 img={ServicesImage7}
                 text="Web Development"
@@ -92,12 +94,25 @@ online presence shines."
 We specialize in crafting dynamic, user-friendly websites tailored to your needs.
 From responsive design to e-commerce solutions, our expertise ensures your
 online presence shines."
-              />
+/>
             </div>
           </div>
         </div>
+        
       </div>
+        <div
+          className="gradient_radial"
+          style={{
+            height: "950px",
+            width: "950px",
+            position: "absolute",
+            top: "250px",
+            left: "-600px",
+            // backgroundColor:"red"
+          }}
+          ></div>
     </div>
+          </div>
   );
 };
 export default ServicePage;

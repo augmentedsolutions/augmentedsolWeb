@@ -51,6 +51,7 @@ const Home = () => {
             left: "-20px",
           }}
         ></div>
+        
         <div
           className="gradient_radial"
           style={{

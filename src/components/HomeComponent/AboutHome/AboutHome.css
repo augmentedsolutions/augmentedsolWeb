@@ -11,11 +11,13 @@
   justify-content: center;
   align-items: center;
 
+
 }
+
 .image-vector-clip {
   
-  clip-path: polygon(77% 1%, 100% 42px, 100% 100%, 0 100%, 0 0);
-  -webkit-clip-path: polygon(77% 1%, 100% 42px, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(74% 0, 100% 22%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+  -webkit-clip-path: polygon(255px 0, 100% 50px, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
 }
 .about-image-left {
   position: absolute;

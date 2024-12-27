@@ -9,6 +9,8 @@ import CardAboutTwo from '../components/AboutComponent/CardAboutTwo'
 
 const AboutPage=()=>{
     return(
+      <div style={{ overflow: "hidden" }}>
+
         <div className='row Container'>
           <div className='col-12'>
           <div className='row '>
@@ -26,6 +28,7 @@ const AboutPage=()=>{
            
           </div>
         </div>
+      </div>
     )
 }
 export default AboutPage
