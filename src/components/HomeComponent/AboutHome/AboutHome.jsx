@@ -15,7 +15,7 @@ const AboutHome = () => {
          
             <div className=" image-container" style={{ width: "600px" }}>
               <div className="">
-                <div className="about-image-main about-image-left p-3" >
+                <div className="about-image-main about-image-left p-3" style={{backgroundImage:`url(${AboutVector})`}}>
                   <img
                     src={AboutOne}
                     className="image-vector-clip"
@@ -25,7 +25,7 @@ const AboutHome = () => {
                   />
                 </div>
               </div>
-              <div className="about-image-main about-image-right p-3">
+              <div className="about-image-main about-image-right p-3" style={{backgroundImage:`url(${AboutVector})`}}>
                 <img
                   src={AboutTwo}
                   height="100%"
