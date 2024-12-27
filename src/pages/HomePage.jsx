@@ -8,7 +8,7 @@ import ClientHome from "../components/HomeComponent/ClientHome/ClientHome";
 import ContactHome from "../components/HomeComponent/ContactHome/ContactHome";
 const Home = () => {
   return (
-    <div style={{ overflow: "hidden" }}>
+    
       <div className="row " style={{ position: "relative" }}>
         <div className="col-12 ">
           <div className="row Container">
@@ -51,7 +51,7 @@ const Home = () => {
             left: "-20px",
           }}
         ></div>
-        
+
         <div
           className="gradient_radial"
           style={{
@@ -106,7 +106,7 @@ const Home = () => {
           }}
         ></div>
       </div>
-    </div>
+
   );
 };
 export default Home;

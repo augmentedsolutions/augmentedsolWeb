@@ -2,7 +2,7 @@
 .text1 {
     color: white;
     position: relative;
-    top: -400px;
+    top: -500px;
     transition: top 1s ease-in-out; /* Smooth transition for movement */
   }
   

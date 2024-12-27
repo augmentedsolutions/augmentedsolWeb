@@ -13,7 +13,7 @@ import ServicesImage7 from "../assets/services/ServicesImage7.png";
 import ServicesHeroSection from "../assets/services/ServicesHeroSection.png";
 const ServicePage = () => {
   return (
-    <div style={{ overflow: "hidden" }}>
+    
 
     <div className="row Container " style={{ position: "relative" }}>
       <div className="col-12">
@@ -126,7 +126,7 @@ online presence shines."
 
 
     </div>
-          </div>
+
   );
 };
 export default ServicePage;

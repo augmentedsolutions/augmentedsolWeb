@@ -12,6 +12,7 @@ const Path = () => {
   return (
     <Router>
       {/* Navbar */}
+      <div style={{ overflow: "hidden" }}>
       <div className=" MarginTopText1">
 
       <Navbar />
@@ -36,6 +37,7 @@ const Path = () => {
 
       {/* Footer */}
       <Footer />
+      </div>
     </Router>
   );
 };

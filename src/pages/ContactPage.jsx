@@ -6,7 +6,7 @@ import ContactImage2 from '../assets/Contact/ContactImage2.png'
 import ContactForm from '../components/ContactComponent/ContactForm'
 const ContactPage=()=>{
 return(
-  <div style={{ overflow: "hidden" }}>
+  
 
   <div className="row Container" style={{ position: "relative" }}>
          <div className='col-12'>
@@ -54,7 +54,7 @@ return(
           ></div> 
 
      </div>
-     </div>
+
 )
 }
 export default ContactPage

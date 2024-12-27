@@ -15,8 +15,8 @@ useEffect(()=>{
   const isActive = (path) => location.pathname === path;
 
   return (
-    <div className="Navbar row Container mt-2 mb-3">
-      <div className="NavbarMain col-12">
+    <div className="Navbar row Container mt-2 mb-3" style={{ position: "relative" }}>
+      <div className="NavbarMain col-12 " style={{zIndex:'4'}}>
         <div className="row d-flex justify-content-between align-items-center">
           <div className="col-2 p-0 m-0">
             <img
@@ -139,6 +139,18 @@ useEffect(()=>{
           </div>
         </div>
       </div>
+      <div
+          className="gradient_radial"
+          style={{
+            height: "950px",
+            width: "950px",
+            position: "absolute",
+            top: "-500px",
+            left: "200px",
+            zIndex:'0'
+            // backgroundColor:'red'
+          }}
+        ></div>
     </div>
   );
 };

@@ -8,7 +8,7 @@ import CardAboutTwo from "../components/AboutComponent/CardAboutTwo";
 
 const AboutPage = () => {
   return (
-    <div style={{ overflow: "hidden" }}>
+    
       <div className="row Container" style={{ position: "relative" }}>
         <div className="col-12">
           <div className="row ">
@@ -51,9 +51,9 @@ const AboutPage = () => {
             // backgroundColor:"red"
           }}
         ></div>
-        
+
       </div>
-    </div>
+
   );
 };
 export default AboutPage;

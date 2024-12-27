@@ -9,7 +9,7 @@
 
   .Btn{
     position: relative;
-    bottom: -500px;
+    bottom: -900px;
     transition: bottom 1s ease-in-out; /* Add transition for smooth effect */
   }
   .image2{

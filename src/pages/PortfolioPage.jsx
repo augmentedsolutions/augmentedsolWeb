@@ -7,7 +7,7 @@ import HeroSectionService from "../components/ServiceComponents/HeroSectionServi
 import PortfolioCarousel from "../components/PortfolioPage/PortfolioCarousel";
 const PortfolioPage = () => {
   return (
-    <div style={{ overflow: "hidden" }}>
+
       <div className="row Container" style={{ position: "relative" }}>
         <div className="col-12">
           <div className="row MarginContainer">
@@ -53,7 +53,7 @@ const PortfolioPage = () => {
 
 
       </div>
-    </div>
+
   );
 };
 export default PortfolioPage;

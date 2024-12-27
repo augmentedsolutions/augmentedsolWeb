@@ -14,10 +14,11 @@
 }
 
 .swiper-pagination .custom-pagination-bullet {
-  width: 25px;
+  width: 14px;
   height: 5px;
+  border-radius: 5px ;
   background-color: white;
-  border-radius: 0px;
+  /* border-radius: 0px; */
   opacity: 1;
   transition: opacity 0.3s ease;
   cursor: pointer;
@@ -25,7 +26,7 @@
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background: linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%);
-  width: 45px;
+  width: 32px;
   height: 5px;
   opacity: 1;
 }

@@ -11,7 +11,7 @@ import ContactLogoright2 from "../assets/Home/ContactLogoRight2.png";
 import ContactLogoright3 from "../assets/Home/ContactLogoRight3.png";
 const Footer = () => {
   return (
-    <div style={{ overflow: "hidden" }}>
+    
       <div
         className="row Container MarginTopContainer "
         style={{ position: "relative" }}
@@ -86,13 +86,14 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="col-12 MarginTopContentContainer">
-                  <div className="row Flex ">
+                  <div className="row  " > 
                     <div className="col-auto">
                       <Logo logo={ContactLogoright2} />
                     </div>
-                    <div className="col-auto ">
-                      <p className="heading_forth ">+92 308 4846218</p>
+                    <div className="p-0 m-0 col-auto heading_forth " style={{height:'flex',justifyContent:'center',alignItems:'center'}}>
+                      +92 308 4846218
                     </div>
+                    
                   </div>
                 </div>
                 <div className="col-12  MarginTopContentContainer">
@@ -100,14 +101,24 @@ const Footer = () => {
                     <div className="col-auto">
                       <Logo logo={ContactLogoright3} />
                     </div>
-                    <div className="col-10" style={{}}>
+                    <div className=" col-10 text-wrap" style={{height:"60px"}}>
                       <span
                         className="heading_forth"
-                        style={{ textWrap: "wrap" }}
+                        style={{ wordWrap: "break-word", }}
                       >
-                        337 G Block Rehmanpura Muslim Town Lahore.
+                        337 G Block Rehmanpura 
                       </span>
+                      <span
+                        className="heading_forth"
+                        style={{ wordWrap: "break-word", }}
+                      >
+                        Muslim Town Lahore.
+                      </span>
+                    
                     </div>
+
+
+                    
                   </div>
                 </div>
               </div>
@@ -115,7 +126,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* <div
+        <div
           className="gradient_radial"
           style={{
             height: "950px",
@@ -137,11 +148,11 @@ const Footer = () => {
             left: "-400px",
             // backgroundColor:"red"
           }}
-          ></div>  */}
+          ></div> 
 
 
       </div>
-    </div>
+    
   );
 };
 
