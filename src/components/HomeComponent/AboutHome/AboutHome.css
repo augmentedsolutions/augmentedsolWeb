@@ -1,27 +1,38 @@
 .image-container {
-    position: relative;
-    height: 614px;
-    /* border: 2px solid red; Add the border to the container */
-  }
+  position: relative;
+  height: 614px;
+  /* border: 2px solid red; Add the border to the container */
+}
+
+.about-image-main {
+  height: 467px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.87px solid; /* Required to enable the border */
+  border-image-source: linear-gradient(
+    93.2deg,
+    rgba(235, 169, 255, 0.8) 3.97%,
+    rgba(255, 176, 250, 0.8) 97.92%
+  );
   
-  .about-image-main{
-     height: 467px;
-     width: 350px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background-image: url(../../../assets/Home/AboutVector.png);
-  } 
-   .about-image-left {
- 
-    position: absolute;
-    left: 0;
-    top:0;
-  }
-  
-  .about-image-right {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-  
+  border-image-slice: 1; /* Required to slice the gradient to fit */
+  border-radius: 10px; /* Optional: Makes the border rounded */
+  padding: 16px; /* Adjust as needed for content inside */
+}
+.image-vector-clip {
+  clip-path: polygon(77% 1%, 100% 23%, 100% 100%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(77% 1%, 100% 23%, 100% 100%, 0 100%, 0 0);
+}
+.about-image-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.about-image-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

@@ -1,6 +1,5 @@
 import React from "react";
-
-import AboutOne from "../../../assets/Home/AboutAugmnetImage_2.png";
+import AboutOne from "../../../assets/Home/AboutAugmnetImage1.png";
 import AboutTwo from "../../../assets/Home/AboutAugmnetImage2.png";
 import AboutVector from "../../../assets/Home/AboutVector.png";
 import "./AboutHome.css"; // Optional: add styles here
@@ -19,8 +18,9 @@ const AboutHome = () => {
                 <div className="about-image-main about-image-left p-3" >
                   <img
                     src={AboutOne}
-                    height="auto"
-                    width="100%"
+                    className="image-vector-clip"
+                    height="100%"
+                    width="auto"
                     alt="About One"
                   />
                 </div>
@@ -28,9 +28,10 @@ const AboutHome = () => {
               <div className="about-image-main about-image-right p-3">
                 <img
                   src={AboutTwo}
-                  height="auto"
-                  width="100%"
-                  // style={{objectFit: "cover"}}
+                  height="100%"
+                  className="image-vector-clip"
+                  width="auto"
+                  style={{objectFit: "cover"}}
                   alt="About Two"
                 />
               </div>
