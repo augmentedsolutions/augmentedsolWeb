@@ -20,7 +20,7 @@ const ClientCardOne = () => {
     <>
       <div className="row MarginBottomText1">
         <div className="col-12 text-center">
-          <h1 className="heading_primary">Augmented Clients</h1>
+          <h2 className="">Augmented Clients</h2>
         </div>
       </div>
       <div className="row">
@@ -46,6 +46,14 @@ const ClientCardOne = () => {
               slidesPerView: 4,
               spaceBetween:40
             },
+            991: {
+              slidesPerView: 2,
+              spaceBetween:40
+            },
+            300:{
+              slidesPerView: 1,
+              spaceBetween:40
+            }
           }}
         >
           {[...clients, ...clients].map((client, index) => (

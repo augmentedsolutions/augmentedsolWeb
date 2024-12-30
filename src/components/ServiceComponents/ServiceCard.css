@@ -1,0 +1,8 @@
+.ServiceCardHome-img{
+
+}
+@media (min-width: 299px) and (max-width: 991px) {
+    .ServiceCardHome-img{
+       height: 400px !important;
+    }
+  }

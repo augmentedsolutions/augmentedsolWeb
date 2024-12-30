@@ -12,13 +12,13 @@ const ClientCardThree = () => {
           <div className="col-12">
             <div className="row">
               <div className="col-lg-10 mt-3">
-                <h1 className="heading_primary">
+                <h2 className="">
                   Explore product in new way
                   <img className="ms-5" src={ClientIcon} />
-                </h1>
+                </h2>
               </div>
               <div className="col-12 mt-3">
-                <p className="text_primary">
+                <p className="">
                   We specialize in creating visual identities for products and
                   branda in your company.
                 </p>

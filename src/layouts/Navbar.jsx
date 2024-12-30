@@ -1,156 +1,139 @@
 import React, { useEffect, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
-import Logo from "../assets/Home/Logo.png";
-import Button from "../common/Button/Button.jsx";
+import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 import "../index.css";
-
+import logo from "../assets/Home/Logo.png";
 const Navbar = () => {
-  const location = useLocation(); // Get the current route
-const [active ,setActive]=useState('')
+  const [visible, setVisible] = useState(false);
 
-useEffect(()=>{
+  useEffect(() => {
+    console.log(`visible= ${visible}`);
+    const handleResize = () => {
+      const isWideScreen = window.innerWidth >= 1200;
+      if (visible && isWideScreen) {
+        setVisible(false);
+      }
+      console.log(isWideScreen);
+    };
 
-},[active])
-  // Function to check if the current route matches the link
-  const isActive = (path) => location.pathname === path;
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup to avoid memory leaks
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [visible]);
+
+  const handleMenuClose = () => {
+    if (window.innerWidth < 1200) {
+      setVisible(false);
+    }
+  };
 
   return (
-    <div className="Navbar row Container mt-2 mb-3" style={{ position: "relative" }}>
-      <div className="NavbarMain col-12 " style={{zIndex:'4'}}>
-        <div className="row d-flex justify-content-between align-items-center">
-          <div className="col-2 p-0 m-0">
-            <img
-              src={Logo}
-              // className="img-fluid"
-              height="auto"
-               
-              width="100%"
-              alt="..."
-            />
-          </div>
-          <div className=" col-7 col-xl-6">
-            <div className="row">
-              <div className="col-12 ">
-
-              
+    <div className="Container">
+      <div className="Navbar row " style={{ position: "relative" }}>
+        {/* Navbar */}
+        <nav className="navbar navbar-expand-lg navbar-scroll  shadow-0  border-dark">
+          <div className="container-fluid">
+            <a className="navbar-brand NavbarLogo" style={{}} href="#!">
+              <img
+                src={logo}
+                // className="img-fluid"
+                height="100%"
+                width="auto"
+                alt="..."
+              />
+            </a>
             
-            <div className="row d-flex justify-content-between align-items-center">
-              <div className="col-auto">
-                <NavLink
-                  to={"/"}
-                  className='heading_fifth_1'
-                  style={({ isActive }) => ({
-                    display: 'inline-block', // Ensure the text takes up space for styling
-                    position: 'relative', // For positioning the custom underline
-                    color: isActive
-                      ? 'transparent' // Set the text color to transparent for gradient
-                      : 'white', // Default color
-                    textDecoration: 'none', // Disable the default underline
-                    background: isActive
-                      ? 'linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%)' // Gradient when active
-                      : 'none',
-                    backgroundClip: isActive ? 'text' : 'none', // Apply gradient to text
-                    WebkitBackgroundClip: isActive ? 'text' : 'none', // Webkit support for gradient text
-                    fontWeight: isActive ? 'bold' : 'normal', // Bold text when active
-                    padding: '10px', // Padding for spacing
-                  })}
-                  
-                  // style={{ textDecoration: "none" }}
-                >
-                  Home
-                </NavLink>
-              </div>
-              <div className="col-auto">
-                <NavLink
-                  to={"/service"}
-                  
-                  className='heading_fifth_1'
-                   style={({ isActive }) => ({
-            display: 'inline-block', // Ensure the text takes up space for styling
-            position: 'relative', // For positioning the custom underline
-            color: isActive
-              ? 'transparent' // Set the text color to transparent for gradient
-              : 'white', // Default color
-            textDecoration: 'none', // Disable the default underline
-            background: isActive
-              ? 'linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%)' // Gradient when active
-              : 'none',
-            backgroundClip: isActive ? 'text' : 'none', // Apply gradient to text
-            WebkitBackgroundClip: isActive ? 'text' : 'none', // Webkit support for gradient text
-            fontWeight: isActive ? 'bolder' : 'normal', // Bold text when active
-            padding: '10px', // Padding for spacing
-          })}
-                >
-                  Services
-                </NavLink>
-              </div>
-              <div className="col-auto">
-                <NavLink
-                  to={"/portfolio"}
-                  className='heading_fifth_1'
-                  style={({ isActive }) => ({
-                    display: 'inline-block', // Ensure the text takes up space for styling
-                    position: 'relative', // For positioning the custom underline
-                    color: isActive
-                      ? 'transparent' // Set the text color to transparent for gradient
-                      : 'white', // Default color
-                    textDecoration: 'none', // Disable the default underline
-                    background: isActive
-                      ? 'linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%)' // Gradient when active
-                      : 'none',
-                    backgroundClip: isActive ? 'text' : 'none', // Apply gradient to text
-                    WebkitBackgroundClip: isActive ? 'text' : 'none', // Webkit support for gradient text
-                    fontWeight: isActive ? 'bold' : 'normal', // Bold text when active
-                    padding: '10px', // Padding for spacing
-                  })}
-                >
-                  Portfolio
-                </NavLink>
-              </div>
-              <div className="col-auto">
-                <NavLink
-                  to={"/about"}
-                  className='heading_fifth_1'
-                  style={({ isActive }) => ({
-                    display: 'inline-block', // Ensure the text takes up space for styling
-                    position: 'relative', // For positioning the custom underline
-                    color: isActive
-                      ? 'transparent' // Set the text color to transparent for gradient
-                      : 'white', // Default color
-                    textDecoration: 'none', // Disable the default underline
-                    background: isActive
-                      ? 'linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%)' // Gradient when active
-                      : 'none',
-                    backgroundClip: isActive ? 'text' : 'none', // Apply gradient to text
-                    WebkitBackgroundClip: isActive ? 'text' : 'none', // Webkit support for gradient text
-                    fontWeight: isActive ? 'bold' : 'normal', // Bold text when active
-                    padding: '10px', // Padding for spacing
-                  })}
-                >
-                  About Us
-                </NavLink>
-              </div>
-            </div>
-            </div>
+            <button
+              class="navbar-toggler"
+              style={{ color: "white" }}
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav mx-auto ">
+                <li className="nav-item px-lg-2 px-xl-4 px-md-3">
+                  <NavLink
+                    to={"/"}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "nav-link nav-link-active"
+                        : "nav-link nav-link-inactive"
+                    }
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li className="nav-item px-lg-2 px-xl-4 px-md-3">
+                  <NavLink
+                    to={"/service"}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "nav-link nav-link-active"
+                        : "nav-link nav-link-inactive"
+                    }
+                  >
+                    Services
+                  </NavLink>
+                </li>
+                <li className="nav-item px-lg-2 px-xl-4 px-md-3">
+                  <NavLink
+                    to={"/portfolio"}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "nav-link nav-link-active"
+                        : "nav-link nav-link-inactive"
+                    }
+                  >
+                    Portfolio
+                  </NavLink>
+                </li>
+                <li className="nav-item px-lg-2 px-xl-4 px-md-3">
+                  <NavLink
+                    to={"/about"}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "nav-link nav-link-active"
+                        : "nav-link nav-link-inactive"
+                    }
+                  >
+                    About
+                  </NavLink>
+                </li>
+              </ul>
+              <button
+                type="button"
+                className="btn  ms-3"
+                style={{
+                  background: "var(--background_color_btn)",
+                  color: "white",
+                  height: "62px",
+                  width: "152px",
+                }}
+              >
+                 <NavLink
+                    to={"/contact"}
+                     style={{textDecoration:'none',color:'white'}}
+                  >
+                    Contact Us
+                  </NavLink>
+              </button>
             </div>
           </div>
-          <div className="col-3 col-lg-1 text-end" style={{minWidth:'190px'}}>
-            <Button name="Contact Us" />
-          </div>
-        </div>
+        </nav>
+
+        {/* Radial Background */}
+        <div className="gradient_radial"></div>
       </div>
-      <div
-          className="gradient_radial"
-          style={{
-            height: "950px",
-            width: "950px",
-            position: "absolute",
-            top: "-500px",
-            left: "200px",
-            zIndex:'0'
-            // backgroundColor:'red'
-          }}
-        ></div>
     </div>
   );
 };

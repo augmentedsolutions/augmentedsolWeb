@@ -6,71 +6,62 @@ import "./AboutHome.css"; // Optional: add styles here
 import Button from "../../../common/Button/Button";
 import "../../../index.css";
 
-
 const AboutHome = () => {
   return (
-    <div className="row PaddingContainer d-flex justify-content-center align-items-center ">
-      <div className="col-lg-6 " style={{ height: "auto" }}>
-        <div className="row d-flex justify-content-center align-items-center">
-         
-            <div className=" image-container" style={{ width: "600px" }}>
-              
-                <div className="about-image-main about-image-left p-3" style={{backgroundImage:`url(${AboutVector})`,backgroundRepeat:'no-repeat'}}>
-                  <img
-                    src={AboutOne}
-                    className="image-vector-clip"
-                    height="100%"
-                    width="100%"
-                    alt="About One"
-                  />
-                </div>
-              
-              <div className="about-image-main about-image-right p-3" style={{backgroundImage:`url(${AboutVector})`,backgroundRepeat:'no-repeat'}}>
+    <div className="">
+      <div className="row gy-4 gy-lg-0 align-items-lg-center">
+        <div className="col-12 col-lg-6">
+          <div className="row d-flex justify-content-center align-items-center">
+            <div className=" image-container">
+              <div
+                className="about-image-main about-image-left "
+                style={{
+                  backgroundImage: `url(${AboutVector})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                }}
+              >
+                <img
+                  src={AboutOne}
+                  className="image-vector-clip"
+                  height="100%"
+                  width="100%"
+                  alt="About One"
+                />
+              </div>
+
+              <div
+                className="about-image-main about-image-right "
+                style={{
+                  backgroundImage: `url(${AboutVector})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                }}
+              >
                 <img
                   src={AboutTwo}
-                  
                   className="image-vector-clip  "
-                  height='100%'
+                  height="100%"
                   width="100%"
-                  style={{objectFit: "cover"}}
+                  style={{ objectFit: "cover" }}
                   alt="About Two"
                 />
               </div>
             </div>
-         
+          </div>
         </div>
-      </div>
-      <div className="col-lg-6 mt-3 ">
-        <div className="row d-flex justify-content-center align-items-center">
-          <div className="col-12">
-            <div className="row MarginBottomText1">
-              <div className="col-12 text-center text-lg-start ">
-                <h1 className="heading_primary">About Augmented</h1>
-              </div>
-            </div>
-            <div className="row MarginBottomText1">
-              <div className="col-12 text-center text-lg-start">
-                <p className="text_primary">
+        <div className="col-12 col-lg-6 col-xxl-6">
+          <div className="row justify-content-lg-end">
+            <div className="col-12 col-lg-11 text-md-start text-center">
+              <div className="about-wrapper">
+                <h2 className="">About Augmented</h2>
+                <p className="lead mb-4 mb-md-5">
+                  {" "}
                   We are a specialized software company at the forefront of
                   augmented reality (AR) technology, With a passion for
                   innovation and a deep understanding of the power of AR, we are
                   dedicated to creating exceptional digital{" "}
                 </p>
-              </div>
-            </div>
-            <div
-              className="row  d-flex justify-content-center justify-content-lg-start"
-              style={{}}
-            >
-              <div
-                className="col-3 col-lg-3 text-center text-lg-start"
-                style={{ minWidth: "250px" }}
-              >
-                <Button
-                  name="Read More"
-                  Height="75px"
-                  FontStylte="heading_fifth_1"
-                />
               </div>
             </div>
           </div>

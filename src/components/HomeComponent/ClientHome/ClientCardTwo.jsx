@@ -25,7 +25,7 @@ const ClientCardTwo = () => {
         style={{ display: "flex", justifyContent: "center" }}
       >
         <div className="col-auto">
-          <h1 className="heading_primary">What our clients say</h1>
+          <h2 className="">What our clients say</h2>
         </div>
       </div>
       <div
@@ -33,7 +33,7 @@ const ClientCardTwo = () => {
         style={{ display: "flex", justifyContent: "center" }}
       >
         <div className="col-auto">
-          <p className="text_primary">
+          <p className="">
             See what our customer say about us. It really matters for us. How
             good or bad we will make it for evaluation to make EhyalLive better.
           </p>
@@ -49,16 +49,18 @@ const ClientCardTwo = () => {
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
             }}
-            style={{display:'flex',justifyContent:'center',alignItems:'center'}}
-            spaceBetween={50} // Spacing between slides
+            s
+            style={{display:'flex',justifyContent:'center',alignItems:'center',opacity:'1'}}
+            spaceBetween={20} // Spacing between slides
             slidesPerView={2} // Number of slides visible at once
             loop={true} // Loop the slides
             autoplay={{ delay: 3000 }} // Automatically move to next slide every 3 seconds
             breakpoints={{
-              768: { slidesPerView: 1 }, // Show 1 slide on tablet and larger screens
-              1024: { slidesPerView: 2 }, // Show 2 slides on desktop and larger screens
+              300:{slidesPerView: 1},
+              768: { slidesPerView: 2 }, // Show 1 slide on tablet and larger screens
+              1400: { slidesPerView: 3 }, // Show 2 slides on desktop and larger screens
             }}
-            className="mySwiper"
+            className=""
           >
             <SwiperSlide >
               <ClientTwoCard

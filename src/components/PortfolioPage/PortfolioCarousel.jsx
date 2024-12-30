@@ -96,12 +96,12 @@ const PortfolioCarousel = () => {
         disableOnInteraction: false,
       }}
       breakpoints={{
-        768: {
+        1200: {
           slidesPerView: 4, // Show slides on both sides for larger screens
           spaceBetween: 5,
         },
         576: {
-          slidesPerView: 1, // Single slide for smaller screens
+          slidesPerView: 2, // Single slide for smaller screens
           spaceBetween: 10,
         },
       }}

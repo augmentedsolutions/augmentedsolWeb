@@ -7,10 +7,58 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  background-color: rgb(1, 1, 1);
+  
+
+  background: linear-gradient(180deg, #010208 16.39%, #010206 20.51%, #040008 24.79%, #010101 30.46%, #010101 34.11%, #010101 36.21%, #010101 100%);
+
 }
 
 :root {
+  /* font size /2.1715  for paragraph size*/
+   /* for line height of paragraph font/1.389 */
+  --font-h1: 3.343rem;
+  --font-lg-h1: 2rem;
+  --font-larger-text: 1.313rem;
+  --font-lg-larger-text: 0.7rem;
+  
+  --font-h2: 3rem;
+  --font-lg-h2: 1.5rem;
+  --font-paragraph: 1.7rem;
+  --font-lg-paragraph: 1.2rem;
+  
+  --font-h3: 1.5rem;
+  --font-h4: 20.8px;
+  --font-h5: 2rem;
+  --font-h6: 1.5rem;
+  --font-smaller-text: 1.063;
+  
+  --line-h1: 2rem;            /* Line Height for H1 */
+  --line-h2: 3.2rem; 
+  --line-lg-h2: 2rem;            /* Line Height for H2 */
+  --line-h3: 2rem;            /* Line Height for H3 */
+  --line-h4: 1.8rem;            /* Line Height for H4 */
+  --line-h5: 1.2rem;            /* Line Height for H5 */
+  --line-h6: 0.6rem;            /* Line Height for H6 */
+  --line-paragraph: 2.6rem;     /* Line Height for Paragraph */
+  --line-lg-paragraph: 1.5rem;     /* Line Height for Paragraph */
+  --line-larger-text: 2.5rem;   /* Line Height for Larger Text */
+  --line-lg-larger-text: 0.8rem;   /* Line Height for Larger Text */
+  --line-smaller-text: 2.3rem;  /* Line Height for Smaller Text */
+
+  --spacing-h1: 0.05rem;        /* Letter Spacing for H1 */
+  --spacing-h2: 0.05rem;        /* Letter Spacing for H2 */
+  --spacing-h3: 0.03rem;        /* Letter Spacing for H3 */
+  --spacing-h4: 0.02rem;        /* Letter Spacing for H4 */
+  --spacing-h5: 0.02rem;        /* Letter Spacing for H5 */
+  --spacing-h6: 0.02rem;        /* Letter Spacing for H6 */
+  --spacing-paragraph: 0;       /* Letter Spacing for Paragraph */
+  --spacing-larger-text: 0.03rem;/* Letter Spacing for Larger Text */
+  --spacing-smaller-text: 0;    /* Letter Spacing for Smaller Text */
+
+
+
+
+
   /* Font Family */
   --font_family_orbitron: "Orbitron", serif;
   --font_family_poppins: "Poppins", serif;
@@ -66,13 +114,14 @@ body {
 
 
   /* font size 64 px */
-  --font_size_3_343: 3.343rem;
+  --font_size_3_343: 4.343rem;
+
 
   /* font size 48 px */
-  --font_size_2_87:2.87rem;
+  --font_size_2_87:3.87rem;
    
    /* font size 32 px */
-   --font_size_1_313:1.313rem;
+   --font_size_1_313:1.937rem;
 
   /* font size 24 px */
   --font_size_1_5:1.875rem;
@@ -81,7 +130,8 @@ body {
    --font_size_1_2_5:1.25rem;
 
    /* font size 16 px */
-   --font_size_1:1rem;
+   --font_size_1_67:1.167rem;
+   --font_size_lg_1_67:0.5rem;
 
    /* font size 20 px */
    --font_size_body_1_25:1.25rem;
@@ -138,6 +188,8 @@ body {
   --btn_text_line_height: 28.01px;
   --Line_height_28_92: 28.92px;
   --Line_height_68_08: 68.08px;
+  --Line_height_22_6: 22.6px;
+  --Line_height_lg_22_6: 2px;
   --line_height_25: 25px;
   --line_height_27: 27.36px;
   --line_height_2: 24px;
@@ -146,6 +198,7 @@ body {
   --line_height_33: 33px;
   --line_height_32: 32px;
   --line_height_30: 30px;
+  --line_height_31_37: 31.37px;
   --line_height_42: 42.76px;
   --line_height_29: 29.74px;
   --line_height_17_29: 17.29px;
@@ -161,6 +214,81 @@ body {
   --leter_spacing_0_2_rem: -0.02em;
   --leter_spacing_0_4_rem: -0.04em;
 }
+
+
+h1 {
+  font-size: var(--font-h1);
+  line-height: var(--line-h1);
+  letter-spacing: var(--spacing-h1);
+  font-family: var(--font_family_orbitron);
+  color: var(--btn_text_color);
+}
+
+h2 {
+  font-size: var(--font-h2);
+  line-height: var(--line-h2);
+  letter-spacing: var(--spacing-h2);
+  font-family: var(--font_family_orbitron);
+  color: var(--btn_text_color);
+}
+
+h3 {
+  font-size: var(--font-h3);
+  line-height: var(--line-h3);
+  letter-spacing: var(--spacing-h3);
+  font-family: var(--font_family_poppins);
+  color: var(--btn_text_color);
+}
+
+h4 {
+  font-size: var(--font-h4);
+  line-height: var(--line-h4);
+  letter-spacing: var(--spacing-h4);
+  font-family: var(--font_family_poppins);
+  color: var(--btn_text_color);
+}
+
+h5 {
+  font-size: var(--font-h5);
+  line-height: var(--line-h5);
+  letter-spacing: var(--spacing-h5);
+  font-family: var(--font_family_poppins);
+  color: var(--btn_text_color);
+}
+
+h6 {
+  font-size: var(--font-h6);
+  line-height: var(--line-h6);
+  letter-spacing: var(--spacing-h6);
+}
+
+p {
+  font-size: var(--font-paragraph);
+  line-height: var(--line-paragraph);
+  letter-spacing: var(--spacing-paragraph);
+  font-family: var(--font_family_poppins);
+  color: var(--btn_text_color);
+}
+
+.larger-text {
+  font-size: var(--font-larger-text);
+  line-height: var(--line-larger-text);
+  letter-spacing: var(--spacing-larger-text);
+  font-family: var(--font_family_poppins);
+  color: var(--btn_text_color);
+}
+
+.smaller-text {
+  font-size: var(--font-smaller-text);
+  line-height: var(--line-smaller-text);
+  letter-spacing: var(--spacing-smaller-text);
+  font-family: var(--font_family_poppins);
+  color: var(--btn_text_color);
+}
+
+
+
+
 
 .btn_text {
   color: var(--btn_text_color);
@@ -199,9 +327,9 @@ body {
 }
 .heading_fifth_1 {
   font-family: var(--font_family_poppins);
-  font-size: var(--font_size_1);
+  font-size: var(--font_size_1_67);
   font-weight: var(--font_wight_primary);
-  line-height: var(--line_height_17_29);
+  line-height: var(--Line_height_22_6);
   color: var(--btn_text_color);
 }
 .heading_sixth_1 {
@@ -215,13 +343,14 @@ body {
   font-size: var(--font_family_poppins);
   font-weight: var(--font_wight_400);
   font-size: var(--font_size_1_313);
-  line-height: var(--line_height_30);
+  line-height: var(--line_height_31_37);
   color: var(--btn_text_color);
+  letter-spacing: 4%;
 }
 .text_primary_2 {
   font-size: var(--font_family_orbitron);
   font-weight: var(--font_wight_400);
-  font-size: var(--font_size_2);
+  font-size: 2rem;
   line-height: var(--line_height_33);
   color: var(--btn_text_color);
 }
@@ -461,7 +590,8 @@ body {
 }
 
 .background_gradient_one {
-  background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #AA14F0 -42.58%, rgba(170, 20, 240, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(185, 54, 245, 0) 100%);
+  background:var(--background_gradient_one);
+  /* opacity: 1; */
 
 }
 .background_Input_Client {
@@ -590,7 +720,16 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
       .MarginBottomText1{
         margin-bottom: 30px;
       }
-
+      h1 {
+        font-size: var(--font-lg-h1);
+        line-height: var(--line-h1);
+        letter-spacing: var(--spacing-h1);
+        font-family: var(--font_family_orbitron);
+        color: var(--btn_text_color);
+      }
+      .PaddingAllContainer{
+        padding: 30px 30px 30px 30px;
+      }
 }
 
 /* For screens between 768px and 991px */
@@ -613,16 +752,26 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
       .MarginBottomText1{
         margin-bottom: 20px;
       }
+      h1 {
+        font-size: var(--font-lg-h1);
+        line-height: var(--line-h1);
+        letter-spacing: var(--spacing-h1);
+        font-family: var(--font_family_orbitron);
+        color: var(--btn_text_color);
+      }
+      .PaddingAllContainer{
+        padding: 20px 20px 20px 20px;
+      }
 }
 
 /* For screens smaller than 768px */
 @media (max-width: 767px) {
   .Container {
-      margin: 0px 20px 0px 20px;
+      margin: 0px 5px 0px 5px;
       /* background-color: lightyellow;  */
   }
   .MarginContainer{
-    margin: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
   }
   .MarginTopContainer{
     margin-top: 10px;
@@ -633,7 +782,63 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
   .MarginBottomText1{
     margin-bottom: 10px;
   }
+
+  .PaddingAllContainer{
+    padding: 5px 5px 5px 5px;
+  }
+  h1 {
+    font-size: var(--font-lg-h1);
+    line-height: var(--line-h1);
+    letter-spacing: var(--spacing-h1);
+    font-family: var(--font_family_orbitron);
+    color: var(--btn_text_color);
+  }
+
 }
+
+@media (min-width: 299px) and (max-width: 600px) {
+
+      h1 {
+        font-size: var(--font-lg-h1);
+        line-height: var(--line-h1);
+        letter-spacing: var(--spacing-h1);
+        font-family: var(--font_family_orbitron);
+        color: var(--btn_text_color);
+      }
+      h2 {
+        font-size: var(--font-lg-h2);
+        line-height: var(--line-lg-h2);
+        letter-spacing: var(--spacing-h2);
+        font-family: var(--font_family_orbitron);
+        color: var(--btn_text_color);
+      }
+      p {
+        font-size: var(--font-lg-paragraph);
+        line-height: var(--line-lg-paragraph);
+        letter-spacing: var(--spacing-paragraph);
+        font-family: var(--font_family_poppins);
+        color: var(--btn_text_color);
+      }
+      
+      .MarginBottomText1{
+        margin-bottom: 5px;
+      }
+      .larger-text {
+        font-size: var(--font-lg-larger-text);
+        line-height: var(--line-lg-larger-text);
+        letter-spacing: var(--spacing-larger-text);
+        font-family: var(--font_family_poppins);
+        color: var(--btn_text_color);
+      }
+      .heading_fifth_1 {
+        font-family: var(--font_family_poppins);
+        font-size: var(--font_size_lg_1_67);
+        font-weight: var(--font_wight_primary);
+        line-height: var(--Line_height_lg_22_6);
+        color: var(--btn_text_color);
+      }
+}
+
 
 .Border{
   border: 3px solid green;

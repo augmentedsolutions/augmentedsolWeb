@@ -3,7 +3,7 @@ import "../../../index.css";
 const ClientTwoCard = ({ Img, comment, name, email }) => {
   return (
     <div
-      className="col-12 background_gradient_third border_radius_one " 
+      className="col-12 background_gradient_one border_radius_one " 
       style={{ margin: "20px 20px 20px 20px", padding:'35px 15px 35px 15px' ,height:'215.83px'}}
     >
       <div className="row Flex">

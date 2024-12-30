@@ -8,9 +8,9 @@ import ServiceCard from "./ServiceCard";
 import "./Carousel.css";
 
 // Import images
-import AgmentServices1 from "../../../assets/Home/AgmentServices1.png";
-import AgmentServices2 from "../../../assets/Home/AgmentServices2.png";
-import AgmentServices3 from "../../../assets/Home/AgmentServices3.png";
+import AgmentServices1 from "../../../assets/Home/ServiceCard1.png";
+import AgmentServices2 from "../../../assets/Home/ServiceCard2.png";
+import AgmentServices3 from "../../../assets/Home/ServiceCard3.png";
 import Serviceprvious from "../../../assets/Home/Service prvious.png";
 import ServiceNext from "../../../assets/Home/ServiceNext.png";
 
@@ -48,14 +48,14 @@ const Carousel = () => {
           slideShadows: true,
         }}
         breakpoints={{
-          768: {
+          1200: {
             slidesPerView: 2,
             spaceBetween: 0,
           },
-          576: {
+          300: {
             slidesPerView: 1,
-            spaceBetween: -50,
-          },
+            spaceBetween: 0,
+          }
         }}
         modules={[EffectCoverflow, Navigation]}
         
@@ -65,7 +65,7 @@ const Carousel = () => {
       >
         {/* Carousel slides */}
         {slides.map((slide) => (
-          <SwiperSlide style={{display:'flex',justifyContent:'center',alignItems:'center'}} key={slide.id} className="swiper-slide">
+          <SwiperSlide className='row' style={{position:'relative', display:'flex',justifyContent:'center',alignItems:'center'}} key={slide.id} className="swiper-slide" >
             <ServiceCard image={slide.image} />
           </SwiperSlide>
         ))}

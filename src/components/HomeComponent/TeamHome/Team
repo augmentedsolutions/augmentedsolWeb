@@ -1,0 +1,87 @@
+{/* <div className="row  PaddingContainer">
+        <div
+          className="text-center text-lg-start MarginContainer col-lg-5 d-flex justify-content-center align-items-center"
+          style={{ position:'relative' }}
+        >
+          <div className="row d-flex justify-content-start align-items-center">
+            <div className="col-lg-10">
+              <div className="row MarginBottomText1">
+                <div className="col-12">
+                  <h2 className="">Augmented Team</h2>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-12">
+                  <p className="">
+                    Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel
+                    ut feugiat ut. Lorem ipsum dolor sit amet consectetur. Lorem
+                    urna dui vel ut feugiat ut.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-7 " style={{}}>
+         <TeamCarousal/>
+        </div>
+      </div>
+
+ */}
+
+ <div
+      className="row "
+      style={{
+        
+        display: "flex",
+        // justifyContent: "center",
+        // alignItems: "center",
+
+      }}
+    >
+      <div className="card-main col-12">
+        <div className="card-photo "
+         
+        >
+          <img
+            src={TeamImage}
+             width='auto'
+             height='400px'        
+          />
+        </div>
+        <div className="col-12 backgorundTeamCard my-3 py-3"  >
+          <div className="row">
+            <div className="col-12">
+
+           <h5 className="  text-center" style={{color:'white'}}>
+           Muh sanaullah
+           </h5>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12">
+           <h6 className="text_paragraph_secondary text-center">
+           CO- FOUNDER & PROJECT MANAGER
+           </h6>
+
+            </div>
+          </div>
+           <div className="row" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+            <div className="col-4">
+              <div className="row " style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+              <div className="col-auto">
+          <Logo logo={TeamLogo1} />
+
+</div>
+<div className="col-auto">
+
+          <Logo logo={TeamLogo2} />
+            </div>
+              </div>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+ 

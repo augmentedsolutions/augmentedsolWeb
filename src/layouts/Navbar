@@ -1,0 +1,146 @@
+<div
+className="NavbarMain navbar-expand-lg col-12 "
+style={{ zIndex: "4" }}
+>
+<div  className=" row d-flex justify-content-between align-items-center">
+  <div className="col-2 p-0 m-0">
+    <img
+      src={Logo}
+      // className="img-fluid"
+      height="auto"
+      width="100%"
+      alt="..."
+    />
+  </div>
+  <div onClick={()=>setVisible(!visible)} className="col-2 navbar-hamburger"
+     aria-expanded={visible}
+     aria-controls="navbar-menu"
+     >
+  <i class="fs-1 fa-solid fa-bars" style={{color:'white'}}></i>
+  </div>
+  <div className={`navbar-hamburger-tabs col-12 col-lg-10 ${visible?'navbar-hamburger-tabs-visible':'navbar-hamburger-tabs'} `} >
+    <div className="row d-flex justify-content-center align-items-center">
+    <div className="col-12 col-lg-9">
+     
+     <div className="row d-flex justify-content-center align-items-center">
+      <div className="col-lg-10">
+
+      
+      <div className="row d-flex justify-content-between align-items-center"   >
+        <div className="col-12 ">
+          <div className="row d-flex justify-content-between align-items-center">
+            <div className="col-12 text-center col-lg-auto">
+              <NavLink
+                to={"/"}
+                className="heading_fifth_1"
+                style={({ isActive }) => ({
+                  display: "inline-block", // Ensure the text takes up space for styling
+                  position: "relative", // For positioning the custom underline
+                  color: isActive
+                    ? "transparent" // Set the text color to transparent for gradient
+                    : "white", // Default color
+                  textDecoration: "none", // Disable the default underline
+                  background: isActive
+                    ? "linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%)" // Gradient when active
+                    : "none",
+                  backgroundClip: isActive ? "text" : "none", // Apply gradient to text
+                  WebkitBackgroundClip: isActive ? "text" : "none", // Webkit support for gradient text
+                  fontWeight: isActive ? "bold" : "normal", // Bold text when active
+                  padding: "10px", // Padding for spacing
+                })}
+                 onClick={handleMenuClose}
+                // style={{ textDecoration: "none" }}
+              >
+                Home
+              </NavLink>
+            </div>
+            <div className="col-12 text-center col-lg-auto">
+              <NavLink
+                to={"/service"}
+                className="heading_fifth_1"
+                style={({ isActive }) => ({
+                  display: "inline-block", // Ensure the text takes up space for styling
+                  position: "relative", // For positioning the custom underline
+                  color: isActive
+                    ? "transparent" // Set the text color to transparent for gradient
+                    : "white", // Default color
+                  textDecoration: "none", // Disable the default underline
+                  background: isActive
+                    ? "linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%)" // Gradient when active
+                    : "none",
+                  backgroundClip: isActive ? "text" : "none", // Apply gradient to text
+                  WebkitBackgroundClip: isActive ? "text" : "none", // Webkit support for gradient text
+                  fontWeight: isActive ? "bolder" : "normal", // Bold text when active
+                  padding: "10px", // Padding for spacing
+                })}
+                onClick={handleMenuClose}
+              >
+                Services
+              </NavLink>
+            </div>
+            <div className="col-12 text-center col-lg-auto">
+              <NavLink
+                to={"/portfolio"}
+                className="heading_fifth_1"
+                style={({ isActive }) => ({
+                  display: "inline-block", // Ensure the text takes up space for styling
+                  position: "relative", // For positioning the custom underline
+                  color: isActive
+                    ? "transparent" // Set the text color to transparent for gradient
+                    : "white", // Default color
+                  textDecoration: "none", // Disable the default underline
+                  background: isActive
+                    ? "linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%)" // Gradient when active
+                    : "none",
+                  backgroundClip: isActive ? "text" : "none", // Apply gradient to text
+                  WebkitBackgroundClip: isActive ? "text" : "none", // Webkit support for gradient text
+                  fontWeight: isActive ? "bold" : "normal", // Bold text when active
+                  padding: "10px", // Padding for spacing
+                })}
+                onClick={handleMenuClose}
+              >
+                Portfolio
+              </NavLink>
+            </div>
+            <div className="col-12 text-center col-lg-auto">
+              <NavLink
+                to={"/about"}
+                className="heading_fifth_1"
+                style={({ isActive }) => ({
+                  display: "inline-block", // Ensure the text takes up space for styling
+                  position: "relative", // For positioning the custom underline
+                  color: isActive
+                    ? "transparent" // Set the text color to transparent for gradient
+                    : "white", // Default color
+                  textDecoration: "none", // Disable the default underline
+                  background: isActive
+                    ? "linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%)" // Gradient when active
+                    : "none",
+                  backgroundClip: isActive ? "text" : "none", // Apply gradient to text
+                  WebkitBackgroundClip: isActive ? "text" : "none", // Webkit support for gradient text
+                  fontWeight: isActive ? "bold" : "normal", // Bold text when active
+                  padding: "10px", // Padding for spacing
+                })}
+                onClick={handleMenuClose}
+              >
+                About Us
+              </NavLink>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     </div>
+
+    </div>
+    <div
+      className="col-4 col-lg-1 text-end"
+      style={{ minWidth: "190px" }}
+      onClick={handleMenuClose}
+    >
+      <Button name="Contact Us" />
+    </div>
+    </div>
+  </div>
+</div>
+</div>

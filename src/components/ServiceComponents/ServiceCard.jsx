@@ -1,43 +1,49 @@
 import React from "react";
 import '../../index.css'
+import './ServiceCard.css'
 const ServiceCard = ({ img, text, paragraph }) => {
   return (
-    <div className="col-5 col-lg-4  mb-lg-5">
+    <div className="col-12 col-sm-10  col-lg-5 col-xl-4 mb-4  ">
+      <div className="row" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+          <div className="col-11">
+
       <div className="row " style={{display:"flex",
             alignItems:'end',
             justifyContent:'center'}}>
         <div
-          className="col-11"
+          className="card p-0 ServiceCardHome-img text-dark card-has-bg click-col"
           style={{
-            border: '0.93px solid rgba(228, 229, 231, 0.7)',
-            height: "580px",
+            // border: '0.93px solid rgba(228, 229, 231, 0.7)',
+            height: "480px",
             backgroundImage: `url(${img})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            display:"flex",
-            minWidth:'380px',
+            // display:"flex",
+            minWidth:'250px',
+            
+             display:"flex",
             alignItems:'end',
-            justifyContent:'center'
+            justifyContent:'end'
           }}
         >
-          <div className="row backgroundServiceCard">
-            <div className="col-12">
-              <div className="row">
-                <div className="col-12">
-                  <div className="row">
-                    <div className="col-12 text-center">
-                      <h1 className="heading_tertiary">{text}</h1>
-                    </div>
-                    <div className="col-12 text-center">
-                      <p className="text_sixth">{paragraph}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+<div class="card-footer backgroundServiceCard " >
+           <div class="media">
+  
+  <div class="media-body">
+    <h2 class="my-0  d-block" style={{fontSize:'23.72px',textDecoration:'underline',color:'white'}}>{text}</h2>
+     <p className="smaller-text" style={{fontSize:'15.37px',lineHeight:"25px"}}>{paragraph}</p>
+  </div>
+</div>
+          </div> 
+       
         </div>
       </div>
+
+          </div>
+          </div>
+
+
     </div>
   );
 };

@@ -1,60 +1,38 @@
 import React from "react";
 import "../../../index.css";
 import ServiceImage from "../../../assets/Home/Service Bacground.png";
-
+import "./ServiceCard.css";
 const ServiceCard = ({ image }) => {
   return (
-    <div
-      className="service-card"
-      style={{
-        position: "relative",
-        height: "auto",
-        width: "auto",
-      }}
-    >
-      {/* Main Image */}
-      <img
-        src={image}
-        alt="Service"
-        style={{
-          height: '500px',
-          width: "auto",
-          objectFit: "cover",
-          position: "relative",
-        }}
-      />
-
-      {/* Text Overlay */}
-      <div className="row p-0 m-0 " style={{ position: "absolute",
-        // padding:'20px 50px 20px 50px',
-          
-          left:'0%'
-          ,bottom:'0%'}}>
-        <div className="col-8 p-0 m-0" style={{
+    <div className="col-10 col-md-9 m-0 p-0" style={{}}> 
+      <div class="row card m-0 p-0 ">
+        <img
+          src={image}
+          class="card-img ServiceCardImg p-0 m-0"
+          alt="Stony Beach"
          
+          width='auto'
           
-         backgroundImage: `url(${ServiceImage})`,
+          style={{borderRadius:'9px',
+           
+            border: '0.93px solid rgba(228, 229, 231, 0.7)'
+            
+            }}
+        />
+        <div class="p-3 col-7 "  style={{position:"absolute",bottom:"0px",
+          backgroundImage: `url(${ServiceImage})`,
          backgroundSize: "cover",
-         
+         height:'auto',
+         borderBottomLeftRadius:'15px'
          // padding: "10px",
-       }} >
-
-      <div
-        
-        className="text-overlay"
-        style={{margin:'20px 50px 20px 50px',}}
-      >
-        <p
-          className="text_secondary"
-          style={{ textDecoration: "underline", margin: 0 }}
-          >
-          Web Development
-        </p>
-        <p className="text_paragraph" style={{ margin: 0 }}>
-          A Network of 3D virtual worlds focused on social connection.
-        </p>
-          </div>
-      </div>
+        }}>
+          <h2 class="card-title" style={{fontSize:'35px'}} >Card title</h2>
+          <p class="card-text" style={{fontSize:'20px',lineHeight:'25px'}}>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          
+        </div>
       </div>
     </div>
   );

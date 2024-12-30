@@ -1,5 +1,12 @@
-@import url('../../index.css');
+.Btn-common{
+height: 7vh;
 
-.btn_link{
-    background-color: var(--background_color_btn);
+}
+
+@media (min-width: 299px) and (max-width: 991px) {
+    .Btn-common{
+        height: 3.5vh;
+        
+        }
+    
 }

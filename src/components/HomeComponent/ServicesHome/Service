@@ -1,0 +1,94 @@
+<div className="col-12 col-lg-4  mb-lg-5">
+      <div className="row " style={{display:"flex",
+            alignItems:'end',
+            justifyContent:'center'}}>
+        <div
+          className="col-11"
+          style={{
+            border: '0.93px solid rgba(228, 229, 231, 0.7)',
+            height: "580px",
+            backgroundImage: `url(${img})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            display:"flex",
+            minWidth:'380px',
+            alignItems:'end',
+            justifyContent:'center'
+          }}
+        >
+          <div className="row backgroundServiceCard">
+            <div className="col-12">
+              <div className="row">
+                <div className="col-12">
+                  <div className="row">
+                    <div className="col-12 text-center">
+                      <h1 className="heading_tertiary">{text}</h1>
+                    </div>
+                    <div className="col-12 text-center">
+                      <p className="text_sixth">{paragraph}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div
+      className="service-card col-2 col-md-12"
+      style={{
+        position: "relative",
+        height: "auto",
+        width: "auto",
+        
+      }}
+    >
+      {/* Main Image */}
+      <img
+      className="ServiceCardImg"
+        src={image}
+        alt="Service"
+        style={{
+          
+          width: "auto",
+          objectFit: "cover",
+          position: "relative",
+        }}
+      />
+
+      {/* Text Overlay */}
+      <div className="row p-0 m-0 " style={{ position: "absolute",
+        // padding:'20px 50px 20px 50px',
+          
+          left:'0%'
+          ,bottom:'0%'}}>
+        <div className="col-8 p-0 m-0" style={{
+         
+          
+         backgroundImage: `url(${ServiceImage})`,
+         backgroundSize: "cover",
+         
+         // padding: "10px",
+       }} >
+
+      <div
+        
+        className="text-overlay"
+        style={{margin:'20px 50px 20px 50px',}}
+      >
+        <p
+          className=""
+          style={{ textDecoration: "underline", margin: 0 }}
+          >
+          Web Development
+        </p>
+        <p className="" style={{ margin: 0 }}>
+          A Network of 3D virtual worlds focused on social connection.
+        </p>
+          </div>
+      </div>
+      </div>
+    </div>

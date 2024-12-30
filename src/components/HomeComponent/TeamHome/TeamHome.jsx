@@ -5,32 +5,24 @@ import TeamCarousal from "./TeamCarousal";
 const TeamHome = () => {
   return (
     <>
-      <div className="row  PaddingContainer">
+      <div className="">
         <div
-          className="text-center text-lg-start MarginContainer col-lg-5 d-flex justify-content-center align-items-center"
-          style={{ position:'relative' }}
+          className="row gy-4 gy-lg-0 align-items-lg-center"
+          style={{ position: "relative" }}
         >
-          <div className="row d-flex justify-content-start align-items-center">
-            <div className="col-lg-10">
-              <div className="row MarginBottomText1">
-                <div className="col-12">
-                  <h1 className="heading_primary">Augmented Team</h1>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-12">
-                  <p className="text_primary">
-                    Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel
-                    ut feugiat ut. Lorem ipsum dolor sit amet consectetur. Lorem
-                    urna dui vel ut feugiat ut.
-                  </p>
-                </div>
-              </div>
+          <div className="col-12 col-lg-5 text-lg-start text-center">
+            <div className="about-wrapper">
+              <h2 className="">Augmented Team</h2>
+              <p className="lead mb-4 mb-md-5">
+                Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel ut
+                feugiat ut. Lorem ipsum dolor sit amet consectetur. Lorem urna
+                dui vel ut feugiat ut.
+              </p>
             </div>
           </div>
-        </div>
-        <div className="col-lg-7 " style={{}}>
-         <TeamCarousal/>
+          <div className="col-12 col-lg-7 ">
+            <TeamCarousal />
+          </div>
         </div>
       </div>
     </>

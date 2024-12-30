@@ -11,7 +11,7 @@ const ServicesHome = () => {
     <>
       <div className="row PaddingContainer">
         <div className="col-12 text-center">
-          <h1 className="heading_primary">Augmented Services</h1>
+          <h2 className="">Augmented Services</h2>
         </div>
       </div>
       <div className="row ">

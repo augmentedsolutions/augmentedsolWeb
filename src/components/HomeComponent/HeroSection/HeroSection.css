@@ -35,4 +35,14 @@
   .containerHover:hover .text3{
     left: 0px; /* Move into visible position */
   }
-  
+  .HeroSectionText{
+    position: absolute;
+    top:10%;
+  }
+  @media (min-width: 299px) and (max-width: 450px) {
+
+    .HeroSectionText{
+      position: absolute;
+      top:1px;
+    }
+}

@@ -1,4 +1,25 @@
 .card{
-    height: 300px;
-    width: 100%;
+   
+    background-color:transparent !important;
+}
+.TeamCardText1{
+    font-size: 27px;
+}
+.TeamCardText2{
+    font-size: 15px;
+}
+
+@media (min-width: 299px) and (max-width: 991px) {
+    .ServiceCardImg{
+        height: 400px;
+        min-width: 230px;
+     }
+     .TeamCardText1{
+        font-size: 24px;
+    }
+    .TeamCardText2{
+        font-size: 16px;
+    }
+    
+    
 }

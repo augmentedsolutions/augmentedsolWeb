@@ -1,9 +1,4 @@
-import React from "react";
-import "./HeroSection.css";
-import "../../index.css";
-const HeroSectionService = ({ img, text1, text2 }) => {
-  return (
-    <div className="row">
+<div className="row">
       <div
         className="col-12 containerHover"
         style={{
@@ -50,7 +45,3 @@ const HeroSectionService = ({ img, text1, text2 }) => {
         </div>
       </div>
     </div>
-  );
-};
-
-export default HeroSectionService;

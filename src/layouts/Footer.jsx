@@ -9,150 +9,126 @@ import ContactLogoleft3 from "../assets/Home/ContactLogoleft3.png";
 import ContactLogoright1 from "../assets/Home/ContactLogoRight1.png";
 import ContactLogoright2 from "../assets/Home/ContactLogoRight2.png";
 import ContactLogoright3 from "../assets/Home/ContactLogoRight3.png";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    
-      <div
-        className="row Container MarginTopContainer "
-        style={{ position: "relative" }}
-      >
-        <div className=" my-lg-0 col-lg-4 MarginTopContainer">
-          <div className="row MarginInnerBottomContainer ">
-            <div className="col-12">
+    <div
+      className="row Container MarginTopContainer "
+      style={{ position: "relative" }}
+    >
+      <footer style={{}}>
+        <div className=" p-4">
+          <div className="row">
+            <div className="col-lg-6 col-md-12 mb-4">
               <img src={LogoImg} />
-            </div>
-          </div>
-
-          <div className="row ">
-            <div className="col-12 text_secondary_2">
               <p>
-                A the core of our company is a passion for the transformative
+                At the core of our company is a passion for the transformative
                 power of augmented reality (AR) and virtual reality (VR).
               </p>
-            </div>
-          </div>
-
-          <div className="row MarginTopContentContainer">
-            <div className="col-auto">
-              <Logo logo={ContactLogoleft1} />
-            </div>
-            <div className="col-auto">
-              <Logo logo={ContactLogoleft2} />
-            </div>
-            <div className="col-auto">
-              <Logo logo={ContactLogoleft3} />
-            </div>
-          </div>
-        </div>
-        <div className="col-auto col-lg-4 MarginTopContainer text-center text-lg-start">
-          <div className="row d-flex justify-content-center text-center text-lg-start">
-            <div className=" col-lg-auto ">
-              <p className=" heading_secondary MarginInnerBottomContainer">
-                Company
-              </p>
-              <div className="">
-                <p className=" heading_forth text-start ">About Us</p>
-                <p className=" heading_forth MarginTopContentContainer text-start  ">
-                  Services
-                </p>
-                <p className=" heading_forth MarginTopContentContainer text-start ">
-                  Products
-                </p>
-                <p className=" heading_forth MarginTopContentContainer text-start ">
-                  Contact US
-                </p>
-                <p className=" heading_forth MarginTopContentContainer text-start ">
-                  Privacy Policy
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-12 MarginTopContainer col-lg-4">
-          <div className="row">
-            <div className="col-12 MarginInnerBottomContainer">
-              <p className="text-start heading_secondary ">Contact Us</p>
-            </div>
-            <div className="col-12 ">
-              <div className="row">
-                <div className="col-12">
-                  <div className="row ">
-                    <div className="col-auto">
-                      <Logo logo={ContactLogoright1} />
-                    </div>
-                    <div className="col-auto">
-                      <p className="heading_forth">augmentedsol@gmail.com</p>
-                    </div>
-                  </div>
+              <div className="row MarginTopContentContainer">
+                <div className="col-auto">
+                  <Logo logo={ContactLogoleft1} />
                 </div>
-                <div className="col-12 MarginTopContentContainer">
-                  <div className="row  " > 
-                    <div className="col-auto">
-                      <Logo logo={ContactLogoright2} />
-                    </div>
-                    <div className="p-0 m-0 col-auto heading_forth " style={{height:'flex',justifyContent:'center',alignItems:'center'}}>
-                      +92 308 4846218
-                    </div>
-                    
-                  </div>
+                <div className="col-auto">
+                  <Logo logo={ContactLogoleft2} />
                 </div>
-                <div className="col-12  MarginTopContentContainer">
-                  <div className="row">
-                    <div className="col-auto">
-                      <Logo logo={ContactLogoright3} />
-                    </div>
-                    <div className=" col-10 text-wrap" style={{height:"60px"}}>
-                      <span
-                        className="heading_forth"
-                        style={{ wordWrap: "break-word", }}
-                      >
-                        337 G Block Rehmanpura 
-                      </span>
-                      <span
-                        className="heading_forth"
-                        style={{ wordWrap: "break-word", }}
-                      >
-                        Muslim Town Lahore.
-                      </span>
-                    
-                    </div>
-
-
-                    
-                  </div>
+                <div className="col-auto">
+                  <Logo logo={ContactLogoleft3} />
                 </div>
               </div>
             </div>
+            <div className="col-lg-3 col-md-6 mb-5">
+              <h5 className="mb-3 shopping-online-heading">Company</h5>
+              <ul className="list-unstyled mb-0 ">
+                <li className="mb-1">
+                  <h4 href="#!" className="shopping-online-link">
+                    About Us
+                  </h4>
+                </li>
+                <li className="mb-1">
+                  <h4 href="#!" className="shopping-online-link">
+                    Services
+                  </h4>
+                </li>
+                <li className="mb-1">
+                  <h4 href="#!" className="shopping-online-link">
+                    Products
+                  </h4>
+                </li>
+                <li>
+                  <h4 href="#!" className="shopping-online-link">
+                    Contact Us
+                  </h4>
+                </li>
+                <li>
+                  <h4 href="#!" className="shopping-online-link">
+                    Privacy Policy
+                  </h4>
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h5 className="mb-3 shopping-online-heading">Contact Us</h5>
+              <ul className="list-unstyled mb-0">
+                <li className="mb-1">
+                  <h4 href="#!" className="shopping-online-link">
+                    frequently asked questions
+                  </h4>
+                </li>
+                <li className="mb-1">
+                  <h4 href="#!" className="shopping-online-link">
+                    delivery
+                  </h4>
+                </li>
+                <li className="mb-1">
+                  <h4 href="#!" className="shopping-online-link">
+                    pricing
+                  </h4>
+                </li>
+                <li>
+                  <h4 href="#!" className="shopping-online-link">
+                    where we deliver?
+                  </h4>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        {/* <div
+          className="text-center p-3"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+        >
+          © 2020 Copyright:
+          <a className="text-dark" href="https://mdbootstrap.com/">
+            MDBootstrap.com
+          </a>
+        </div> */}
+      </footer>
 
-        <div
-          className="gradient_radial"
-          style={{
-            height: "950px",
-            width: "950px",
-            position: "absolute",
-            top: "-200px",
-            right: "-400px",
-            // backgroundColor:"red"
-          }}
-          ></div> 
+      <div
+        className="gradient_radial"
+        style={{
+          height: "950px",
+          width: "950px",
+          position: "absolute",
+          top: "-200px",
+          right: "-400px",
+          // backgroundColor:"red"
+        }}
+      ></div>
 
-<div
-          className="gradient_radial"
-          style={{
-            height: "950px",
-            width: "950px",
-            position: "absolute",
-            top: "-200px",
-            left: "-400px",
-            // backgroundColor:"red"
-          }}
-          ></div> 
-
-
-      </div>
-    
+      <div
+        className="gradient_radial"
+        style={{
+          height: "950px",
+          width: "950px",
+          position: "absolute",
+          top: "-200px",
+          left: "-400px",
+          // backgroundColor:"red"
+        }}
+      ></div>
+    </div>
   );
 };
 
