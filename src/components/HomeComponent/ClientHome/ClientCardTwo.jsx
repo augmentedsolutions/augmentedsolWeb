@@ -23,7 +23,7 @@ const ClientCardTwo = () => {
     
  <div class="row">
       <div class="col text-center mb-1 md-sm-5 md-md-5 mb-lg-5">
-         <h1 class="display-4 font-weight-bolder">What our clients say</h1>
+         <h1 class="display-4 font-weight-bolder MarginBottomContentContainer">What our clients say</h1>
   <p class="lead">See what our customer say about us. It really matters for us. How
   good or bad we will make it for evaluation to make EhyalLive better.</p>
       </div>

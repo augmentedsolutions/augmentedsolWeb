@@ -54,7 +54,7 @@ const AboutHome = () => {
           <div className="row justify-content-lg-end">
             <div className="col-12 col-lg-11 text-md-start text-center">
               <div className="about-wrapper">
-                <h2 className="">About Augmented</h2>
+                <h2 className="MarginBottomContentContainer">About Augmented</h2>
                 <p className="lead mb-4 mb-md-5">
                   {" "}
                   We are a specialized software company at the forefront of

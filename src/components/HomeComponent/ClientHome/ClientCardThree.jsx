@@ -14,7 +14,7 @@ const ClientCardThree = () => {
               
             <div class="row">
       <div class="col text-start mb-1 md-sm-5 md-md-5 mb-lg-5">
-         <h1 class="display-4 font-weight-bolder">Explore product in new way
+         <h1 class="display-4 font-weight-bolder MarginBottomContentContainer">Explore product in new way
          <img className="ms-5" src={ClientIcon} /></h1>
   <p class="lead"> We specialize in creating visual identities for products and
   branda in your company.</p>

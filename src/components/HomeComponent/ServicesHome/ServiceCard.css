@@ -11,12 +11,12 @@
   min-width: 450px;
 }
 .HomeServiceCardText1 {
-  fontsize: 30px !important;
+  font-size: 30px !important;
   color: white;
 }
 .HomeServiceCardText2 {
-  fontsize: 20px;
-  lineheight: 25px;
+  font-size: 20px;
+  line-height: 25px;
 }
 @media (min-width: 299px) and (max-width: 991px) {
   .ServiceCardImg {
@@ -24,10 +24,10 @@
     min-width: 230px;
   }
   .HomeServiceCardText1 {
-   fontsize: 20px !important;
+   font-size: 22px !important;
  }
  .HomeServiceCardText2 {
-   fontsize: 10px !important;
-   lineheight: 25px !important;
+   font-size: 15px !important;
+   line-height: 25px !important;
  }
 }

@@ -19,7 +19,7 @@ const ServiceCard = ({ image }) => {
             
             }}
         />
-        <div class="p-3 col-7 "  style={{position:"absolute",bottom:"0px",
+        <div class="p-2 p-md-3  col-8 col-md-7 "  style={{position:"absolute",bottom:"0px",
           backgroundImage: `url(${ServiceImage})`,
          backgroundSize: "cover",
          height:'auto',
