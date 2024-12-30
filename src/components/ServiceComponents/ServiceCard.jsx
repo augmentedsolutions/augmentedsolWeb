@@ -31,8 +31,8 @@ const ServiceCard = ({ img, text, paragraph }) => {
            <div class="media">
   
   <div class="media-body">
-    <h2 class="my-0  d-block" style={{fontSize:'23.72px',textDecoration:'underline',color:'white'}}>{text}</h2>
-     <p className="smaller-text" style={{fontSize:'15.37px',lineHeight:"25px"}}>{paragraph}</p>
+    <h2 class="  d-block ServiceTabText1 MarginBottomContentContainer" style={{}}>{text}</h2>
+     <p className="smaller-text ServiceTabText2" style={{}}>{paragraph}</p>
   </div>
 </div>
           </div> 

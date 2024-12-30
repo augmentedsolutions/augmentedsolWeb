@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import "../index.css";
 import logo from "../assets/Home/Logo.png";
+
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
 
@@ -34,33 +35,37 @@ const Navbar = () => {
     <div className="Container">
       <div className="Navbar row " style={{ position: "relative" }}>
         {/* Navbar */}
-        <nav className="navbar navbar-expand-lg navbar-scroll  shadow-0  border-dark">
+        <nav className="navbar navbar-expand-lg navbar-scroll shadow-0 border-dark">
           <div className="container-fluid">
-            <a className="navbar-brand NavbarLogo" style={{}} href="#!">
+            <a className="navbar-brand NavbarLogo" href="#!">
               <img
                 src={logo}
-                // className="img-fluid"
                 height="100%"
                 width="auto"
                 alt="..."
               />
             </a>
-            
+
             <button
-              class="navbar-toggler"
-              style={{ color: "white" }}
+              className="navbar-toggler"
               type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#navbarSupportedContent"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              style={{ color: 'white' }}
             >
-              <i class="fas fa-bars"></i>
+              <span className="navbar-toggler-icon">
+                <i className="fas fa-bars"></i>
+              </span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav mx-auto ">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav mx-auto">
                 <li className="nav-item px-lg-2 px-xl-4 px-md-3">
                   <NavLink
                     to={"/"}
@@ -69,6 +74,7 @@ const Navbar = () => {
                         ? "nav-link nav-link-active"
                         : "nav-link nav-link-inactive"
                     }
+                    onClick={handleMenuClose} // Close the menu
                   >
                     Home
                   </NavLink>
@@ -81,6 +87,7 @@ const Navbar = () => {
                         ? "nav-link nav-link-active"
                         : "nav-link nav-link-inactive"
                     }
+                    onClick={handleMenuClose} // Close the menu
                   >
                     Services
                   </NavLink>
@@ -93,6 +100,7 @@ const Navbar = () => {
                         ? "nav-link nav-link-active"
                         : "nav-link nav-link-inactive"
                     }
+                    onClick={handleMenuClose} // Close the menu
                   >
                     Portfolio
                   </NavLink>
@@ -105,6 +113,7 @@ const Navbar = () => {
                         ? "nav-link nav-link-active"
                         : "nav-link nav-link-inactive"
                     }
+                    onClick={handleMenuClose} // Close the menu
                   >
                     About
                   </NavLink>
@@ -112,7 +121,7 @@ const Navbar = () => {
               </ul>
               <button
                 type="button"
-                className="btn  ms-3"
+                className="btn ms-3"
                 style={{
                   background: "var(--background_color_btn)",
                   color: "white",
@@ -120,12 +129,13 @@ const Navbar = () => {
                   width: "152px",
                 }}
               >
-                 <NavLink
-                    to={"/contact"}
-                     style={{textDecoration:'none',color:'white'}}
-                  >
-                    Contact Us
-                  </NavLink>
+                <NavLink
+                  to={"/contact"}
+                  style={{ textDecoration: "none", color: "white" }}
+                  onClick={handleMenuClose} // Close the menu
+                >
+                  Contact Us
+                </NavLink>
               </button>
             </div>
           </div>

@@ -49,6 +49,7 @@ const Home = () => {
             position: "absolute",
             top: "-100px",
             left: "-20px",
+            zIndex:'-1'
           }}
         ></div>
 
@@ -60,6 +61,8 @@ const Home = () => {
             position: "absolute",
             top: "200px",
             left: "-400px",
+            zIndex:'-1'
+
           }}
         ></div>
         <div
@@ -70,6 +73,7 @@ const Home = () => {
             position: "absolute",
             top: "500px",
             right: "-400px",
+            zIndex:'-1'
           }}
         ></div>
           <div
@@ -80,6 +84,7 @@ const Home = () => {
             position: "absolute",
             bottom: "-100px",
             left: "-600px",
+            zIndex:'-1'
             // backgroundColor:'red'
           }}
         ></div>
@@ -91,6 +96,7 @@ const Home = () => {
             position: "absolute",
             bottom: "1000px",
             left: "-600px",
+            zIndex:'-1'
             // backgroundColor:'red'
           }}
         ></div>
@@ -102,7 +108,9 @@ const Home = () => {
             position: "absolute",
             bottom: "300px",
             right: "-600px",
+            zIndex:'-1'
             // backgroundColor:'red'
+
           }}
         ></div>
       </div>

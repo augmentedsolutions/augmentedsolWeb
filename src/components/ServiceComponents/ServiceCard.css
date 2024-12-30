@@ -1,8 +1,26 @@
 .ServiceCardHome-img{
 
 }
+.ServiceTabText1{
+font-size:23.72px;
+text-decoration:underline;
+color:white;
+}
+.ServiceTabText2{
+font-size:15.37px;
+line-height:25px;
+}
 @media (min-width: 299px) and (max-width: 991px) {
     .ServiceCardHome-img{
        height: 400px !important;
     }
+    .ServiceTabText1{
+      font-size:20px;
+      text-decoration:underline;
+      color:white;
+      }
+      .ServiceTabText2{
+      font-size:13.37px;
+      line-height:20px;
+      }
   }

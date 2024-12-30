@@ -1,20 +1,33 @@
 /* .swiper-slide{
  width: 500px  !important ;
 } */
- .swiper-slide{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ServiceCardImg {
+  height: 520px;
+  min-width: 450px;
+}
+.HomeServiceCardText1 {
+  fontsize: 30px !important;
+  color: white;
+}
+.HomeServiceCardText2 {
+  fontsize: 20px;
+  lineheight: 25px;
+}
+@media (min-width: 299px) and (max-width: 991px) {
+  .ServiceCardImg {
+    height: 400px;
+    min-width: 230px;
+  }
+  .HomeServiceCardText1 {
+   fontsize: 20px !important;
  }
- .ServiceCardImg{
-    height: 520px;
-    min-width: 450px;
+ .HomeServiceCardText2 {
+   fontsize: 10px !important;
+   lineheight: 25px !important;
  }
-
- @media (min-width: 299px) and (max-width: 991px) {
-    .ServiceCardImg{
-        height: 400px;
-        min-width: 230px;
-     }
-    
 }

@@ -100,10 +100,15 @@ const PortfolioCarousel = () => {
           slidesPerView: 4, // Show slides on both sides for larger screens
           spaceBetween: 5,
         },
-        576: {
+        991: {
           slidesPerView: 2, // Single slide for smaller screens
           spaceBetween: 10,
         },
+        300: {
+          slidesPerView: 2, // Single slide for smaller screens
+          spaceBetween: 0,
+        },
+
       }}
     >
       {portfolioData.map((item, index) => (

@@ -12,3 +12,13 @@
 .PortfolioCard {
   background-color: white;
 }
+
+.PortfolioImage{
+  height:320px;
+}
+
+@media (min-width: 299px) and (max-width: 991px) {
+  .PortfolioImage{
+    height:260px;
+  }
+}

@@ -7,22 +7,24 @@ import Button from "../../../common/Button/Button";
 const ClientCardThree = () => {
   return (
     <div className="row">
-      <div className="col-8 col-lg-6">
+      <div className="col-12 col-sm-10 col-lg-6">
         <div className="row">
           <div className="col-12">
             <div className="row">
-              <div className="col-lg-10 mt-3">
-                <h2 className="">
-                  Explore product in new way
-                  <img className="ms-5" src={ClientIcon} />
-                </h2>
-              </div>
-              <div className="col-12 mt-3">
-                <p className="">
-                  We specialize in creating visual identities for products and
-                  branda in your company.
-                </p>
-              </div>
+              
+            <div class="row">
+      <div class="col text-start mb-1 md-sm-5 md-md-5 mb-lg-5">
+         <h1 class="display-4 font-weight-bolder">Explore product in new way
+         <img className="ms-5" src={ClientIcon} /></h1>
+  <p class="lead"> We specialize in creating visual identities for products and
+  branda in your company.</p>
+      </div>
+    </div>
+
+
+
+             
+         
               <div className="col-12 mt-3">
                 <div className="row">
                   <div className="col-12">

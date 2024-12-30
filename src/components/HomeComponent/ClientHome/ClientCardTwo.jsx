@@ -20,25 +20,16 @@ import { Autoplay, Navigation } from "swiper/modules";
 const ClientCardTwo = () => {
   return (
     <>
-      <div
-        className="row border_radius_two MarginBottomText1"
-        style={{ display: "flex", justifyContent: "center" }}
-      >
-        <div className="col-auto">
-          <h2 className="">What our clients say</h2>
-        </div>
+    
+ <div class="row">
+      <div class="col text-center mb-1 md-sm-5 md-md-5 mb-lg-5">
+         <h1 class="display-4 font-weight-bolder">What our clients say</h1>
+  <p class="lead">See what our customer say about us. It really matters for us. How
+  good or bad we will make it for evaluation to make EhyalLive better.</p>
       </div>
-      <div
-        className="row MarginBottomText1"
-        style={{ display: "flex", justifyContent: "center" }}
-      >
-        <div className="col-auto">
-          <p className="">
-            See what our customer say about us. It really matters for us. How
-            good or bad we will make it for evaluation to make EhyalLive better.
-          </p>
-        </div>
-      </div>
+    </div>
+
+
       
       {/* Swiper Carousel */}
       <div className="row" style={{ display: "flex", justifyContent: "center" }}>

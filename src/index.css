@@ -17,8 +17,8 @@ body {
   /* font size /2.1715  for paragraph size*/
    /* for line height of paragraph font/1.389 */
   --font-h1: 3.343rem;
-  --font-lg-h1: 2rem;
-  --font-larger-text: 1.313rem;
+  --font-lg-h1: 1..5rem;
+  --font-larger-text: 1.2rem;
   --font-lg-larger-text: 0.7rem;
   
   --font-h2: 3rem;
@@ -33,7 +33,7 @@ body {
   --font-smaller-text: 1.063;
   
   --line-h1: 2rem;            /* Line Height for H1 */
-  --line-h2: 3.2rem; 
+  --line-h2: 2rem; 
   --line-lg-h2: 2rem;            /* Line Height for H2 */
   --line-h3: 2rem;            /* Line Height for H3 */
   --line-h4: 1.8rem;            /* Line Height for H4 */
@@ -734,6 +734,10 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
 
 /* For screens between 768px and 991px */
 @media (min-width: 768px) and (max-width: 991px) {
+  
+  .MarginBottomContentContainer{
+    margin-bottom: 10px;
+  }
   .Container {
       margin: 0px 50px 0px 50px;
       /* background-color: lightcoral;  */
@@ -752,6 +756,9 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
       .MarginBottomText1{
         margin-bottom: 20px;
       }
+
+
+
       h1 {
         font-size: var(--font-lg-h1);
         line-height: var(--line-h1);
@@ -797,6 +804,11 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
 }
 
 @media (min-width: 299px) and (max-width: 600px) {
+
+  .MarginBottomContentContainer{
+    margin-bottom: 5px;
+  }
+
 
       h1 {
         font-size: var(--font-lg-h1);

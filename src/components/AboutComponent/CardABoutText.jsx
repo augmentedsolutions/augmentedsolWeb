@@ -4,7 +4,7 @@ import "../../index.css";
 const CardABoutText = ({ text, paragraph }) => {
   return (
     <div className="about-wrapper">
-      <h2 className="">{text}</h2>
+      <h2 className="MarginBottomContentContainer">{text}</h2>
       <p className="lead mb-4 mb-md-5">{paragraph}</p>
     </div>
   );

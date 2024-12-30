@@ -3,9 +3,9 @@ import "../../index.css";
 
 const PortfolioCard = ({ img, text, options }) => {
   return (
-    <div style={{}} className="PortfolioCard">
-      <div>
-        <img src={img} width='auto' height='320px' />
+    <div style={{}} className="PortfolioCard row m-0 p-0">
+      <div className="col-12  m-0 p-0">
+        <img src={img} className="PortfolioImage" width='auto'  />
         <h1 className="heading_tertiary px-3 pt-3 PortfolioText" style={{ color: 'black' }}>
           {text}
         </h1>

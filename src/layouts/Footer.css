@@ -1,0 +1,42 @@
+.footer-paragraph
+{
+   font-size: 25px;
+   
+}
+.footer-heading-one
+{
+   font-size: 24px;
+   font-weight: bold;
+   
+}
+.footer-heading-two
+{
+   font-size: 20px;
+   
+}
+.footer-logo
+{
+   
+}
+
+@media (min-width: 299px) and (max-width: 991px) {
+    .footer-paragraph
+    {
+       font-size: 22px;
+       line-height: 35px;
+       
+    }
+    .footer-heading-one
+{
+   font-size: 20px;
+   font-weight: bold;
+   
+}
+.footer-heading-two
+{
+   font-size: 18px;
+   
+}
+
+
+  }
