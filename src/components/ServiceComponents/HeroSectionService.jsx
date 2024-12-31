@@ -11,10 +11,10 @@ const HeroSectionService = ({ img, text1, text2 }) => {
           position: "relative",
           display: "flex",
           alignItems: "center",
-          justifyContent: "center",
+          justifyContent: "center"
         }}
       >
-        <img className="ServiceHeroBanner" src={img} width="100%" style={{minHeight:'140px'}}/>
+        <img className="ServiceHeroBanner" src={img} width="100%" style={{minHeight:'150px'}}/>
         <div
           className="row"
           style={{
@@ -33,17 +33,17 @@ const HeroSectionService = ({ img, text1, text2 }) => {
                 alignItems: "center",
               }}
             >
-              <div className="col-12 col-md-5  ">
-                <h1 className=" text1 MarginBottomText1" style={{}}>
+              <div className="col-12 col-md-5 heading_primary_1 mb-1 mb-sm-3 mb-xl-5 ">
+                <span className=" text1 MarginBottomText1" style={{}}>
                   {text1}
-                </h1>
+                </span>
               </div>
             </div>
             <div className="row">
               <div col-8 className="">
-                <p className=" text2 MarginBottomText1" style={{}}>
+                <span className=" text2 larger-text MarginBottomText1" style={{}}>
                   {text2}
-                </p>
+                </span>
               </div>
             </div>
           </div>

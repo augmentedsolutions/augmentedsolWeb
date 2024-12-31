@@ -19,18 +19,17 @@ const ServiceCard = ({ image }) => {
             
             }}
         />
-        <div class="p-2 p-md-3  col-8 col-md-6 "  style={{position:"absolute",bottom:"0px",
+        <div class="p-2 p-lg-4   col-10 col-md-6 "  style={{position:"absolute",bottom:"0px",
           backgroundImage: `url(${ServiceImage})`,
          backgroundSize: "cover",
          height:'auto',
          borderBottomLeftRadius:'15px'
          // padding: "10px",
         }}>
-          <h2 class="text-white card-title HomeServiceCardText1" style={{textDecoration:'underline'}} >Card title</h2>
-          <h3 class="text-white card-text HomeServiceCardText2" style={{}}>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </h3>
+          <h3 class=" text-white card-title mb-1 mb-lg-2 " style={{textDecoration:'underline'}} >Web Development</h3>
+          <h4 class="text-white card-text " style={{}}>
+          A Network of 3D virtual worlds focused on social connection. 
+          </h4>
           
         </div>
       </div>

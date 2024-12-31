@@ -21,8 +21,8 @@ const Footer = () => {
         <div className=" p-4">
           <div className="row text-white">
             <div className="col-lg-6  col-md-12 ">
-              <img src={LogoImg} className="mb-4" />
-              <h4 className="  mb-3">
+              <img src={LogoImg} className="mb-1 mb-sm-3 mb-lg-5" />
+              <h4 className="   mb-1 mb-sm-3 mb-lg-5">
                 At the core of our company is a passion for the transformative
                 power of augmented reality (AR) and virtual reality (VR).
               </h4>
@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-lg-3 col-md-6 ">
-              <h5 className=" shopping-online-heading mb-4 ">Company</h5>
+              <h3 className=" shopping-online-heading mb-4 ">Company</h3>
               <ul className="list-unstyled mb-0 ">
                 <li className="">
                   <h6 href="#!" className="shopping-online-link mb-3 footer-heading-two">
@@ -69,7 +69,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
-              <h5 className=" shopping-online-heading mb-4 ">Contact Us</h5>
+              <h3 className=" shopping-online-heading mb-4 ">Contact Us</h3>
               <ul className="list-unstyled mb-0">
                 <li className="">
                   <h6 href="#!" className="shopping-online-link mb-3 footer-heading-two">
@@ -113,7 +113,7 @@ const Footer = () => {
           width: "950px",
           position: "absolute",
           top: "-200px",
-          right: "-400px",
+          right: "-400px"
           // backgroundColor:"red"
         }}
       ></div>
@@ -124,8 +124,9 @@ const Footer = () => {
           height: "950px",
           width: "950px",
           position: "absolute",
-          top: "-200px",
-          left: "-400px",
+          top: "-100px",
+          left: "200px",
+            // backgroundColor:'red'
           // backgroundColor:"red"
         }}
       ></div>

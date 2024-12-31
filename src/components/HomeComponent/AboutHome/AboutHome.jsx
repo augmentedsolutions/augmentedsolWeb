@@ -54,17 +54,22 @@ const AboutHome = () => {
         </div>
         <div className="col-12 col-lg-6 col-xxl-6 text-start" style={{display:'flex',justifyContent:'center'}} >
           <div className="row " style={{display:"flex",justifyContent:'start',alignItems:'center'}}>
-            <div className="col-12 col-lg-8 text-lg-start text-center">
+            <div className=" col-12 col-lg-12 col-xl-11 col-xxl-9  text-lg-start text-center">
               <div className="about-wrapper">
-                <h1 className=" text-white mb-5">About Augmented</h1>
-                <p className="lead text-white mb-5">
+                <h1 className=" text-white mb-3 mb-lg-5">About Augmented</h1>
+                <p className="lead text-white mb-3 mb-lg-5">
                   {" "}
                   We are a specialized software company at the forefront of
                   augmented reality (AR) technology, With a passion for
                   innovation and a deep understanding of the power of AR, we are
                   dedicated to creating exceptional digital{" "}
                 </p>
-                <Button name='Read More' />
+                <div className="row text-center text-lg-start justify-content-center justify-content-lg-start">
+      <div className="col-5 col-sm-4 col-md-3  col-lg-6 col-xl-5 col-xxl-4" >
+
+      <Button name='Read More'/>
+      </div>
+      </div>
               </div>
             </div>
           </div>

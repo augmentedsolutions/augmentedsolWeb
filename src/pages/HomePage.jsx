@@ -17,23 +17,23 @@ const Home = () => {
             </div>
           </div>
           <div className="row  Container" style={{display:'flex',justifyContent:'center',alignItems:'center'}} >
-            <div className="col-12 mt-5 mb-5 p-5">
+            <div className="col-12   my-1 py-1 my-sm-3 py-sm-3 my-lg-5 py-lg-5">
               <AboutHome />
             </div>
           </div>
 
           
-          <div className="row mt-5 mb-5 " >
+          <div className="row my-1 py-1 my-sm-3 py-sm-3 my-lg-5 py-lg-5 " >
             <div className="col-12 ">
               <ServicesHome />
             </div>
           </div>
           <div className="row  Container " >
-            <div className="col-12 mt-5 mb-5 pt-5 pb-5 ">
+            <div className="col-12 my-1 py-1 my-sm-3 py-sm-3 my-lg-5 py-lg-5 ">
               <TeamHome />
             </div>
           </div>
-          <div className="row  Container" >
+          <div className="row  Container my-1 py-1 my-sm-3 py-sm-3 my-lg-5 py-lg-5" >
             <div className="col-12  MarginContainer">
               <ClientHome />
             </div>
@@ -83,7 +83,7 @@ const Home = () => {
             width: "950px",
             position: "absolute",
             bottom: "-100px",
-            left: "-600px",
+            left: "-500px",
             zIndex:'-1'
             // backgroundColor:'red'
           }}
@@ -94,9 +94,10 @@ const Home = () => {
             height: "950px",
             width: "950px",
             position: "absolute",
-            bottom: "1000px",
-            left: "-600px",
+            bottom: "1350px",
+            left: "-400px",
             zIndex:'-1'
+            
             // backgroundColor:'red'
           }}
         ></div>
@@ -106,9 +107,10 @@ const Home = () => {
             height: "950px",
             width: "950px",
             position: "absolute",
-            bottom: "300px",
-            right: "-600px",
+            bottom: "500px",
+            right: "-400px",
             zIndex:'-1'
+            
             // backgroundColor:'red'
 
           }}

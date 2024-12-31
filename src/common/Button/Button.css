@@ -1,13 +1,13 @@
 .AboutHomeBTN{
-    height: 75px;
-                    width: 200px;
+    height: 75px !important;
+                    width: 100% !important;
                     font-size: 1.5rem !important; 
   }
 
   @media (min-width: 611px) and (max-width: 991px) {
     .AboutHomeBTN{
         height: 2px ;
-        width: 100px ;
+        /* width: 100px ; */
         font-size: 2rem ;
       }
     
@@ -15,8 +15,8 @@
 
 @media (min-width: 299px) and (max-width: 611px) {
     .AboutHomeBTN{
-        height: 35px !important;
-        width: 100px !important;
+        height: 45px !important;
+        /* width: 120px !important; */
         font-size: 0.9rem !important;
       }
     

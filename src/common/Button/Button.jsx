@@ -6,6 +6,7 @@ import "./Button.css";
 const Button = ({
   name,
   FontStylte = "heading_sixth_11",
+  icon,
   justify = "center",
 }) => {
   return (
@@ -24,7 +25,7 @@ const Button = ({
         style={{ textDecoration: "none", color: "white" }}
         // Close the menu
       >
-        {name}
+        {name} <img src={icon}/>
       </NavLink>
     </button>
   );

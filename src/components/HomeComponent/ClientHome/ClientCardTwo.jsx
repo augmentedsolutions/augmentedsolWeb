@@ -23,8 +23,8 @@ const ClientCardTwo = () => {
     <>
     
  <div class="row " style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-      <div class="col-8 text-center mb-1 md-sm-5 md-md-5 mb-lg-5">
-         <h1 class="text-white font-weight-bolder my-5" style={{textDecoration:'underline'}}>What our clients say</h1>
+      <div class=" col-12 col-sm-10 col-md-8 text-center mb-1 md-sm-5 md-md-5 mb-lg-5">
+         <h1 class="text-white font-weight-bolder   my-5" style={{textDecoration:'underline'}}>What our clients say</h1>
          
   <p class="lead text-white ">See what our customer say about us. It really matters for us. How
   good or bad we will make it for evaluation to make EhyalLive better.</p>

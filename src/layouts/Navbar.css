@@ -24,8 +24,8 @@
   bottom: -2px;
   left: 50%; /* Start positioning from the middle */
   transform: translateX(-50%); /* Center align by shifting left */
-  width: 50%;
-  height: 2px;
+  width: 10%;
+  height: 5px;
   background: white;
   border-radius: 5px;
 }
@@ -41,6 +41,9 @@
 }
 .NavbarLogo{
   height:80px;
+}
+.Navbar-BTN{
+  height: 100px;
 }
 .navbar-collapse {
   transition: height 0.3s ease, opacity 0.3s ease;

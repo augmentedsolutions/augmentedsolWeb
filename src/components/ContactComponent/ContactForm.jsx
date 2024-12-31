@@ -11,12 +11,12 @@ import ContactLogoleft3 from "../../assets/Home/ContactLogoleft3.png";
 import Logo from "../../common/Logo/Logo";
 const ContactForm = () => {
   return (
-    <div className="row PaddingContainer">
-      <div className="col-12 MarginInnerBottomContainer">
-        <h1 className="text_primary_2 ">Contact Fom</h1>
+    <div className="row p-1 p-sm-2 p-lg-5">
+      <div className="col-12  mb-1 mb-sm-3 mb-lg-5">
+        <h2 className="">Contact Fom</h2>
       </div>
       <div className="col-12">
-        <div className="row ">
+        <div className="row  my-lg-3">
           <div className="col-lg-5">
             <div className="row">
               <div className="col-10">
@@ -60,9 +60,9 @@ const ContactForm = () => {
       <div className="col-auto">
         <Logo logo={ContactLogoright1} />
       </div>
-      <div className="col text_secondary_1 text-wrap">
+      <h6 className="col  text-wrap text-white">
         augmentedsol@gmail.com
-      </div>
+      </h6>
     </div>
   </div>
   <div className="col-lg-3 MarginTopContainer">
@@ -70,9 +70,9 @@ const ContactForm = () => {
       <div className="col-auto">
         <Logo logo={ContactLogoright2} />
       </div>
-      <div className="col text_secondary_1 text-wrap">
+      <h6 className="col  text-wrap text-white">
         +92 308 4846218
-      </div>
+      </h6>
     </div>
   </div>
   <div className="col-lg-5 MarginTopContainer">
@@ -80,16 +80,16 @@ const ContactForm = () => {
       <div className="col-auto">
         <Logo logo={ContactLogoright3} />
       </div>
-      <div className="col text_secondary_1 text-wrap">
+      <h6 className="col text-white  text-wrap">
         337 G Block Rehman Pura Muslim.
-      </div>
+      </h6>
     </div>
   </div>
 </div>
 
       </div>
-      <div className="col-12 MarginInnerContainer ">
-        <h1 className="text_primary_2 ">Social Links</h1>
+      <div className="col-12 my-1 my-sm-3 my-lg-5 ">
+        <h2 className=" ">Social Links</h2>
       </div>
       <div className="col-12">
         <div className="row  " style={{display:"flex",justifyContent:'center',alignItems:'center'}}>

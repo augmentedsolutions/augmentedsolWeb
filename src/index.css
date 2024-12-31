@@ -16,9 +16,11 @@ body {
 :root {
   /* font size /2.1715  for paragraph size*/
    /* for line height of paragraph font/1.389 */
+   --font_size_3_343:3.343rem !important;
+  
   --font-h1: 3.343rem;
   --font-lg-h1: 1.8rem;
-  --font-larger-text: 1.2rem;
+  --font-larger-text: 1.7rem;
   --font-lg-larger-text: 0.8rem;
   
   --font-h2: 2.837rem ;
@@ -235,7 +237,7 @@ p {
 }
 .heading_primary_1 {
   font-family: var(--font_family_orbitron);
-  font-size: var(--font_size_3_343);
+  font-size: var(--font_size_3_343) ;
   font-weight: var(--font_weight_900);
   line-height: var(--line_height_72);
   color: var(--btn_text_color);
@@ -771,9 +773,16 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
       }
       .larger-text {
         font-size: var(--font-lg-larger-text);
-        line-height: var(--line-lg-larger-text);
+        line-height: 2px !important;
         letter-spacing: var(--spacing-larger-text);
         font-family: var(--font_family_poppins);
+        color: var(--btn_text_color);
+      }
+      .heading_primary_1 {
+        font-family: var(--font_family_orbitron);
+        font-size: 2rem !important ;
+        font-weight: var(--font_weight_900);
+        line-height: 12px;
         color: var(--btn_text_color);
       }
       .heading_fifth_1 {

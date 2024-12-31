@@ -4,18 +4,18 @@ import ClientCardTwo from "./ClientCardTwo";
 import ClientCardThree from "./ClientCardThree";
 import "../../../index.css";
 import bgImage from '../../../assets/Home/ClientBackgornd.png'
-
+import './ClientHome.css'
 
 const ClientHome = () => {
   return (
     <>
-      <div className="row background_gradient_one my-5 py-5 p-1 p-md-2 p-lg-5 border_radius_one " style={{    border: "3.24px solid rgb(47, 20, 63)",}}>
+      <div className="row background_gradient_one my-1 my-sm-3 my-lg-5  p-1 p-sm-3 p-lg-5  border_radius_one " style={{    border: "3.24px solid rgb(47, 20, 63)",}}>
         <div className="col-12">
           <ClientCardOne />
         </div>
       </div>
-      <div className="row my-5 py-5">
-       <div className="col-12 " style={{position:'relative',height:'500px'}}>
+      <div className="row  my-1 my-sm-3 my-lg-5 p-1 p-sm-3 p-lg-5">
+       <div className="col-12 ClientTwoContainer" style={{position:'relative'}}>
 
       <div className="row background_gradient_one   p-1 p-md-3 p-lg-5 border_radius_one" style={{height:'490px',border: "3.24px solid rgb(47, 20, 63)",marginBottom:'200px'}}>
         <div className="col-12 Flex " style={{flexDirection:'column',    }} >
@@ -24,7 +24,7 @@ const ClientHome = () => {
       </div>
        </div>
       </div>
-      <div className="row  my-5 p-5 background_gradient_one  border_radius_one  " style={{
+      <div className="row  my-1 my-sm-3 my-lg-5 p-1 p-sm-3 p-lg-5 background_gradient_one  border_radius_one  " style={{
       backgroundImage: `var(--background_gradient_one), url(${bgImage})`,
       backgroundSize: 'auto 100%',
     

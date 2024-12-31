@@ -1,0 +1,19 @@
+.ContactForm{
+    position:relative;
+    top:-150px;
+}
+@media (min-width: 611px) and (max-width: 991px) {
+    .ContactForm{
+        position:relative;
+        top:-30px;
+    }
+    
+}  
+
+@media (min-width: 299px) and (max-width: 611px) {
+    .ContactForm{
+        position:relative;
+        top:-20px;
+    }
+    
+}

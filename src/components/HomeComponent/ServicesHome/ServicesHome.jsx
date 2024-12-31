@@ -9,8 +9,8 @@ import Carousel from "./Carousle";
 const ServicesHome = () => {
   return (
     <>
-      <div className="row p-5">
-         <div className="col-12 mb-5 text-center">
+      <div className="row p-1 p-sm-3 p-lg-5">
+         <div className="col-12 mb-sm-3 mb-1 mb-lg-5 text-center">
           <h1 className="text-white">Augmented Services</h1>
         </div>
       </div>

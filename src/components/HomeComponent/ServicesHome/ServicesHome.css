@@ -1,0 +1,16 @@
+.ClientTwoContainer{
+height:500px;
+}
+@media (min-width: 450px) and (max-width: 991px) {
+   
+    .ClientTwoContainer{
+        height:500px;
+        }
+}
+
+@media (min-width: 299px) and (max-width: 450px) {
+    .ClientTwoContainer{
+        height:500px;
+        }
+
+}

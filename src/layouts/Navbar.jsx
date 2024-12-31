@@ -11,6 +11,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const Navbarr = () => {
   return (
+    <div style={{position:'relative'}}>
     <div className="Container">
       {/* Navbar */}
       <Navbar
@@ -23,7 +24,8 @@ const Navbarr = () => {
           <img
             src={logo}
             alt="Logo"
-            style={{ height: "100%", width: "auto" }}
+            className="NavbarLogo"
+            // style={{ height: "100%", width: "auto" }}
           />
         </Navbar.Brand>
 
@@ -43,76 +45,104 @@ const Navbarr = () => {
               to={"/"}
               className={({ isActive }) =>
                 isActive
-                  ? "nav-link nav-link-active px-3"
-                  : "nav-link nav-link-inactive px-3"
+                  ? "nav-link nav-link-active  px-md-1 px-lg-2 px-xl-3 px-xxl-5"
+                  : "nav-link nav-link-inactive  px-md-1 px-lg-2 px-xl-3 px-xxl-5"
               }
-              style={{color:'white'}}
+              style={{color:'white' ,height:'auto'}}
             >
+              <h5>
+
               Home
+              </h5>
             </NavLink>
             <NavLink
               to={"/service"}
               as={NavLink}
-              style={{color:'white'}}
+              style={{color:'white ' ,height:'auto'}}
               className={({ isActive }) =>
                 isActive
-                  ? "nav-link nav-link-active px-3"
-                  : "nav-link nav-link-inactive px-3"
+                  ? "nav-link nav-link-active  px-md-1 px-lg-2 px-xl-3 px-xxl-5"
+                  : "nav-link nav-link-inactive  px-md-1 px-lg-2 px-xl-3 px-xxl-5"
               }
             >
-              Services
+              
+             <h5> Services</h5>
             </NavLink>
             <NavLink
               to={"/portfolio"}
               as={NavLink}
-              style={{color:'white'}}
+              style={{color:'white' ,height:'auto'}}
               className={({ isActive }) =>
                 isActive
-                  ? "nav-link nav-link-active px-3"
-                  : "nav-link nav-link-inactive px-3"
+                  ? "nav-link nav-link-active  px-md-1 px-lg-2 px-xl-3 px-xxl-5"
+                  : "nav-link nav-link-inactive  px-md-1 px-lg-2 px-xl-3 px-xxl-5"
               }
             >
+              <h5>
+
               Portfolio
+              </h5>
             </NavLink>
             <NavLink
               to={"/about"}
               as={NavLink}
-              style={{color:'white'}}
+              style={{color:'white' ,height:'auto'}}
               className={({ isActive }) =>
                 isActive
-                  ? "nav-link nav-link-active px-3"
-                  : "nav-link nav-link-inactive px-3"
+                  ? "nav-link nav-link-active  px-lg-2 px-xl-3 px-xxl-5"
+                  : "nav-link nav-link-inactive  px-lg-2 px-xl-3 px-xxl-5"
               }
             >
+              <h5>
+
               About
+              </h5>
             </NavLink>
           </Nav>
 
           {/* Contact Button */}
           <button
             type="button"
-            className="btn ms-3"
+            className="btn ms-3 "
             as={NavLink}
             style={{
               background: "var(--background_color_btn)",
               color: "white",
-              height: "62px",
-              width: "152px",
+              height:'70px'
+              
             }}
           >
             <NavLink
               to={"/contact"}
               as={NavLink}
+              className=''
               style={{ textDecoration: "none", color: "white" }}
             >
+           <h5>
+
               Contact Us
+           </h5>
             </NavLink>
           </button>
         </Navbar.Collapse>
       </Navbar>
 
       {/* Radial Background */}
-      <div className="gradient_radial"></div>
+      
+    </div>
+    <div
+          className="gradient_radial"
+          style={{
+            height: "950px",
+            width: "950px",
+            position: "absolute",
+            bottom: "-430px",
+            right: "700px",
+            zIndex:'-1',
+            
+
+          }}
+        ></div>
     </div>
   );
 };

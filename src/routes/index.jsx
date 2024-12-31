@@ -13,7 +13,7 @@ const Path = () => {
     <Router>
       {/* Navbar */}
       <div style={{ overflow: "hidden" }}>
-      <div className=" my-5">
+      <div className=" my-1 my-sm-3 my-lg-5">
 
       <Navbarr />
       </div>
@@ -36,7 +36,7 @@ const Path = () => {
       </Routes>
 
       {/* Footer */}
-      <div className="my-5"> 
+      <div className="my-1 my-sm-3 my-lg-5"> 
 
       <Footer />
       </div>
