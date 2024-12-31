@@ -11,7 +11,7 @@ const Button = ({
   return (
     <button
       type="button"
-      className="btn  AboutHomeBTN"
+      className="btn   AboutHomeBTN"
       style={{
         background: "var(--background_color_btn)",
         color: "white",

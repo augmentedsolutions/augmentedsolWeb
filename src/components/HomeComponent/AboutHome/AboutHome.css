@@ -1,7 +1,7 @@
-.image-container {
+.image-containerr {
   position: relative;
   height: 614px;
-  width: 600px;
+  width: 500px;
   /* border: 2px solid red; Add the border to the container */
 }
 
@@ -37,6 +37,12 @@
                   font-size: 1.5rem;
 }
 @media (min-width: 299px) and (max-width: 611px) {
+  .image-containerr {
+    position: relative;
+    height: 350px;
+    width: 280px;
+    /* border: 2px solid red; Add the border to the container */
+  }
   .about-image-main {
     height: 250px;
     width: 187px;

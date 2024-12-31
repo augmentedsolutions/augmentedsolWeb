@@ -10,7 +10,7 @@ import Logo from "../../../common/Logo/Logo";
 import './TeamCard.css'
 const TeamCard = () => {
   return (
-    <div className="col-12 col-sm-8 col-md-7  col-lg-12 m-0 p-0">
+    <div className="col-11  col-md-7  col-lg-12 m-0 p-0">
       <div className="card" style={{backgroundColor:'none'}}>
         <img
           src={TeamImage}
@@ -24,8 +24,8 @@ const TeamCard = () => {
             
           }}
         >
-          <h2 className="card-text TeamCardText1 " >Muh sanaullah</h2>
-          <p className="card-text TeamCardText2" >CO- FOUNDER & PROJECT MANAGER</p>
+          <h2 className="card-text  " >Muh sanaullah</h2>
+          <h3 className="card-text text-white TeamCardText2" >CO- FOUNDER & PROJECT MANAGER</h3>
           <div
             className="row"
             style={{
@@ -35,7 +35,7 @@ const TeamCard = () => {
               
             }}
           >
-            <div className="col-12 col-xl-7 col-xxl-5">
+            <div className="col-7 col-sm-5 col-md-8 col-xl-7 col-xxl-5">
               <div
                 className="row "
                 style={{

@@ -19,13 +19,13 @@ const Footer = () => {
     >
       <footer style={{}}>
         <div className=" p-4">
-          <div className="row">
+          <div className="row text-white">
             <div className="col-lg-6  col-md-12 ">
-              <img src={LogoImg} className="MarginInnerBottomContainer" />
-              <p className="footer-paragraph MarginBottomContentContainer">
+              <img src={LogoImg} className="mb-4" />
+              <h4 className="  mb-3">
                 At the core of our company is a passion for the transformative
                 power of augmented reality (AR) and virtual reality (VR).
-              </p>
+              </h4>
               <div className="row MarginTopContentContainer footer-logo MarginContentContainer ">
                 <div className="col-auto">
                   <Logo logo={ContactLogoleft1} />
@@ -39,57 +39,57 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-lg-3 col-md-6 ">
-              <h5 className=" shopping-online-heading MarginInnerBottomContainer footer-heading-one">Company</h5>
+              <h5 className=" shopping-online-heading mb-4 ">Company</h5>
               <ul className="list-unstyled mb-0 ">
                 <li className="">
-                  <h4 href="#!" className="shopping-online-link MarginBottomContentContainer footer-heading-two">
+                  <h6 href="#!" className="shopping-online-link mb-3 footer-heading-two">
                     About Us
-                  </h4>
+                  </h6>
                 </li>
                 <li className="">
-                  <h4 href="#!" className="MarginBottomContentContainer shopping-online-link footer-heading-two">
+                  <h6 href="#!" className="mb-3 shopping-online-link footer-heading-two">
                     Services
-                  </h4>
+                  </h6>
                 </li>
                 <li className="">
-                  <h4 href="#!" className="shopping-online-link MarginBottomContentContainer footer-heading-two">
+                  <h6 href="#!" className="shopping-online-link mb-3 footer-heading-two">
                     Products
-                  </h4>
+                  </h6>
                 </li>
                 <li>
-                  <h4 href="#!" className="shopping-online-link MarginBottomContentContainer footer-heading-two">
+                  <h6 href="#!" className="shopping-online-link mb-3 footer-heading-two">
                     Contact Us
-                  </h4>
+                  </h6>
                 </li>
                 <li>
-                  <h4 href="#!" className="shopping-online-link MarginBottomContentContainer footer-heading-two">
+                  <h6 href="#!" className="shopping-online-link mb-3 footer-heading-two">
                     Privacy Policy
-                  </h4>
+                  </h6>
                 </li>
               </ul>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
-              <h5 className=" shopping-online-heading MarginInnerBottomContainer footer-heading-one">Contact Us</h5>
+              <h5 className=" shopping-online-heading mb-4 ">Contact Us</h5>
               <ul className="list-unstyled mb-0">
                 <li className="">
-                  <h4 href="#!" className="shopping-online-link MarginBottomContentContainer footer-heading-two">
+                  <h6 href="#!" className="shopping-online-link mb-3 footer-heading-two">
                     frequently asked questions
-                  </h4>
+                  </h6>
                 </li>
                 <li className="">
-                  <h4 href="#!" className="shopping-online-link MarginBottomContentContainer footer-heading-two">
+                  <h6 href="#!" className="shopping-online-link mb-3 footer-heading-two">
                     delivery
-                  </h4>
+                  </h6>
                 </li>
                 <li className="">
-                  <h4 href="#!" className="shopping-online-link  MarginBottomContentContainer footer-heading-two">
+                  <h6 href="#!" className="shopping-online-link  mb-3 footer-heading-two">
                     pricing
-                  </h4>
+                  </h6>
                 </li>
                 <li>
-                  <h4 href="#!" className="shopping-online-link MarginBottomContentContainer footer-heading-two" >
+                  <h6 href="#!" className="shopping-online-link mb-3 footer-heading-two" >
                     where we deliver?
-                  </h4>
+                  </h6>
                 </li>
               </ul>
             </div>

@@ -17,11 +17,11 @@ body {
   /* font size /2.1715  for paragraph size*/
    /* for line height of paragraph font/1.389 */
   --font-h1: 3.343rem;
-  --font-lg-h1: 2rem;
+  --font-lg-h1: 1.8rem;
   --font-larger-text: 1.2rem;
   --font-lg-larger-text: 0.8rem;
   
-  --font-h2: 2.837rem;
+  --font-h2: 2.837rem ;
   --font-lg-h2: 1.56rem;
   --font-paragraph: 1.7rem;
   --font-lg-paragraph: 0.7rem;
@@ -41,7 +41,7 @@ body {
   --line-h6: 0.6rem;            /* Line Height for H6 */
   --line-paragraph: 2.6rem;     /* Line Height for Paragraph */
   --line-lg-paragraph: 1rem;     /* Line Height for Paragraph */
-  --line-larger-text: 1.8rem;   /* Line Height for Larger Text */
+  --line-larger-text: 1.5rem;   /* Line Height for Larger Text */
   --line-lg-larger-text: 1rem;   /* Line Height for Larger Text */
   --line-smaller-text: 2.3rem;  /* Line Height for Smaller Text */
 
@@ -155,26 +155,24 @@ body {
 
 
 h1 {
-  font-size: var(--font-h1);
-  line-height: var(--line-h1);
+   font-size: var(--font-h1);
   letter-spacing: var(--spacing-h1);
   font-family: var(--font_family_orbitron);
   color: var(--btn_text_color);
 }
 
 h2 {
-  font-size: var(--font-h2);
-  line-height: var(--line-h2);
+
   letter-spacing: var(--spacing-h2);
   font-family: var(--font_family_orbitron);
-  color: var(--btn_text_color);
+  color: var(--btn_text_color) !important;
 }
 
 h3 {
   font-size: var(--font-h3);
   line-height: var(--line-h3);
   letter-spacing: var(--spacing-h3);
-  font-family: var(--font_family_poppins);
+  font-family: var(--font_family_poppins) !important;
   color: var(--btn_text_color);
 }
 
@@ -182,7 +180,7 @@ h4 {
   font-size: var(--font-h4);
   line-height: var(--line-h4);
   letter-spacing: var(--spacing-h4);
-  font-family: var(--font_family_poppins);
+  font-family: var(--font_family_poppins) !important;
   color: var(--btn_text_color);
 }
 
@@ -190,7 +188,7 @@ h5 {
   font-size: var(--font-h5);
   line-height: var(--line-h5);
   letter-spacing: var(--spacing-h5);
-  font-family: var(--font_family_poppins);
+  font-family: var(--font_family_poppins) !important;
   color: var(--btn_text_color);
 }
 
@@ -201,11 +199,11 @@ h6 {
 }
 
 p {
-  font-size: var(--font-paragraph);
-  line-height: var(--line-paragraph);
-  letter-spacing: var(--spacing-paragraph);
-  font-family: var(--font_family_poppins);
-  color: var(--btn_text_color);
+  /* font-size: var(--font-paragraph);
+  line-height: var(--line-paragraph); */
+  /* letter-spacing: var(--spacing-paragraph); */
+  font-family: var(--font_family_poppins) !important;
+  color: var(--btn_text_color) !important;
 }
 
 .larger-text {
@@ -524,7 +522,7 @@ p {
 }
 
 .Container {
-  margin: 0px 98px 0px 98px;
+  margin: 0px 98px 0px 98px !important;
 }
 
 .background_gradient_one {
@@ -642,7 +640,7 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
 /* For screens between 992px and 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
   .Container {
-    margin: 0px 98px 0px 98px;
+    margin: 0px 98px 0px 98px !important; 
   }
       /* background-color: lightgreen;  */
       .MarginContainer{
@@ -677,7 +675,7 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
     margin-bottom: 10px;
   }
   .Container {
-      margin: 0px 50px 0px 50px;
+      margin: 0px 50px 0px 50px !important;
       /* background-color: lightcoral;  */
   }
 
@@ -712,7 +710,7 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
 /* For screens smaller than 768px */
 @media (max-width: 767px) {
   .Container {
-      margin: 0px 5px 0px 5px;
+      margin: 0px 5px 0px 5px !important;
       /* background-color: lightyellow;  */
   }
   .MarginContainer{
@@ -756,19 +754,17 @@ background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #
         color: var(--btn_text_color);
       }
       h2 {
-        font-size: var(--font-lg-h2);
-        line-height: var(--line-lg-h2);
-        letter-spacing: var(--spacing-h2);
-        font-family: var(--font_family_orbitron);
+
+        font-family: var(--font_family_orbitron) ;
         color: var(--btn_text_color);
       }
-      p {
+      /* p {
         font-size: var(--font-lg-paragraph);
         line-height: var(--line-lg-paragraph);
         letter-spacing: var(--spacing-paragraph);
         font-family: var(--font_family_poppins);
         color: var(--btn_text_color);
-      }
+      } */
       
       .MarginBottomText1{
         margin-bottom: 5px;

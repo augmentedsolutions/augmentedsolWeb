@@ -10,10 +10,11 @@ import { NavLink } from "react-router-dom";
 const AboutHome = () => {
   return (
     <div className="">
-      <div className="row gy-4 gy-lg-0 align-items-lg-center">
-        <div className="col-12 col-lg-6">
-          <div className="row d-flex justify-content-center align-items-center">
-            <div className=" image-container">
+      <div className="row gy-4 gy-lg-0 align-items-lg-center"style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+        <div className="col-12 col-lg-6" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+          
+            <div className=" image-containerr">
+              
               <div
                 className="about-image-main about-image-left "
                 style={{
@@ -49,38 +50,21 @@ const AboutHome = () => {
                 />
               </div>
             </div>
-          </div>
+          
         </div>
-        <div className="col-12 col-lg-6 col-xxl-6">
-          <div className="row justify-content-lg-end">
-            <div className="col-12 col-lg-11 text-lg-start text-center">
+        <div className="col-12 col-lg-6 col-xxl-6 text-start" style={{display:'flex',justifyContent:'center'}} >
+          <div className="row " style={{display:"flex",justifyContent:'start',alignItems:'center'}}>
+            <div className="col-12 col-lg-8 text-lg-start text-center">
               <div className="about-wrapper">
-                <h2 className="MarginBottomContentContainer">About Augmented</h2>
-                <p className="">
+                <h1 className=" text-white mb-5">About Augmented</h1>
+                <p className="lead text-white mb-5">
                   {" "}
                   We are a specialized software company at the forefront of
                   augmented reality (AR) technology, With a passion for
                   innovation and a deep understanding of the power of AR, we are
                   dedicated to creating exceptional digital{" "}
                 </p>
-                <button
-                type="button"
-                className="btn  AboutHomeBTN"
-                style={{
-                  background: "var(--background_color_btn)",
-                  color: "white",
-                  
-                  fontWeight:'500'
-                }}
-              >
-                <NavLink
-                  to={"/contact"}
-                  style={{ textDecoration: "none", color: "white" }}
-                   // Close the menu
-                >
-                  Contact Us
-                </NavLink>
-              </button>
+                <Button name='Read More' />
               </div>
             </div>
           </div>

@@ -6,9 +6,9 @@ const PortfolioCard = ({ img, text, options }) => {
     <div style={{}} className="PortfolioCard row m-0 p-0">
       <div className="col-12  m-0 p-0">
         <img src={img} className="PortfolioImage" width='auto'  />
-        <h1 className="heading_tertiary px-3 pt-3 PortfolioText" style={{ color: 'black' }}>
+        <h3 className=" px-3 pt-3 PortfolioText" style={{ color: 'black' }}>
           {text}
-        </h1>
+        </h3>
         <div className="pt-3 mx-3 row" >
           {options.map((e, index) => {
             return (

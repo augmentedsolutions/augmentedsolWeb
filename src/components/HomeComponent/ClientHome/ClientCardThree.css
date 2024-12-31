@@ -1,0 +1,11 @@
+.Client-Card-Three-Input{
+    height: 75px;
+}
+
+@media (min-width: 299px) and (max-width: 611px) {
+    .Client-Card-Three-Input{
+        height: 35px;
+        
+      }
+    
+}

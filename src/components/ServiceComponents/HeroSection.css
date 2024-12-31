@@ -30,3 +30,21 @@
     padding-bottom: 50px;
   }
   
+  @media (min-width: 299px) and (max-width: 450px) {
+    .text1 {
+     
+      top: 0px;
+      
+    }
+    .HeroSectionService-text{
+      padding-top:5px  ;
+      padding-bottom: 5px;
+    } 
+    /* Styling for Text2 */
+    .text2 {
+     
+      bottom: 0px;
+      
+    }
+
+}

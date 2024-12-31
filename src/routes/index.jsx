@@ -5,7 +5,7 @@ import HomePage from "../pages/HomePage.jsx";
 import ServicePage from "../pages/ServicePage.jsx";
 import PortfolioPage from "../pages/PortfolioPage.jsx";
 import ContactPage from "../pages/ContactPage";
-import Navbar from "../layouts/Navbar.jsx";
+import Navbarr from "../layouts/Navbar.jsx";
 import Footer from "../layouts/Footer.jsx";
 
 const Path = () => {
@@ -13,9 +13,9 @@ const Path = () => {
     <Router>
       {/* Navbar */}
       <div style={{ overflow: "hidden" }}>
-      <div className=" MarginTopText1">
+      <div className=" my-5">
 
-      <Navbar />
+      <Navbarr />
       </div>
 
       <Routes>
@@ -36,7 +36,10 @@ const Path = () => {
       </Routes>
 
       {/* Footer */}
+      <div className="my-5"> 
+
       <Footer />
+      </div>
       </div>
     </Router>
   );

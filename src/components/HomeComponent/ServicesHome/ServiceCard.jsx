@@ -4,7 +4,7 @@ import ServiceImage from "../../../assets/Home/Service Bacground.png";
 import "./ServiceCard.css";
 const ServiceCard = ({ image }) => {
   return (
-    <div className="col-10 col-lg-12 m-0 p-0" style={{}}> 
+    <div className="col-10 col-lg-11 m-0 p-0" style={{}}> 
       <div class="row card m-0 p-0 ">
         <img
           src={image}
@@ -26,11 +26,11 @@ const ServiceCard = ({ image }) => {
          borderBottomLeftRadius:'15px'
          // padding: "10px",
         }}>
-          <h2 class="card-title HomeServiceCardText1" style={{}} >Card title</h2>
-          <p class="card-text HomeServiceCardText2" style={{}}>
+          <h2 class="text-white card-title HomeServiceCardText1" style={{textDecoration:'underline'}} >Card title</h2>
+          <h3 class="text-white card-text HomeServiceCardText2" style={{}}>
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This content is a little bit longer.
-          </p>
+          </h3>
           
         </div>
       </div>

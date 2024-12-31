@@ -43,7 +43,7 @@ const TeamCarousal = () => {
         }}
         spaceBetween={-190}
         slidesPerView={2}
-        centeredSlides
+        centeredSlides={true}
         breakpoints={{
           991: {
             slidesPerView: 2,
@@ -55,7 +55,7 @@ const TeamCarousal = () => {
         }}
       >
         {images.map((image, index) => (
-          <SwiperSlide key={index} className="custom-slide row">
+          <SwiperSlide key={index} className="custom-slide ">
             <TeamCard image={image} />
           </SwiperSlide>
         ))}

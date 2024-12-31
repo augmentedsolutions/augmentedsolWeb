@@ -3,21 +3,21 @@ import ClientIcon from "../../../assets/Home/ClientIcon.png";
 
 import "../../../index.css";
 import Button from "../../../common/Button/Button";
-
+import './ClientCardThree.css'
 const ClientCardThree = () => {
   return (
-    <div className="row">
-      <div className="col-12 col-sm-10 col-lg-6">
+    <div className="row my-5">
+      <div className="col-12 col-sm-10 col-xl-6 col-xxl-6">
         <div className="row">
           <div className="col-12">
             <div className="row">
               
             <div class="row">
-      <div class="col text-start mb-1 md-sm-5 md-md-5 mb-lg-5">
-         <h2 class=" font-weight-bolder MarginBottomContentContainer">Explore product in new wa
-         <img className="ms-5" src={ClientIcon} /></h2                                                                                                                                                                                                                                                                                                                                                                         >
-  <p class=""> We specialize in creating visual identities for products and
-  branda in your company.</p>
+      <div class="text-white col-xl-12 col-xxl-10 text-start mb-1  ">
+         <h1 class=" font-weight-bolder MarginBottomContentContainer">Explore product in new way
+         <img className="ms-5 mb-5" src={ClientIcon} /></h1                                                                                                                                                                                                                                                                                                                                                                         >
+  <p class="text-white lead"> We specialize in creating visual identities for products and
+  brands in your company.</p>
       </div>
     </div>
 
@@ -33,8 +33,8 @@ const ClientCardThree = () => {
 
                       <input
                         type="text"
-                        className="background_Input_Client"
-                        style={{ height: "75px", width: "100%" }}
+                        className="background_Input_Client Client-Card-Three-Input"
+                        style={{  width: "100%" }}
                         />
                         </div>
                         <div className="col-4 text-start">

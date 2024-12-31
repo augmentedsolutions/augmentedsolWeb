@@ -16,20 +16,20 @@ const Home = () => {
               <HeroSection />
             </div>
           </div>
-          <div className="row  Container" >
-            <div className="col-12 MarginContainer">
+          <div className="row  Container" style={{display:'flex',justifyContent:'center',alignItems:'center'}} >
+            <div className="col-12 mt-5 mb-5 p-5">
               <AboutHome />
             </div>
           </div>
 
           
-          <div className="row MarginContainer " >
+          <div className="row mt-5 mb-5 " >
             <div className="col-12 ">
               <ServicesHome />
             </div>
           </div>
-          <div className="row  Container" >
-            <div className="col-12 MarginContainer ">
+          <div className="row  Container " >
+            <div className="col-12 mt-5 mb-5 pt-5 pb-5 ">
               <TeamHome />
             </div>
           </div>

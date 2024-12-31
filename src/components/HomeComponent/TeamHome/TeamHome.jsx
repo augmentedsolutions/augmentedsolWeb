@@ -11,13 +11,18 @@ const TeamHome = () => {
           style={{ position: "relative" }}
         >
           <div className="col-12 col-lg-5 text-lg-start text-center">
+            <div className="row">
+             <div className="col-9">
+
             <div className="about-wrapper">
-              <h2 className="MarginBottomContentContainer">Augmented Team</h2>
-              <p className=" mb-4 mb-md-5">
+              <h1 className="text-white mb-5">Augmented Team</h1>
+              <p className="lead text-white mb-5 ">
                 Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel ut
                 feugiat ut. Lorem ipsum dolor sit amet consectetur. Lorem urna
                 dui vel ut feugiat ut.
               </p>
+            </div>
+             </div>
             </div>
           </div>
           <div className="col-12 col-lg-7 ">

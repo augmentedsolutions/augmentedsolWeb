@@ -5,7 +5,7 @@ const HeroSectionService = ({ img, text1, text2 }) => {
   return (
     <div className="row">
       <div
-        className="col-12 containerHover"
+        className="col-12  containerHover"
         style={{
           overflow: "hidden",
           position: "relative",
@@ -14,7 +14,7 @@ const HeroSectionService = ({ img, text1, text2 }) => {
           justifyContent: "center",
         }}
       >
-        <img className="ServiceHeroBanner" src={img} width="100%" />
+        <img className="ServiceHeroBanner" src={img} width="100%" style={{minHeight:'140px'}}/>
         <div
           className="row"
           style={{
@@ -26,24 +26,24 @@ const HeroSectionService = ({ img, text1, text2 }) => {
         >
           <div className="col-10  text-center " style={{}}>
             <div
-              className="row MarginBottomText1"
+              className="row "
               style={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
               }}
             >
-              <div className="col-5">
-                <h1 className=" text1" style={{}}>
+              <div className="col-12 col-md-5  ">
+                <h1 className=" text1 MarginBottomText1" style={{}}>
                   {text1}
                 </h1>
               </div>
             </div>
             <div className="row">
-              <div col-8 className="MarginBottomText1">
-                <h2 className="larger-text text2" style={{}}>
+              <div col-8 className="">
+                <p className=" text2 MarginBottomText1" style={{}}>
                   {text2}
-                </h2>
+                </p>
               </div>
             </div>
           </div>

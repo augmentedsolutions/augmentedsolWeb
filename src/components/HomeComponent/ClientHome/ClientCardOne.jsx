@@ -18,12 +18,12 @@ const ClientCardOne = () => {
 
   return (
     <>
-      <div className="row MarginBottomText1">
+      <div className="row my-5">
         <div className="col-12 text-center">
-          <h2 className="">Augmented Clients</h2>
+          <h1 className="text-white">Augmented Clients</h1>
         </div>
       </div>
-      <div className="row">
+      <div className="row my-5 ">
         <Swiper
           allowTouchMove={true}
           autoplay={{
