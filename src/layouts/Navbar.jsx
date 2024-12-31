@@ -38,33 +38,27 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar-scroll shadow-0 border-dark">
           <div className="container-fluid">
             <a className="navbar-brand NavbarLogo" href="#!">
-              <img
-                src={logo}
-                height="100%"
-                width="auto"
-                alt="..."
-              />
+              <img src={logo} height="100%" width="auto" alt="..." />
             </a>
 
             <button
-              className="navbar-toggler"
+              class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
-              style={{ color: 'white' }}
+              style={{color:'white'}}
             >
-              <span className="navbar-toggler-icon">
-                <i className="fas fa-bars"></i>
+              <span class="navbar-toggler-icon">
+              <i className="fas fa-bars"></i>
               </span>
             </button>
 
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
+           
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mx-auto">
                 <li className="nav-item px-lg-2 px-xl-4 px-md-3">
                   <NavLink

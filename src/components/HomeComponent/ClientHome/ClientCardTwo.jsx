@@ -6,6 +6,7 @@ import Client3 from "../../../assets/Home/Client3.png";
 import ClientTwoCard from "./ClientTwoCard";
 import Serviceprvious from "../../../assets/Home/Service prvious.png";
 import ServiceNext from "../../../assets/Home/ServiceNext.png";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -23,8 +24,8 @@ const ClientCardTwo = () => {
     
  <div class="row">
       <div class="col text-center mb-1 md-sm-5 md-md-5 mb-lg-5">
-         <h1 class="display-4 font-weight-bolder MarginBottomContentContainer">What our clients say</h1>
-  <p class="lead">See what our customer say about us. It really matters for us. How
+         <h2 class=" font-weight-bolder MarginBottomContentContainer">What our clients say</h2>
+  <p class="">See what our customer say about us. It really matters for us. How
   good or bad we will make it for evaluation to make EhyalLive better.</p>
       </div>
     </div>

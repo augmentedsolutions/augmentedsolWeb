@@ -7,7 +7,7 @@
   align-items: center;
 }
 .ServiceCardImg {
-  height: 520px;
+  height: 620px;
   min-width: 450px;
 }
 .HomeServiceCardText1 {
@@ -20,7 +20,7 @@
 }
 @media (min-width: 299px) and (max-width: 991px) {
   .ServiceCardImg {
-    height: 400px;
+    height: 300px;
     min-width: 230px;
   }
   .HomeServiceCardText1 {

@@ -14,9 +14,9 @@ const ClientCardThree = () => {
               
             <div class="row">
       <div class="col text-start mb-1 md-sm-5 md-md-5 mb-lg-5">
-         <h1 class="display-4 font-weight-bolder MarginBottomContentContainer">Explore product in new way
-         <img className="ms-5" src={ClientIcon} /></h1>
-  <p class="lead"> We specialize in creating visual identities for products and
+         <h2 class=" font-weight-bolder MarginBottomContentContainer">Explore product in new wa
+         <img className="ms-5" src={ClientIcon} /></h2                                                                                                                                                                                                                                                                                                                                                                         >
+  <p class=""> We specialize in creating visual identities for products and
   branda in your company.</p>
       </div>
     </div>
@@ -34,7 +34,7 @@ const ClientCardThree = () => {
                       <input
                         type="text"
                         className="background_Input_Client"
-                        style={{ height: "60px", width: "100%" }}
+                        style={{ height: "75px", width: "100%" }}
                         />
                         </div>
                         <div className="col-4 text-start">

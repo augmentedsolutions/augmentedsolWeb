@@ -1,6 +1,6 @@
-.swiperTeam{
+/* .swiperTeam{
   height: 700px;
-}
+} */
 .swiper-pagination {
   position: absolute; /* Adjusted for better control */
   bottom: -1px !important; /* Ensure visible on screen */

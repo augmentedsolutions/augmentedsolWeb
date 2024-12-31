@@ -1,12 +1,14 @@
-.Btn-common{
-height: 7vh;
+.AboutHomeBTN{
+    height: 75px;
+                    width: 200px;
+                    font-size: 1.5rem;
+  }
 
-}
-
-@media (min-width: 299px) and (max-width: 991px) {
-    .Btn-common{
-        height: 3.5vh;
-        
-        }
+@media (min-width: 299px) and (max-width: 611px) {
+    .AboutHomeBTN{
+        height: 35px;
+        width: 100px;
+        font-size: 0.9rem;
+      }
     
 }

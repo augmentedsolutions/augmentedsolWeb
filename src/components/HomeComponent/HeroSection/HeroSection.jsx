@@ -29,7 +29,7 @@ const HeroSection = () => {
                 <div className="col-12 col-xl-9 col-xxl-6 p-0 m-0"> 
 
               <p className="text3 larger-text MarginBottomText1 " style={{}}>
-              Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel ut feugiat ut. Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel ut feugiat ut.
+              orem ipsum dolor sit amet consectetur. Lorem urna dui vel ut feugiat ut. Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel ut feugiat ut.
               </p>
                 </div>
               </div>

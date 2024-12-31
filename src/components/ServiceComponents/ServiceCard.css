@@ -9,6 +9,9 @@
   font-size: 15.37px;
   line-height: 25px;
 }
+.ServiceCardHome-img {
+  height: 500px !important;
+}
 @media (min-width: 299px) and (max-width: 991px) {
   .ServiceCardHome-img {
     height: 400px !important;

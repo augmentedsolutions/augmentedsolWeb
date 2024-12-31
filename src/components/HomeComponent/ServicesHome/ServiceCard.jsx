@@ -4,11 +4,11 @@ import ServiceImage from "../../../assets/Home/Service Bacground.png";
 import "./ServiceCard.css";
 const ServiceCard = ({ image }) => {
   return (
-    <div className="col-10 col-md-9 m-0 p-0" style={{}}> 
+    <div className="col-10 col-lg-12 m-0 p-0" style={{}}> 
       <div class="row card m-0 p-0 ">
         <img
           src={image}
-          class="card-img ServiceCardImg p-0 m-0"
+          class=" ServiceCardImg p-0 m-0"
           alt="Stony Beach"
          
           width='auto'
@@ -19,7 +19,7 @@ const ServiceCard = ({ image }) => {
             
             }}
         />
-        <div class="p-2 p-md-3  col-8 col-md-7 "  style={{position:"absolute",bottom:"0px",
+        <div class="p-2 p-md-3  col-8 col-md-6 "  style={{position:"absolute",bottom:"0px",
           backgroundImage: `url(${ServiceImage})`,
          backgroundSize: "cover",
          height:'auto',

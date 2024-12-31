@@ -10,7 +10,7 @@ import Logo from "../../../common/Logo/Logo";
 import './TeamCard.css'
 const TeamCard = () => {
   return (
-    <div className="col-sm-8 col-md-7  col-lg-12 m-0 p-0">
+    <div className="col-12 col-sm-8 col-md-7  col-lg-12 m-0 p-0">
       <div className="card" style={{backgroundColor:'none'}}>
         <img
           src={TeamImage}

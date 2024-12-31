@@ -14,12 +14,12 @@ const ServiceCard = ({ img, text, paragraph }) => {
           className="card p-0 ServiceCardHome-img text-dark card-has-bg click-col"
           style={{
             // border: '0.93px solid rgba(228, 229, 231, 0.7)',
-            height: "480px",
+            // height: "480px",
             backgroundImage: `url(${img})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             // display:"flex",
-            minWidth:'250px',
+            // minWidth:'250px',
             
              display:"flex",
             alignItems:'end',

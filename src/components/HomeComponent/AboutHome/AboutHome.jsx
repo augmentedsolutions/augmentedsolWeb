@@ -5,6 +5,7 @@ import AboutVector from "../../../assets/Home/AboutVector.png";
 import "./AboutHome.css"; // Optional: add styles here
 import Button from "../../../common/Button/Button";
 import "../../../index.css";
+import { NavLink } from "react-router-dom";
 
 const AboutHome = () => {
   return (
@@ -52,16 +53,34 @@ const AboutHome = () => {
         </div>
         <div className="col-12 col-lg-6 col-xxl-6">
           <div className="row justify-content-lg-end">
-            <div className="col-12 col-lg-11 text-md-start text-center">
+            <div className="col-12 col-lg-11 text-lg-start text-center">
               <div className="about-wrapper">
                 <h2 className="MarginBottomContentContainer">About Augmented</h2>
-                <p className="lead mb-4 mb-md-5">
+                <p className="">
                   {" "}
                   We are a specialized software company at the forefront of
                   augmented reality (AR) technology, With a passion for
                   innovation and a deep understanding of the power of AR, we are
                   dedicated to creating exceptional digital{" "}
                 </p>
+                <button
+                type="button"
+                className="btn  AboutHomeBTN"
+                style={{
+                  background: "var(--background_color_btn)",
+                  color: "white",
+                  
+                  fontWeight:'500'
+                }}
+              >
+                <NavLink
+                  to={"/contact"}
+                  style={{ textDecoration: "none", color: "white" }}
+                   // Close the menu
+                >
+                  Contact Us
+                </NavLink>
+              </button>
               </div>
             </div>
           </div>

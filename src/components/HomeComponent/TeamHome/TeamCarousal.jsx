@@ -50,7 +50,7 @@ const TeamCarousal = () => {
           },
           300: {
             slidesPerView: 1,
-            spaceBetween:-100
+            spaceBetween:0
           },
         }}
       >

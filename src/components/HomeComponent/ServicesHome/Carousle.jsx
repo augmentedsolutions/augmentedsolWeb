@@ -34,7 +34,7 @@ const Carousel = () => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={2}
-        spaceBetween={0}
+        spaceBetween={200}
         loop={true}
         navigation={{
           prevEl: ".custom-prev",
@@ -50,7 +50,7 @@ const Carousel = () => {
         breakpoints={{
           1200: {
             slidesPerView: 2,
-            spaceBetween: 0,
+            spaceBetween: 200,
           },
           300: {
             slidesPerView: 1,

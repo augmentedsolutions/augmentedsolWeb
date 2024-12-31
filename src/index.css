@@ -17,18 +17,18 @@ body {
   /* font size /2.1715  for paragraph size*/
    /* for line height of paragraph font/1.389 */
   --font-h1: 3.343rem;
-  --font-lg-h1: 1..5rem;
+  --font-lg-h1: 2rem;
   --font-larger-text: 1.2rem;
-  --font-lg-larger-text: 0.7rem;
+  --font-lg-larger-text: 0.8rem;
   
-  --font-h2: 3rem;
-  --font-lg-h2: 1.5rem;
+  --font-h2: 2.837rem;
+  --font-lg-h2: 1.56rem;
   --font-paragraph: 1.7rem;
-  --font-lg-paragraph: 1.2rem;
+  --font-lg-paragraph: 0.7rem;
   
-  --font-h3: 1.5rem;
-  --font-h4: 20.8px;
-  --font-h5: 2rem;
+  --font-h3: 1.646rem;
+  --font-h4: 1.181rem;
+  --font-h5: 1.5rem;
   --font-h6: 1.5rem;
   --font-smaller-text: 1.063;
   
@@ -40,9 +40,9 @@ body {
   --line-h5: 1.2rem;            /* Line Height for H5 */
   --line-h6: 0.6rem;            /* Line Height for H6 */
   --line-paragraph: 2.6rem;     /* Line Height for Paragraph */
-  --line-lg-paragraph: 1.5rem;     /* Line Height for Paragraph */
-  --line-larger-text: 2.5rem;   /* Line Height for Larger Text */
-  --line-lg-larger-text: 0.8rem;   /* Line Height for Larger Text */
+  --line-lg-paragraph: 1rem;     /* Line Height for Paragraph */
+  --line-larger-text: 1.8rem;   /* Line Height for Larger Text */
+  --line-lg-larger-text: 1rem;   /* Line Height for Larger Text */
   --line-smaller-text: 2.3rem;  /* Line Height for Smaller Text */
 
   --spacing-h1: 0.05rem;        /* Letter Spacing for H1 */
@@ -113,69 +113,7 @@ body {
   --btn_text_color: #ffffff;
 
 
-  /* font size 64 px */
-  --font_size_3_343: 4.343rem;
-
-
-  /* font size 48 px */
-  --font_size_2_87:3.87rem;
-   
-   /* font size 32 px */
-   --font_size_1_313:1.937rem;
-
-  /* font size 24 px */
-  --font_size_1_5:1.875rem;
-
-   /* font size 20 px */
-   --font_size_1_2_5:1.25rem;
-
-   /* font size 16 px */
-   --font_size_1_67:1.167rem;
-   --font_size_lg_1_67:0.5rem;
-
-   /* font size 20 px */
-   --font_size_body_1_25:1.25rem;
-
-   /* font size 16 px */
-   --font_size_body_1:1rem;
-
-   /* font size 14 px */
-   --font_size_body_1:0.875rem;
-
-   /* font size 12 px */
-   --font_size_body_0_75:0.75rem;
-
-   /* font size 14 px */
-   --font_size_caption_1:0.875rem;
-
-  /* font size 1.313rem */
-  --font_size_21: 21px;
-  --font_size_21: 20px;
-  --font_size_24: 24px;
-  /* 23.66px */
-  --font_size_23:1.479rem ;
   
-  /* font size 18.67px; */
-  --btn_text_fontsize:1.167rem
-  --font_size14_68: 0.918rem;
-  --font_size_18_24: 18.24px;
-  --font_size_17: 17px;
-  /* font size16px; */
-  --font_size2: 1rem; 
-  --font_size13_27: 13.27px;
-  --font_size28: 28.5px;
-  --font_size_23: 23.89px;
-  --font_size_13_21: 0.81rem;
-  --font_size_10_37: 10.37px;
-  --font_size_15_96: 15.96px;
-  --font_size_16: 1rem;
-
-  /* Font size 30.33 */
-  --font_size_1_2: 1.2rem;
-  
-  
-
-
   /* Font Weight */
   --font_weight_900: 900;
   --font_wight_primary: 700;

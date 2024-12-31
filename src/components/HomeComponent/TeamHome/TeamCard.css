@@ -10,10 +10,10 @@
 }
 
 @media (min-width: 299px) and (max-width: 991px) {
-    .ServiceCardImg{
+    /* .ServiceCardImg{
         height: 400px;
-        min-width: 230px;
-     }
+        min-width: 300px;
+     } */
      .TeamCardText1{
         font-size: 24px;
     }
