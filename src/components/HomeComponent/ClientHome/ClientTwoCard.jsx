@@ -12,19 +12,19 @@ const ClientTwoCard = ({ Img, comment, name, email }) => {
         border: "3.24px solid rgb(47, 20, 63)",
         
         padding: "35px 15px 35px 15px",
-        height: "215.83px",
+        height: "auto",
       }}
     >
       <div className="row Flex">
-        <div className="col-12">
-          <div className="row">
+        <div className="col-12 ">
+          <div className="row " >
             <div className="col-12 text_paragraph_forth">{comment}</div>
-            <div className="col-12 pt-1 pt-sm-3">
+            <div className="col-12 mt-2 mt-sm-4">
               <div className="row">
-                <div className="col-3 col-sm-2 ">
+                <div className="col-2 col-xl-2 col-xxl-3 me-3 col-sm-2 ">
                   <img src={Img} alt={name} />
                 </div>
-                <div className="col-9 col-sm-10">
+                <div className="col-9  col-lg-9 col-xl-8 col-xxl-8 ">
                   <div className="row">
                     <div className="ps-1 p-0 m-0 col-12 text_paragraph_forth">{name}</div>
                     <h6 className=" ps-1 col-12 p-0 m-0 text_paragraph_fifth">{email}</h6>

@@ -22,7 +22,7 @@ const ClientCardTwo = () => {
   return (
     <>
     
- <div class="row " style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+ <div class="row mb-5" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
       <div class=" col-12 col-sm-10 col-md-8 text-center mb-1 md-sm-5 md-md-5 mb-lg-5">
          <h1 class="text-white font-weight-bolder   my-5" style={{textDecoration:'underline'}}>What our clients say</h1>
          
@@ -44,13 +44,13 @@ const ClientCardTwo = () => {
             }}
             
             style={{display:'flex',justifyContent:'center',alignItems:'center',opacity:'1'}}
-            spaceBetween={20} // Spacing between slides
+            spaceBetween={30} // Spacing between slides
             slidesPerView={2} // Number of slides visible at once
             loop={true} // Loop the slides
             autoplay={{ delay: 3000 }} // Automatically move to next slide every 3 seconds
             breakpoints={{
-              300:{slidesPerView: 1,spaceBetween:0},
-              768: { slidesPerView: 2 }, // Show 1 slide on tablet and larger screens
+              300:{slidesPerView: 1,spaceBetween:10},
+              768: { slidesPerView: 2,spaceBetween:20 }, // Show 1 slide on tablet and larger screens
               1400: { slidesPerView: 3 }, // Show 2 slides on desktop and larger screens
             }}
             className=""
@@ -58,7 +58,7 @@ const ClientCardTwo = () => {
             <SwiperSlide >
               <ClientTwoCard
                 Img={Client1}
-                comment='“I know in real-time where the money is spent, and I don’t have to lend out the company’s credit card anymore. What a relief!"'
+                comment='“I know in real-time where the money is spent, and I don’t have to lend out the company"'
                 name="Cody Fisher"
                 email="deanna.curtis@example.com"
               />
@@ -66,7 +66,7 @@ const ClientCardTwo = () => {
             <SwiperSlide>
               <ClientTwoCard
                 Img={Client2}
-                comment="“VISUALS are much better. The improvements in optics and resolution and much more than a modern console generation leap”"
+                comment="“VISUALS are much better. The improvements in optics and resolution ”"
                 name="Kathryn Murphy"
                 email="alma.lawson@example.com"
               />
