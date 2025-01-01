@@ -18,10 +18,10 @@ const ClientTwoCard = ({ Img, comment, name, email }) => {
       <div className="row Flex">
         <div className="col-12 ">
           <div className="row " >
-            <div className="col-12 text_paragraph_forth">{comment}</div>
-            <div className="col-12 mt-2 mt-sm-4">
+            <div className=" col-12 text_paragraph_forth" style={{height:'70px'}}>{comment}</div>
+            <div className="col-12 mt- mt-sm-4">
               <div className="row">
-                <div className="col-2 col-xl-2 col-xxl-3 me-3 col-sm-2 ">
+                <div className="col-auto ">
                   <img src={Img} alt={name} />
                 </div>
                 <div className="col-9  col-lg-9 col-xl-8 col-xxl-8 ">
