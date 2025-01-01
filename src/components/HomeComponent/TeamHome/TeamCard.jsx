@@ -18,14 +18,14 @@ const TeamCard = () => {
           alt="Sunset Over the Sea"
         />
         <div
-          className="card-body backgorundTeamCard  text-center my-3 py-3"
+          className="card-body backgorundTeamCard  text-center my-3 py-lg-2 py-3"
           style={{
             border: "3.24px solid rgb(47, 20, 63)",
             
           }}
         >
-          <h2 className="card-text  " >Muh sanaullah</h2>
-          <h3 className="card-text text-white TeamCardText2" >CO- FOUNDER & PROJECT MANAGER</h3>
+          <h2 className="card-text mb-1 mb-sm-2 mb-lg-4  " >Sanaullah</h2>
+          <h3 className="card-text text-white TeamCardText2 mb-1 mb-sm-2 mb-lg-4" >CO- FOUNDER & PROJECT MANAGER</h3>
           <div
             className="row"
             style={{
@@ -35,7 +35,7 @@ const TeamCard = () => {
               
             }}
           >
-            <div className="col-7 col-sm-5 col-md-8 col-xl-7 col-xxl-5">
+            <div className="col-7 col-sm-5 col-md-5 col-lg-9 col-xl-7 col-xxl-6">
               <div
                 className="row "
                 style={{
