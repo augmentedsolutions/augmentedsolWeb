@@ -29,8 +29,8 @@ const ClientCardThree = () => {
               <div className="col-12 mt-3">
                 <div className="row">
                   <div className="col-12">
-                    <div className="row ">
-                      <div className="col-7">
+                    <div className="row m-0 p-0">
+                      <div className="m-0 p-0 col-7 col-sm-7">
               
                         <input
                     type="text"

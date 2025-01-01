@@ -14,7 +14,7 @@ const HeroSectionService = ({ img, text1, text2 }) => {
           justifyContent: "center"
         }}
       >
-        <img className="ServiceHeroBanner" src={img} width="100%" style={{minHeight:'150px'}}/>
+        <img className="ServiceHeroBanner" src={img} width="100%" style={{minHeight:'185px'}}/>
         <div
           className="row"
           style={{
