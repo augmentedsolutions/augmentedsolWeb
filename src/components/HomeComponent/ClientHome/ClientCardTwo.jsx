@@ -11,67 +11,51 @@ import ServiceNext from "../../../assets/Home/ServiceNext.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation"; // Import navigation styles
-import "swiper/css/autoplay"; // Import autoplay styles
+import 'swiper/css';
+import 'swiper/css/navigation'; // Import navigation styles
+import 'swiper/css/autoplay'; // Import autoplay styles
 import { Autoplay, Navigation } from "swiper/modules";
+
+
 
 const ClientCardTwo = () => {
   return (
     <>
-      <div
-        class="row "
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <div class=" col-12 col-sm-10 col-md-8 text-center mb-1 md-sm-5 md-md-5 mb-lg-5">
-          <h1
-            class="text-white font-weight-bolder   my-5"
-            style={{ textDecoration: "underline" }}
-          >
-            What our clients say
-          </h1>
-
-          <p class="lead text-white ">
-            See what our customer say about us. It really matters for us. How
-            good or bad we will make it for evaluation to make EhyalLive better.
-          </p>
-        </div>
+    
+ <div class="row " style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+      <div class=" col-12 col-sm-10 col-md-8 text-center mb-1 md-sm-5 md-md-5 mb-lg-5">
+         <h1 class="text-white font-weight-bolder   my-5" style={{textDecoration:'underline'}}>What our clients say</h1>
+         
+  <p class="lead text-white ">See what our customer say about us. It really matters for us. How
+  good or bad we will make it for evaluation to make EhyalLive better.</p>
       </div>
+    </div>
 
+
+      
       {/* Swiper Carousel */}
-      <div
-        className="row"
-        style={{ display: "flex", justifyContent: "center" }}
-      >
+      <div className="row" style={{ display: "flex", justifyContent: "center" }}>
         <div className="col-12">
           <Swiper
             modules={[Navigation, Autoplay]} // Enable Navigation and Autoplay modules
             navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
             }}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              opacity: "1",
-            }}
+            
+            style={{display:'flex',justifyContent:'center',alignItems:'center',opacity:'1'}}
             spaceBetween={20} // Spacing between slides
             slidesPerView={2} // Number of slides visible at once
-            // loop={true} // Loop the slides
-            // autoplay={{ delay: 3000 }} // Automatically move to next slide every 3 seconds
+            loop={true} // Loop the slides
+            autoplay={{ delay: 3000 }} // Automatically move to next slide every 3 seconds
             breakpoints={{
-              300: { slidesPerView: 1, spaceBetween: 0 },
+              300:{slidesPerView: 1,spaceBetween:0},
               768: { slidesPerView: 2 }, // Show 1 slide on tablet and larger screens
               1400: { slidesPerView: 3 }, // Show 2 slides on desktop and larger screens
             }}
             className=""
           >
-            <SwiperSlide>
+            <SwiperSlide >
               <ClientTwoCard
                 Img={Client1}
                 comment='“I know in real-time where the money is spent, and I don’t have to lend out the company’s credit card anymore. What a relief!"'

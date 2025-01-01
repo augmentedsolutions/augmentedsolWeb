@@ -14,10 +14,10 @@ const ClientHome = () => {
           <ClientCardOne />
         </div>
       </div>
-      <div className="row  my-1 my-sm-3 my-lg-5 p-1 p-sm-3 p-lg-5">
-       <div className="col-12 ClientTwoContainer" style={{position:'relative'}}>
+      <div className="row  my-1 my-sm-3 my-lg-5 p-1 p-sm-3 p-lg-5" style={{position:'relative'}}>
+       <div className="col-12 ClientTwoContainer" style={{}}>
 
-      <div className="row background_gradient_one   p-1 p-md-3 p-lg-5 border_radius_one" style={{position:'relative',height:'490px',border: "3.24px solid rgb(47, 20, 63)",marginBottom:'120px'}}>
+      <div className="row background_gradient_one   p-1 p-md-3 p-lg-5 border_radius_one" style={{height:'490px',border: "3.24px solid rgb(47, 20, 63)",marginBottom:'120px'}}>
         <div className="col-12 Flex " style={{flexDirection:'column',    }} >
           <ClientCardTwo />
         </div>
