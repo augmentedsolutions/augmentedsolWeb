@@ -29,7 +29,7 @@ const ClientCardThree = () => {
               <div className="col-12 mt-3">
                 <div className="row">
                   <div className="col-12">
-                    <div className="row">
+                    <div className="row ">
                       <div className="col-7">
               
                         <input
@@ -50,7 +50,7 @@ const ClientCardThree = () => {
                   />
                   
                       </div>
-                      <div className="col-4 col-sm-3 col-md-3  col-lg-3 col-xl-4 col-xxl-3">
+                      <div className="col-auto">
                         <Button name="Start" icon={ ClientVectorImage2} />
                       </div>
                     </div>

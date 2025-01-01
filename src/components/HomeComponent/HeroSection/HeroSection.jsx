@@ -34,7 +34,7 @@ const HeroSection = () => {
                 </div>
               </div>
               <div className="row p-0 m-0 Btn  " style={{display:'flex',justifyContent:'start',alignItems:'start'}}>
-             <div style={{minWidth:'100px'}} className="Btn-Hero-Section col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-1 p-0 m-0"   >
+             <div style={{minWidth:'100px'}} className="Btn-Hero-Section col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-2 p-0 m-0"   >
               
               <Button name='Lets Start' FontSize='1px'  justify='start'/>
              </div>

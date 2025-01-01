@@ -4,7 +4,7 @@ import ServiceImage from "../../../assets/Home/Service Bacground.png";
 import "./ServiceCard.css";
 const ServiceCard = ({ image }) => {
   return (
-    <div className="col-10 col-lg-11 m-0 p-0" style={{}}> 
+    <div className="col-11 col-sm-8 col-md-7 col-lg-10 col-xl-12 col-xxl-12 m-0 p-0" style={{}}> 
       <div class="row card m-0 p-0 ">
         <img
           src={image}

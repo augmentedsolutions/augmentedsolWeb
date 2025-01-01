@@ -15,7 +15,7 @@ const Button = ({
 }) => {
   return (
     <button
-      type="button"
+      type="button p-0"
       className="btn   AboutHomeBTN"
       style={{
         background: "var(--background_color_btn)",
@@ -30,6 +30,7 @@ const Button = ({
         to={"/contact"}
         style={{ textDecoration: "none",fontWeight:"bold", color: "white",fontSize:{FontSize} }}
         // Close the menu
+        className='px-3 py-2'
         
       >
         {name} <img src={icon} />

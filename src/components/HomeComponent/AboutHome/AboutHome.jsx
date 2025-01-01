@@ -65,7 +65,7 @@ const AboutHome = () => {
                   dedicated to creating exceptional digital{" "}
                 </p>
                 <div className="row text-center text-lg-start justify-content-center justify-content-lg-start">
-      <div className="col-5 col-sm-4 col-md-3  col-lg-6 col-xl-5 col-xxl-4" >
+      <div className="col-auto" >
 
       <Button name='Read More'/>
       </div>

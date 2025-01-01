@@ -97,10 +97,9 @@ const Navbarr = () => {
             </Nav>
 
             {/* Contact Button */}
-            <div className="col-2 mx-auto mx-lg-0 " style={{   background: "var(--background_color_btn)",
+            <div onClick={closeNavbar} className=" col-5 col-sm-4 col-lg-auto mx-auto mx-lg-0 " style={{   background: "var(--background_color_btn)",
                 color: "white",
-                borderRadius:'5.63px',
-                minWidth: "160px",}}>
+                borderRadius:'5.63px'}}>
                   
             <Button name='Contact Us' FontSize="30px"/>
             </div>

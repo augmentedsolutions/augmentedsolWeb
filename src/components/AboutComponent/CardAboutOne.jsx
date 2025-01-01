@@ -8,7 +8,7 @@ const CardAboutOne = ({img}) => {
           className="row gy-4 gy-lg-0 align-items-lg-center"
           style={{ position: "relative" }}
         >
-          <div className="col-12 col-lg-6 text-lg-start text-center  ">
+          <div className="mt-5 mt-lg-0 col-12 col-lg-6 text-lg-start text-center  ">
           <img src={img} width='90%' height='auto' />
           </div>
           <div className="col-12 col-lg-6 col-xxl-6 text-lg-start text-center">
