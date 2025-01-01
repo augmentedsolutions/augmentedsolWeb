@@ -20,7 +20,7 @@ const HeroSection = () => {
         >
           <img src={BannerImage} class="img-fluid image1" width="100%" style={{minHeight:'170px'}} alt="..."></img>
           <img src={HoverImageHome} class="img-fluid image2" width="100%" style={{minHeight:'170px'}} alt="..."></img>
-          <div className="row PaddingAllContainer HeroSectionText" style={{  }}>
+          <div className="mt-1 mt-sm-0 row PaddingAllContainer HeroSectionText" style={{  }}>
             <div className="col-12 col-lg-10 " style={{display:'flex',justifyContent:'start',flexDirection:'column'}}>
               <span className="text3 heading_primary_1 mb-1 mb-sm-3 mb-xl-5 " style={{}}>
                 Virtual Reality
@@ -34,9 +34,9 @@ const HeroSection = () => {
                 </div>
               </div>
               <div className="row p-0 m-0 Btn  " style={{display:'flex',justifyContent:'start',alignItems:'start'}}>
-             <div className="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-2 p-0 m-0"  style={{}} >
+             <div style={{minWidth:'100px'}} className="Btn-Hero-Section col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-1 p-0 m-0"   >
               
-              <Button name='Lets Start'  FontStylte={'heading_fifth_1'} justify='start'/>
+              <Button name='Lets Start' FontSize='1px'  justify='start'/>
              </div>
               </div>
             </div>

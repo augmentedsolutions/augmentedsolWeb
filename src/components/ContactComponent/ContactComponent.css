@@ -1,7 +1,13 @@
+@import url('../../index.css');
 .ContactForm{
     position:relative;
     top:-150px;
 }
+
+.custom-placeholder::placeholder {
+    color: white !important; /* Change the placeholder color */
+    font-family: var(--font_family_orbitron); /* Set the placeholder font family */
+  }
 @media (min-width: 611px) and (max-width: 991px) {
     .ContactForm{
         position:relative;

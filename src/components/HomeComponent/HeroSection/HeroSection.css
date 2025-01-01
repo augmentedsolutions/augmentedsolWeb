@@ -40,6 +40,9 @@
     top:10%;
   }
   @media (min-width: 299px) and (max-width: 450px) {
+    .Btn-Hero-Section{
+       height: 5vh !important;  
+    }
 
     .HeroSectionText{
       position: absolute;

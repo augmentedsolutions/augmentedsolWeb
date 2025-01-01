@@ -31,11 +31,24 @@ const ClientCardThree = () => {
                   <div className="col-12">
                     <div className="row">
                       <div className="col-7">
+              
                         <input
-                          type="text"
-                          className="background_Input_Client Client-Card-Three-Input"
-                          style={{ width: "100%" }}
-                        />
+                    type="text"
+                    id="formControlLg"
+                    style={{
+                      
+                      width: "100%",
+                      height: "100%" ,
+                      
+                      border: "1px solid white",
+                      borderRadius: "5px",
+                      background: 'linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #CB8DE8 -42.58%, rgba(203, 143, 232, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(199, 137, 228, 0) 100%)'
+
+                    }}
+                    class="form-control form-control-lg custom-placeholder-Client-Three"
+                    placeholder="Your Email"
+                  />
+                  
                       </div>
                       <div className="col-4 col-sm-3 col-md-3  col-lg-3 col-xl-4 col-xxl-3">
                         <Button name="Start" icon={ ClientVectorImage2} />

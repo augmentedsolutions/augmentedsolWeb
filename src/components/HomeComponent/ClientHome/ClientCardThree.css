@@ -1,7 +1,18 @@
+@import url('../../../index.css');
 .Client-Card-Three-Input{
     height: 75px;
 }
 
+.custom-placeholder-Client-Three {
+    border: 3.24px solid rgb(133,90,119) !important; 
+    font-weight:bold;
+    
+  }
+.custom-placeholder-Client-Three::placeholder {
+    color: rgb(133,90,119) !important;
+    
+    font-family: var(--font_family_poppins); /* Set the placeholder font family */
+  }
 @media (min-width: 299px) and (max-width: 611px) {
     .Client-Card-Three-Input{
         height: 35px;
