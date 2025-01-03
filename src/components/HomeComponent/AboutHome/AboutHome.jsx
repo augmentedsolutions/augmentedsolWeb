@@ -25,15 +25,16 @@ const AboutHome = () => {
               >
                 <img
                   src={AboutOne}
-                  className="image-vector-clip"
-                  height="100%"
+                  className="image-vector-clip AboutImag1"
+                  
                   width="100%"
+                  style={{objectFit:'cover'}}
                   alt="About One"
                 />
               </div>
 
               <div
-                className="about-image-main about-image-right "
+                className="about-image-main about-image-right   "
                 style={{
                   backgroundImage: `url(${AboutVector})`,
                   backgroundRepeat: "no-repeat",
@@ -42,10 +43,10 @@ const AboutHome = () => {
               >
                 <img
                   src={AboutTwo}
-                  className="image-vector-clip  "
-                  height="100%"
+                  className="image-vector-clip  AboutImag1 "
+                  
                   width="100%"
-                  style={{ objectFit: "cover" }}
+                  style={{objectFit:'cover'}}
                   alt="About Two"
                 />
               </div>

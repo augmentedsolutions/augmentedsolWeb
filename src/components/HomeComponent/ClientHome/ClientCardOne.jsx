@@ -8,7 +8,7 @@ import './ClientCardOne.css';
 import "../../../index.css";
 import ClientCard from "./ClientCard.jsx";
 import ClientIMg1 from "../../../assets/Home/AugmentedClients1.png";
-import ClientIMg2 from "../../../assets/Home/AugmentedClients2.png";
+import ClientIMg2 from "../../../assets/Home/AugmentedClients2.jpg";
 import ClientIMg3 from "../../../assets/Home/AugmentedClients3.png";
 import ClientIMg4 from "../../../assets/Home/AugmentedClients4.png";
 import ClientIMg5 from "../../../assets/Home/AugmentedClients5.png";

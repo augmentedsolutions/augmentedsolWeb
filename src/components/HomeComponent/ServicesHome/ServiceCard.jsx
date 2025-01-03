@@ -11,10 +11,10 @@ const ServiceCard = ({ image }) => {
           class=" ServiceCardImg p-0 m-0"
           alt="Stony Beach"
          
-          width='auto'
-          
+          width='100%'
+          height='auto'
           style={{borderRadius:'9px',
-           
+           objectFit:'cover',
             border: '0.93px solid rgba(228, 229, 231, 0.7)'
             
             }}

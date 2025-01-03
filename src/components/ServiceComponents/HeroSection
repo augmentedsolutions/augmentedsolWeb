@@ -1,0 +1,47 @@
+<div className="row">
+      <div
+        className="col-12 p-0  containerHover"
+        style={{
+          overflow: "hidden",
+          position: "relative",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center"
+        }}
+      >
+        <img className="ServiceHeroBanner "  height='1300px' src={img}  width='auto' style={{minHeight:'185px'}}/>
+        <div
+          className="row"
+          style={{
+            position: "absolute",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div className="col-10  text-center " style={{}}>
+            <div
+              className="row "
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <div className="col-12 col-md-5 heading_primary_1 mb-1 mb-sm-3 mb-xl-5 ">
+                <span className=" text1 MarginBottomText1" style={{}}>
+                  {text1}
+                </span>
+              </div>
+            </div>
+            <div className="row">
+              <div col-8 className="">
+                <span className=" text2 larger-text MarginBottomText1" style={{}}>
+                  {text2}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,81 @@
+<!-- <div className="row p-0 m-0 ">
+    <div
+      className="col-12 p-0 m-0 containerHover"
+      style={{
+        overflow: "hidden",
+        position: "relative",
+       display:'flex',
+        justifyContent:'center',
+        alignItems:"center"
+      }}
+    >
+      <img src={BannerImage} class=" image1 hero" width="100%" style={{minHeight:'185px'}} alt="..."></img>
+      <img src={HoverImageHome} class=" image2 hero" width="100%" style={{minHeight:'185px'}} alt="..."></img>
+      <div className="mt-1 mt-sm-0 row PaddingAllContainer HeroSectionText" style={{  }}>
+        <div className="col-12 col-lg-10 " style={{display:'flex',justifyContent:'start',flexDirection:'column'}}>
+          <span className="text3 heading_primary_1 mb-1 mb-sm-3 mb-xl-5 " style={{}}>
+            Virtual Reality
+          </span>
+          <div className="row p-0 m-0 mb-1 mb-sm-3 mb-xl-5 ">
+            <div className="col-12 col-xl-9 col-xxl-6 p-0 m-0"> 
+
+          <span className=" text3 larger-text MarginBottomText1 " style={{}}>
+          orem ipsum dolor sit amet consectetur. Lorem urna dui vel ut feugiat ut. Lorem ipsum dolor sit amet consectetur. Lorem urna dui vel ut feugiat ut.
+          </span>
+            </div>
+          </div>
+          <div className="row p-0 m-0 Btn  " style={{display:'flex',justifyContent:'start',alignItems:'start'}}>
+         <div  className="Btn-Hero-Section col-auto p-0 m-0"   >
+          
+          <Button name='Lets Start' FontSize='1px'  justify='start'/>
+         </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="hero" style={{backgroundImage:`url(${img})` ,backgroundRepeat:'none',backgroundSize:'cover'}}>
+      <div class="hero-content">
+        <h1 class="hero-title">{text1}</h1>
+        <div className="row justify-content-center">
+         <div className="col-10">
+
+        <p class=" hero-subtitle larger-text">{text2}</p>
+         </div>
+        </div>
+        {/* <a href="#" class="hero-button">
+          Get Started
+        </a> */}
+      </div>
+    </header> -->

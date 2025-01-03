@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, EffectCoverflow, Autoplay } from "swiper/modules";
 import './PortfolioCarousel.css';
@@ -12,8 +12,36 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
+import axios from "axios";
+import Loading from "../../common/Loading/Loading";
 
 const PortfolioCarousel = () => {
+  const [data,setData]=useState([]);
+  const [loading,setLoading]=useState(true);
+  const apiUrl = import.meta.env.VITE_API_URL;
+  const routeRoute1 = import.meta.env.VITE_API_Route1;
+  const Request2 = import.meta.env.VITE_API_Request2;
+  console.log('API URL:', apiUrl,routeRoute1,Request2);
+  const ApiCall=async()=>{
+    console.log('APi Call start')
+     try{
+    const response=await axios.get(`${apiUrl}${routeRoute1}${Request2}`)
+    console.log("response", response.data)
+       setData(response.data)
+       setLoading(false)
+     }catch(error)
+     {
+      console.log("error",error)
+      setLoading(false)
+     }
+  }
+  
+  useEffect(()=>{
+ApiCall()
+  },[])
+  useEffect(()=>{
+    console.log("Set Data ", data)
+  },[data])
   const portfolioData = [
   
     {
@@ -76,18 +104,20 @@ const PortfolioCarousel = () => {
   ];
 
   return (
-    <Swiper
+    <>
+    {loading?( <Loading/>    ):(
+      <Swiper
       style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
       modules={[Navigation, EffectCoverflow, Pagination, Autoplay]}
       effect="coverflow"
       coverflowEffect={{
         rotate: 0,
         stretch: 0, // Stretch the slides for better visibility
-        depth: 50, // Add depth to the slide stack
+        depth: 0, // Add depth to the slide stack
         modifier: 1,
         slideShadows: true,
       }}
-      spaceBetween={5}
+      spaceBetween={20}
       slidesPerView={4} // Show 4 slides: 1 active + 1 on each side
       centeredSlides
       loop
@@ -96,34 +126,37 @@ const PortfolioCarousel = () => {
         disableOnInteraction: false,
       }}
       breakpoints={{
-        1200: {
+        1500: {
           slidesPerView: 4, // Show slides on both sides for larger screens
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 3, // Show slides on both sides for larger screens
           spaceBetween: 5,
         },
-        991: {
+        700: {
           slidesPerView: 2, // Single slide for smaller screens
           spaceBetween: 10,
         },
         300: {
-          slidesPerView: 2, // Single slide for smaller screens
-          spaceBetween: 0,
+          slidesPerView: 1, // Single slide for smaller screens
+          spaceBetween: 10,
         },
 
       }}
     >
-      {portfolioData.map((item, index) => (
-        <SwiperSlide key={index} style={{ height: "auto" }}>
-          <PortfolioCard
-            img={item.img}
-            text={item.text}
-            options={item.options}
-            aria-label={`Portfolio card showcasing ${item.text}`}
-            loading="lazy"
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+      
+        {data.map((item, index) => (
+          <SwiperSlide key={index} style={{ height: "auto" }}>
+            <PortfolioCard
+            item={item}
+            />
+          </SwiperSlide>
+        ))}
+        </Swiper>
+    )}
+    </>
   );
-};
+    };
 
 export default PortfolioCarousel;

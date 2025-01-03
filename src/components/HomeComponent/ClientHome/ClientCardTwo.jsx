@@ -44,7 +44,7 @@ const ClientCardTwo = () => {
             }}
             
             style={{display:'flex',justifyContent:'center',alignItems:'center',opacity:'1'}}
-            spaceBetween={30} // Spacing between slides
+            spaceBetween={20} // Spacing between slides
             slidesPerView={2} // Number of slides visible at once
             loop={true} // Loop the slides
             autoplay={{ delay: 3000 }} // Automatically move to next slide every 3 seconds

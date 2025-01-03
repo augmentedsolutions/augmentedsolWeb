@@ -7,6 +7,9 @@ import PortfolioPage from "../pages/PortfolioPage.jsx";
 import ContactPage from "../pages/ContactPage";
 import Navbarr from "../layouts/Navbar.jsx";
 import Footer from "../layouts/Footer.jsx";
+import UseCasePage from "../pages/UseCasePage.jsx";
+import PortfolioCardDetail from "../pages/PortfolioCardDetailPage.jsx";
+import UseCaseCardDetail from "../pages/UseCaseCardDetailPage.jsx";
 
 const Path = () => {
   return (
@@ -33,10 +36,19 @@ const Path = () => {
 
         {/* Portfolio Page Route */}
         <Route path="/portfolio" element={<PortfolioPage />} />
+        
+        {/* Use Case Page Route */}
+        <Route path="/useCase" element={<UseCasePage />} />
+
+        {/* Use Case Portfolio Card Detail Route */}
+        <Route path="/portfolioDetails" element={<PortfolioCardDetail />} />
+
+        {/* Use Case Use Case Card Detail Route */}
+        <Route path="/useCaseDetails" element={<UseCaseCardDetail />} />
       </Routes>
 
       {/* Footer */}
-      <div className="my-1 my-sm-3 my-lg-5"> 
+      <div className="mb-2 mb-sm-3 mb-lg-5"> 
 
       <Footer />
       </div>

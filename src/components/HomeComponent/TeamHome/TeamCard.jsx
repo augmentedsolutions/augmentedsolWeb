@@ -14,6 +14,8 @@ const TeamCard = () => {
       <div className="card" style={{backgroundColor:'none'}}>
         <img
           src={TeamImage}
+          style={{objectFit:"cover"}}
+          width='100%'
           className="card-img-top"
           alt="Sunset Over the Sea"
         />

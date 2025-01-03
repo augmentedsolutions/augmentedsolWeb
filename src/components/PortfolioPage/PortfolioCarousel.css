@@ -1,5 +1,6 @@
 .swiper-slide-active .PortfolioCard {
   background-color: rgb(0, 0, 0);
+  
 }
 .swiper-slide-active .PortfolioOption {
   color: white !important;
@@ -14,10 +15,10 @@
 }
 
 .PortfolioImage{
-  height:320px;
+  height:370px;
 }
 
-@media (min-width: 299px) and (max-width: 991px) {
+@media (min-width: 299px) and (max-width: 400px) {
   .PortfolioImage{
     height:260px;
   }

@@ -36,7 +36,13 @@
                   width: 200px;
                   font-size: 1.5rem;
 }
+.AboutImag1{
+  height: 450px;
+}
 @media (min-width: 299px) and (max-width: 611px) {
+  .AboutImag1{
+    height: 230px;
+  }
   .image-containerr {
     position: relative;
     height: 350px;

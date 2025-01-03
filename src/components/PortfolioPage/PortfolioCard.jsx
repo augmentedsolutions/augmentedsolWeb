@@ -1,16 +1,28 @@
 import React from "react";
 import "../../index.css";
+import { useNavigate } from "react-router-dom";
 
-const PortfolioCard = ({ img, text, options }) => {
+const PortfolioCard = ({ item }) => {
+  const navigate=useNavigate()
+  // console.log(options)
+  const handleClick=()=>{
+    navigate('/portfolioDetails',{ state: {item} })
+  }
+
+  // img={item.image}
+  // text={item.projectName }
+  // options={item.services}
+  // aria-label={`Portfolio card showcasing ${item.text}`}
+  // loading="lazy"
   return (
     <div style={{}} className="PortfolioCard row m-0 p-0">
       <div className="col-12  m-0 p-0">
-        <img src={img} className="PortfolioImage" width='auto'  />
-        <h3 className=" px-3 pt-3 PortfolioText" style={{ color: 'black' }}>
-          {text}
+        <img src={item.image} className="PortfolioImage" width='100%'  />
+        <h3 className=" px-3 pt-3 PortfolioText" style={{ color: 'black' ,height:'85px',overflow:'hidden'}}>
+        {item.projectName }
         </h3>
         <div className="pt-3 mx-3 row" >
-          {options.map((e, index) => {
+          {item.services.map((e, index) => {
             return (
               <span
                 key={index}
@@ -18,7 +30,7 @@ const PortfolioCard = ({ img, text, options }) => {
                 style={{height:'33px', color:'black' , display: 'flex', justifyContent: 'center', alignItems: 'center' }}
               >
                 
-                  {e.option}
+                  {e}
                 
               </span>
             );
@@ -26,6 +38,7 @@ const PortfolioCard = ({ img, text, options }) => {
         </div>
         <div
           className="mt-4 text_seventh "
+          onClick={handleClick}
           style={{
             height: '53px',
             background: 'linear-gradient(99.05deg, #A700F5 0.07%, #DF308D 106.32%)',

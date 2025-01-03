@@ -12,7 +12,7 @@ const AboutPage = () => {
       <div className="row Container" style={{ position: "relative" }}>
         <div className="col-12">
           <div className="row ">
-            <div className="12 MarginContainer ">
+            <div className="12 p-0 MarginContainer ">
               <HeroSectionService
                 img={HeroSectionImage}
                 text1="About"
@@ -36,6 +36,7 @@ const AboutPage = () => {
             position: "absolute",
             top: "250px",
             left: "-600px",
+            zIndex:'-1'
             // backgroundColor:"red"
           }}
         ></div>
@@ -48,6 +49,7 @@ const AboutPage = () => {
             position: "absolute",
             top: "400px",
             right: "-600px",
+            zIndex:'-1'
             // backgroundColor:"red"
           }}
         ></div>

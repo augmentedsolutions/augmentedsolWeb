@@ -1,0 +1,16 @@
+.project-description * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .project-description2 img, .project-description2 video {
+    width: auto !important;
+    height: 600px !important;
+    object-fit:contain;
+  }
+  .project-description2  iframe {
+    height:auto !important;
+    width:  100% !important;
+    /* object-fit:cover !important; */
+  }

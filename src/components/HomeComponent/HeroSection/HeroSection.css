@@ -23,9 +23,14 @@
     bottom: 0px; /* Move into visible position */
 
   }
+  .image2{
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  }
   .containerHover:hover .image2 {
    
     display: flex;
+
   }
   .containerHover:hover .image1 {
    
@@ -39,11 +44,48 @@
     position: absolute;
     top:10%;
   }
-  @media (min-width: 299px) and (max-width: 450px) {
+  .heroPage {
+    position: relative;
+    /* background: url('https://images.pexels.com/photos/2570062/pexels-photo-2570062.jpeg') center/cover no-repeat; */
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:16px ;
+     -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+/* */
+
+.Service-Hero-Content{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+  .heroPage {
+    
+    height: 50vh;
+    
+}
+}
+  @media (min-width: 299px) and (max-width: 600px) {
     /* .Btn-Hero-Section{
        height: 5vh !important;  
     } */
-
+    .heroPage {
+    
+      height: 25vh;
+      
+  }
     .HeroSectionText{
       position: absolute;
       top:1px;

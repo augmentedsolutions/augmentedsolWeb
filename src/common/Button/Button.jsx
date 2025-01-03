@@ -30,7 +30,7 @@ const Button = ({
         to={"/contact"}
         style={{ textDecoration: "none",fontWeight:"bold", color: "white",fontSize:{FontSize} }}
         // Close the menu
-        className='px-2 py-1'
+        className='px-0 py-0'
         
       >
         {name} <img src={icon} />

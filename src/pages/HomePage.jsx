@@ -12,7 +12,7 @@ const Home = () => {
       <div className="row " style={{ position: "relative" }}>
         <div className="col-12 ">
           <div className="row Container">
-            <div className="col-12 MarginContainer" style={{}}>
+            <div className="col-12 p-0 MarginContainer" style={{}}>
               <HeroSection />
             </div>
           </div>
@@ -33,7 +33,7 @@ const Home = () => {
               <TeamHome />
             </div>
           </div>
-          <div className="row  Container my-1 py-1 my-sm-3 py-sm-3 my-lg-5 py-lg-5" >
+          <div className="row  Container mt-1 py-1 mt-sm-3 py-sm-3 mt-lg-5 py-lg-5" >
             <div className="col-12  MarginContainer">
               <ClientHome />
             </div>

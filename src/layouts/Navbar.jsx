@@ -9,7 +9,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Button from "../common/Button/Button";
 
-
 const Navbarr = () => {
   const [expanded, setExpanded] = useState(false);
 
@@ -21,7 +20,7 @@ const Navbarr = () => {
       <div className="Container">
         {/* Navbar */}
         <Navbar
-          expand="lg"
+          expand="xl"
           className="navbar-scroll shadow-0 border-dark"
           style={{ backgroundColor: "transparent" }}
           expanded={expanded}
@@ -64,11 +63,23 @@ const Navbarr = () => {
                 style={{ color: "white", height: "auto" }}
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link nav-link-active px-md-1 px-lg-2 px-xl-3 px-xxl-5 text-center"
-                    : "nav-link nav-link-inactive px-md-1 px-lg-2 px-xl-3 px-xxl-5 text-center"
+                    ? "nav-link nav-link-active px-md-1 px-lg-1 px-xl-2 px-xxl-4 text-center"
+                    : "nav-link nav-link-inactive px-md-1 px-lg-1 px-xl-2 px-xxl-4 text-center"
                 }
               >
                 <h5>Services</h5>
+              </NavLink>
+              <NavLink
+                to="/useCase"
+                onClick={closeNavbar}
+                style={{ color: "white", height: "auto" }}
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link nav-link-active px-md-1 px-lg-1 px-xl-2 px-xxl-4 text-center"
+                    : "nav-link nav-link-inactive px-md-1 px-lg-1 px-xl-2 px-xxl-4 text-center"
+                }
+              >
+                <h5>Use Case</h5>
               </NavLink>
               <NavLink
                 to="/portfolio"
@@ -76,8 +87,8 @@ const Navbarr = () => {
                 style={{ color: "white", height: "auto" }}
                 className={({ isActive }) =>
                   isActive
-                    ? "nav-link nav-link-active px-md-1 px-lg-2 px-xl-3 px-xxl-5 text-center"
-                    : "nav-link nav-link-inactive px-md-1 px-lg-2 px-xl-3 px-xxl-5 text-center"
+                    ? "nav-link nav-link-active px-md-1 px-lg-1 px-xl-2 px-xxl-4 text-center"
+                    : "nav-link nav-link-inactive px-md-1 px-lg-1 px-xl-2 px-xxl-4 text-center"
                 }
               >
                 <h5>Portfolio</h5>
@@ -97,11 +108,16 @@ const Navbarr = () => {
             </Nav>
 
             {/* Contact Button */}
-            <div onClick={closeNavbar} className=" col-5 col-sm-4 col-lg-auto mx-auto mx-lg-0 " style={{   background: "var(--background_color_btn)",
+            <div
+              onClick={closeNavbar}
+              className=" col-5 col-sm-4 col-lg-auto mx-auto mx-lg-0 "
+              style={{
+                background: "var(--background_color_btn)",
                 color: "white",
-                borderRadius:'5.63px'}}>
-                  
-            <Button name='Contact Us' FontSize="30px"/>
+                borderRadius: "5.63px",
+              }}
+            >
+              <Button name="Contact Us" FontSize="30px" />
             </div>
           </Navbar.Collapse>
         </Navbar>

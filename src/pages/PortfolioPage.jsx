@@ -5,13 +5,15 @@ import PortfolioHersoSection from "../assets/Protfolio/ServicesHersoSection.png"
 import HeroSectionService from "../components/ServiceComponents/HeroSectionService";
 
 import PortfolioCarousel from "../components/PortfolioPage/PortfolioCarousel";
+import axios from "axios";
 const PortfolioPage = () => {
+
   return (
 
-      <div className="row Container" style={{ position: "relative" }}>
-        <div className="col-12">
-          <div className="row MarginContainer">
-            <div className="col-12 ">
+      <div className="row " style={{ position: "relative" }}>
+        <div className="col-12 ">
+          <div className="row Container MarginContainer">
+            <div className="col-12 p-0 ">
               <HeroSectionService
                 img={PortfolioHersoSection}
                 text1="Portfolio"
@@ -19,9 +21,9 @@ const PortfolioPage = () => {
               />
             </div>
           </div>
-          <div className="row MarginContainer">
+          <div className="row my-2 my-3 my-5">
             <div className="col-12">
-              <div className="row">
+              <div className="row " style={{minHeight:'40vh',alignItems:'center'}}>
                 <PortfolioCarousel />
               </div>
             </div>
@@ -36,6 +38,7 @@ const PortfolioPage = () => {
             position: "absolute",
             top: "250px",
             left: "-600px",
+            zIndex:'-1'
             // backgroundColor:"red"
           }}
           ></div>
@@ -47,6 +50,7 @@ const PortfolioPage = () => {
             position: "absolute",
             top: "400px",
             right: "-600px",
+            zIndex:'-1'
             // backgroundColor:"red"
           }}
           ></div> 

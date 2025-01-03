@@ -22,10 +22,15 @@ const Footer = () => {
           <div className="row text-white">
             <div className="col-lg-6  col-md-12 ">
               <img src={LogoImg} className="mb-4  mb-lg-5" />
-              <h4 className="   mb-4 mb-lg-5">
+              <div className="row">
+                  <div className="col-12 col-xl-10 col-xxl-9">
+
+              <h5 className="   mb-4 mb-lg-5 ">
                 At the core of our company is a passion for the transformative
                 power of augmented reality (AR) and virtual reality (VR).
-              </h4>
+              </h5>
+                  </div>
+              </div>
               <div className="row mb-4 footer-logo MarginContentContainer ">
                 <div className="col-auto">
                   <Logo logo={ContactLogoleft1} />
@@ -144,6 +149,8 @@ const Footer = () => {
           position: "absolute",
           top: "-200px",
           right: "-400px",
+          
+            zIndex:'-1'
           // backgroundColor:"red"
         }}
       ></div>
@@ -156,6 +163,8 @@ const Footer = () => {
           position: "absolute",
           top: "-100px",
           left: "200px",
+          
+            zIndex:'-1'
           // backgroundColor:'red'
           // backgroundColor:"red"
         }}

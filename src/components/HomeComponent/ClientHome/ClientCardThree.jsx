@@ -7,7 +7,7 @@ import "./ClientCardThree.css";
 import ClientVectorImage2 from '../../../assets/Home/ClientVectorImage2.png'
 const ClientCardThree = () => {
   return (
-    <div className="row my-5">
+    <div className="row mt-5">
       <div className="col-12 col-sm-10 col-xl-6 col-xxl-6">
         <div className="row">
           <div className="col-12">
